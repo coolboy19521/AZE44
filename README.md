@@ -273,6 +273,8 @@ Güc Tələbləri
 
 <h3>Mühərriklər və Servo Motor</h3>
 
+<h4>Mühərrik</h4>
+
 <table style="width:80%; border-collapse:collapse;">
   <tr>
     <td rowspan="5" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
@@ -298,6 +300,8 @@ Güc Tələbləri
     <td>25 × 71 mm, Çəki: 95 q</td>
   </tr>
 </table>
+
+<h4>Servo</h4>
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
