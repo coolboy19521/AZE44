@@ -198,12 +198,10 @@ Robotumuz maneə mərhələsi üçün effektiv alqoritmdən istifadə edir. Bel�
 
 <h3>Raspberry Pi 5</h3>
 
-<table style="width:80%; border-collapse: collapse;">
+<table style="width:80%; border-collapse:collapse;">
   <tr>
-    <td style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;" rowspan="4">
-      <div style="width:400px; height:210px; background-color:white; display:flex; justify-content:center; align-items:center; padding:0; margin:0;">
-        <img src="media/image1.jpeg" style="max-width:100%; max-height:100%; display:block; padding:0; margin:0; border:0;">
-      </div>
+    <td rowspan="4" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image1.jpeg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
     </td>
     <td>USB</td>
     <td>LiDAR sensoru və əlavə cihazların birləşdirilməsi</td>
@@ -221,6 +219,7 @@ Robotumuz maneə mərhələsi üçün effektiv alqoritmdən istifadə edir. Bel�
     <td>5V DC, minimum 3A</td>
   </tr>
 </table>
+
 
 
 Raspberry Pi 5 robotun əsas nəzarətçisi kimi istifadə olunan yüksək performanslı bir lövhəli kompüterdir. Sensor məlumatlarını emal edir, aktuatorlara nəzarət siqnalları yaradır və ümumi sistem əməliyyatlarını ROS üzərindən idarə edir.
