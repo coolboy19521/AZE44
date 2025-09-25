@@ -614,7 +614,6 @@ Yarışmaya başladıqdan bəri robotumuz hər zaman dəyişmişdir. Bunun səb�
 Robot şassi, motor və idarəetmə sistemləri optimallaşdırılmışdır. Xüsusilə stabil şassi quruluşu və sensor yerləşimi üzərində dəyişikliklər aparılmış, beləliklə robotun balansı və çevikliyi artırılmışdır. Bundan əlavə robotun kamera moduluna 4 ədəd ağ LED əlavə edilmişdir. Bu LEDlər işıqlandırmanı sabitləşdirərək ətraf işıqlandırmanın təsirini azaldır.
 
 <img src="media/robot_side.png" height="450"><br>
-<br>
 
 Robotun şassisi həm yüngül, həm də möhkəm olması üçün diqqətlə seçilmiş materiallardan hazırlanıb. Burada əsasən alüminium, PLA plastik və polikarbonatdan istifadə olunub. Bu materiallar sayəsində robot həm dayanıqlılığını qoruyur, həm də sərbəst və çevik hərəkət edə bilir.
 
@@ -640,7 +639,6 @@ Bu yerləşdirmə sensorların optimal işləməsini və robotun stabil hərək�
 -	**Tabla temperaturu:** 60°C,
 -	Standoff aralayıcıları və vidalar şassinin möhkəmliyini və rahat montajını təmin edir.
 
-<br>
 <table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <td style="margin:0; padding:0;"><img src="media/right_up.png" height="300"><br></td>
@@ -650,7 +648,6 @@ Bu yerləşdirmə sensorların optimal işləməsini və robotun stabil hərək�
     <td colspan="2" align="center">Üst, yan və alt görünüş.</td>
   </tr>
 </table>
-<br>
 
 ### Motor Növləri və Xüsusiyyətləri
 
@@ -674,9 +671,7 @@ Motorların şassidə yerləşdirilməsi robotun balansı və hərəkət səmər
 
 Bu yerləşdirmə həm mexaniki balansı qoruyur, həm də sensorlardan və digər aktuatorlardan müdaxiləni minimuma endirir.
 
-<br>
 <img src="media/up_gear.png" height="300">
-<br>
 
 ### Batareya və Ağırlıq Balansı
 
@@ -695,9 +690,7 @@ LIDAR və Kamera:
 -	**Optimal yerləşim:** LIDAR sensoru robotun tam ortasına yaxın yerləşdirilmişdir ki, 360° əhatə təmin olunsun və maneələr tam şəkildə aşkarlansın. Kamera isə ön qisimdə, robotun baxış sahəsini maksimuma çıxaracaq şəkildə yerləşdirilmişdir.
 -	**Stabil montaj:** Kamera üçün 4 ədəd ağ LED əlavə edilmişdir ki, robot işıq şəraitindən asılı olmayaraq rəngləri daha düzgün tanıya bilsin. Həm LIDAR, həm də kamera montajı möhkəm və vibrasiyadan qorunan standoff aralayıcılarla həyata keçirilmişdir.
 
-<br>
-<img src="media/frontt.png" height="400">
-<br>
+<img src="media/frontt.jpg" height="400">
 
 IMU və Ultrasonik Sensorlar:
 -	**Vibrasiyadan qoruma:** BNO055 IMU sensoru, robotun dönmə və hərəkət zamanı dəqiq məlumat verə biləcəyi üçün xüsusi amortizasiya təbəqəsi və montaj yerləri ilə yerləşdirilmişdir.
