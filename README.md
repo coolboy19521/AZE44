@@ -200,7 +200,7 @@ Robotumuz maneə mərhələsi üçün effektiv alqoritmdən istifadə edir. Bel�
 
 <table style="width:100%;">
   <tr>
-    <td style="width:400px; text-align:center; vertical-align:middle;" rowspan="4">
+    <td style="width:400px; text-align:center; vertical-align:middle;padding:0;margin:0;" rowspan="4">
       <div style="width:400px; height:210px; background-color:white; display:flex; justify-content:center; align-items:center;">
         <img src="media/image1.jpeg" style="max-width:100%; max-height:100%;">
       </div>
