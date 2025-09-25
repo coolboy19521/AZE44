@@ -467,7 +467,7 @@ Bağlantı nöqtələri
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
-    <td rowspan="7" style="width:300px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <td rowspan="7" style="width:275px; text-align:center; vertical-align:middle; padding:0; margin:0;">
       <img src="media/image55.jpg" style="width:300px; height:210px; display:block; margin:0 auto; border:0;">
     </td>
     <td>Ölçmə diapazonu</td>
@@ -819,6 +819,15 @@ Now that you get how we are treating the data, we would like to talk a little bi
 
 After all this is our strategy diagram:
 
-![Diagram of Strategy](Diagram_Future_Engineers.png)
+![Diagram of Strategy](media/Diagram_Future_Engineers.png)
+
+### Komanda Şəkilləri
+
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <td style="margin:0; padding:0;"><img src="media/funny.jpg" height="300"><br></td>
+    <td><img src="media/official.jpg" height="300"><br></td>
+  </tr>
+</table>
 
 **P.S. You can contact us for any help needed or for unclear points. But before contacting us please make sure you did not find anything related on the report.**
