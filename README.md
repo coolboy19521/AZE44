@@ -198,19 +198,30 @@ Robotumuz maneə mərhələsi üçün effektiv alqoritmdən istifadə edir. Bel�
 
 <h3>Raspberry Pi 5</h3>
 
-<table style="width:100%;">
+<table style="width:80%; border-collapse: collapse;">
   <tr>
-    <td style="width:400px; text-align:center; vertical-align:middle;padding:0!important;margin:0!important;" rowspan="4">
-      <div style="width:400px; height:210px; background-color:white; display:flex; justify-content:center; align-items:center;padding:0!important;margin:0!important;">
-        <img src="media/image1.jpeg" style="max-width:100%; max-height:100%;padding:0!important;margin:0!important;">
+    <td style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;" rowspan="4">
+      <div style="width:400px; height:210px; background-color:white; display:flex; justify-content:center; align-items:center; padding:0; margin:0;">
+        <img src="media/image1.jpeg" style="max-width:100%; max-height:100%; display:block; padding:0; margin:0; border:0;">
       </div>
     </td>
-    <td>USB</td><td>LiDAR sensoru və əlavə cihazların birləşdirilməsi</td>
+    <td>USB</td>
+    <td>LiDAR sensoru və əlavə cihazların birləşdirilməsi</td>
   </tr>
-  <tr><td>CSI Kamera Poru:</td><td>Kamera Modulu 3 üçün qoşulma</td></tr>
-  <tr><td>GPIO sancaqları</td><td>Başlat düyməsi, güc açarı, kodlayıcı və digər sensor siqnalları</td></tr>
-  <tr><td>İş gərginliyi</td><td>5V DC, minimum 3A</td></tr>
+  <tr>
+    <td>CSI Kamera Poru:</td>
+    <td>Kamera Modulu 3 üçün qoşulma</td>
+  </tr>
+  <tr>
+    <td>GPIO sancaqları</td>
+    <td>Başlat düyməsi, güc açarı, kodlayıcı və digər sensor siqnalları</td>
+  </tr>
+  <tr>
+    <td>İş gərginliyi</td>
+    <td>5V DC, minimum 3A</td>
+  </tr>
 </table>
+
 
 Raspberry Pi 5 robotun əsas nəzarətçisi kimi istifadə olunan yüksək performanslı bir lövhəli kompüterdir. Sensor məlumatlarını emal edir, aktuatorlara nəzarət siqnalları yaradır və ümumi sistem əməliyyatlarını ROS üzərindən idarə edir.
 
