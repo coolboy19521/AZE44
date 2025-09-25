@@ -233,8 +233,6 @@ Güc Tələbləri:
 - Li-Po 3S 1300 mAh batareya və gərginlik tənzimləyicisi ilə təchiz olunur
 - Periferik cihazlar üçün sabit enerji təmin edir
 
-<br>
-
 <h3>Raspberry Pi Pico + DRV8833 Motor Sürücü</h3>
 
 <table style="width:80%; border-collapse:collapse;">
@@ -268,8 +266,6 @@ Mühərrik Birləşmələri
 Güc Tələbləri
 -	**DRV8833:** 2.7–10.8V giriş
 -	**Raspberry Pi Pico:** 3.3V işləmə gərginliyi
-
-<br>
 
 <h3>Mühərriklər və Servo Motor</h3>
 
@@ -336,8 +332,6 @@ Güc Tələbləri
 Nəzarət Siqnalları
 -	**DC mühərriklər:** PWM + Enkoder rəyi
 -	**Servo:** PWM ilə mövqe bucağı idarəsi
-
-<br>
 
 <h3>LiDAR Sensor (RPLIDAR A1M8)</h3>
 
@@ -409,8 +403,6 @@ Sony IMX708 sensorlu 11.9 MP kamera modulu, yüksək keyfiyyətli təsvir və vi
 Güc Tələbləri
 -	CSI interfeysi üzərindən enerji alır
 
-<br>
-
 <h3>Gyroskop (IMU) Sensoru – Adafruit BNO055</h3>
 
 <table style="width:80%; border-collapse:collapse;">
@@ -444,8 +436,6 @@ Bosch BNO055 əsaslı IMU sensoru daxili sensor birləşməsi ilə dəqiq oriyen
 Güc Tələbləri
 -	**İş gərginliyi:** 3.3V (5V tolerant I²C girişləri ilə)
 
-<br>
-
 <h3>Xüsusi PCB Dizaynı</h3>
 
 Bu xüsusi idarəetmə lövhəsi Raspberry Pi 5 və robot sisteminin periferik komponentləri arasında əsas interfeys kimi hazırlanmışdır. O, modullar arasında mütəşəkkil və təhlükəsiz əlaqəni təmin edən sensor birləşmələrini, istifadəçinin qarşılıqlı əlaqə elementlərini (LED, düymə, səs siqnalı) və enerji idarəetmə komponentlərini birləşdirir.
@@ -472,8 +462,6 @@ Bağlantı nöqtələri
 -	Elektrik xətləri yüksək cərəyan üçün daha qalın naqillərlə lehimlənir, siqnal xətləri isə daha nazik naqillərdən istifadə edir.
 -	Prototip olaraq bu dizayn tez modifikasiyalara və sınaqlara imkan verir.
 -	Uzunmüddətli və davamlı istifadə üçün, kütləvi istehsalda lehim maskası və səthi bitirmə ilə FR4 əsaslı PCB- yə keçmək tövsiyə olunur.
-
-<br>
 
 <h3>Ultrasonik Sensor (HC-SR04)</h3>
 
@@ -524,14 +512,12 @@ Güc Tələbləri
 -	**İş gərginliyi:** 5V DC
 -	**Tipik cərəyan istehlakı:** 15 mA
 
-<br>
-
 <h3>Batareyanın Xüsusiyyətləri (Gərginlik, Tutum, C Qiyməti)</h3>
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
     <td rowspan="8" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
-      <img src="media/image5.jpg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+      <img src="media/image5.jpeg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
     </td>
     <td>Gərginlik</td>
     <td>11.1 V (nominal)</td>
@@ -552,7 +538,7 @@ Güc Tələbləri
     <td>Çəki</td>
     <td>110 g</td>
   </tr>
-  <td>
+  <tr>
     <td>Ölçülər</td>
     <td>74 × 33 × 21 mm</td>
   </tr>
