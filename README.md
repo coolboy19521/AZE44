@@ -339,18 +339,35 @@ Nəzarət Siqnalları
 
 <br>
 
-**LiDAR Sensor (RPLIDAR A1M8)**
+<h3>LiDAR Sensor (RPLIDAR A1M8)</h3>
 
-<div style="width:310px; height:170px; text-align:center; background-color:white; display:flex; justify-content:center; align-items:center"><img src="media\image3.jpeg" style="max-width:100%; max-height:100%;"></div>
-<br>
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <td rowspan="5" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image3.jpeg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+    </td>
+    <td>Ölçü</td>
+    <td>98.5 × 70 × 60 mm</td>
+  </tr>
+  <tr>
+    <td>Çəki</td>
+    <td>170 q</td>
+  </tr>
+  <tr>
+    <td>Tarama diapazonu</td>
+    <td>6 m</td>
+  </tr>
+  <tr>
+    <td>Nümunə götürmə sürəti</td>
+    <td>8000/s</td>
+  </tr>
+  <tr>
+    <td>Tarama tezliyi</td>
+    <td>2–10 Hz (PWM ilə)</td>
+  </tr>
+</table>
 
 SLAMTEC RPLiDAR A1M8, xəritəçəkmə və naviqasiya üçün nəzərdə tutulmuş 360° 2D lazer skaneridir. Yüngül, etibarlı və mobil robotlar üçün optimallaşdırılmışdır.
-
-Əsas Parametrlər:
--	**Ölçü:** 98.5 × 70 × 60 mm, Çəki: 170 q
--	**Tarama diapazonu:** 6 m
--	**Nümunə götürmə sürəti:** 8000/s
--	**Tarama tezliyi:** 2–10 Hz (PWM ilə)
 
 Əlaqələr
 -	USB interfeysi ilə Raspberry Pi 5-ə qoşulur
@@ -360,20 +377,31 @@ Güc Tələbləri
 -	5V DC (USB)
 -	Aşağı enerji istehlakı
 
-<br>
+<h3>Kamera (Raspberry Pi Camera Module v3)</h3>
 
-**Kamera (Raspberry Pi Camera Module v3)**
-
-<div style="width:310px; height:170px; text-align:center; background-color:white; display:flex; justify-content:center; align-items:center"><img src="media\image53.png" style="max-width:100%; max-height:100%;"></div>
-<br>
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <td rowspan="4" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image53.png" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+    </td>
+    <td>Çözünürlük</td>
+    <td>4608 × 2592 (11.9 MP)</td>
+  </tr>
+  <tr>
+    <td>Piksel</td>
+    <td>1.4 µm</td>
+  </tr>
+  <tr>
+    <td>Video</td>
+    <td>1080p50, 720p100, 480p120</td>
+  </tr>
+  <tr>
+    <td>Ölçü</td>
+    <td>25 × 24 × 11.5 mm, Çəki: 3 q</td>
+  </tr>
+</table>
 
 Sony IMX708 sensorlu 11.9 MP kamera modulu, yüksək keyfiyyətli təsvir və video çəkmə imkanına malikdir. HDR və PDAF avtofokus dəstəkləyir.
-
-Əsas Parametrlər:
--	**Çözünürlük:** 4608 × 2592 (11.9 MP)
--	**Piksel:** 1.4 µm
--	**Video:** 1080p50, 720p100, 480p120
--	**Ölçü:** 25 × 24 × 11.5 mm, Çəki: 3 q
 
 Əlaqələr
 -	CSI-2 portu ilə Raspberry Pi 5-ə qoşulur
@@ -383,18 +411,31 @@ Güc Tələbləri
 
 <br>
 
-**Gyroskop (IMU) Sensoru – Adafruit BNO055**
+<h3>Gyroskop (IMU) Sensoru – Adafruit BNO055</h3>
 
-<div style="width:310px; height:170px; text-align:center; background-color:white; display:flex; justify-content:center; align-items:center"><img src="media\image54.jpeg" style="max-width:100%; max-height:100%;"></div>
-<br>
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <td rowspan="4" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image54.jpeg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+    </td>
+    <td>9 DOF</td>
+    <td>Akselerometr, Giroskop, Maqnitometr</td>
+  </tr>
+  <tr>
+    <td>Çıxış</td>
+    <td>Euler bucaqları, Kvaternion, Vektorlar</td>
+  </tr>
+  <tr>
+    <td>Tezlik</td>
+    <td>100 Hz-ə qədər</td>
+  </tr>
+  <tr>
+    <td>Ölçü</td>
+    <td>20 × 27 × 4 mm, Çəki: 3 q</td>
+  </tr>
+</table>
 
 Bosch BNO055 əsaslı IMU sensoru daxili sensor birləşməsi ilə dəqiq oriyentasiya məlumatı təqdim edir.
-
-Əsas Parametrlər:
--	**9 DOF:** Akselerometr, Giroskop, Maqnitometr
--	**Çıxış:** Euler bucaqları, Kvaternion, Vektorlar
--	**Tezlik:** 100 Hz-ə qədər
--	**Ölçü:** 20 × 27 × 4 mm, Çəki: 3 q
 
 Əlaqələr
 -	**Rabitə:** I²C (0x28 və ya 0x29), UART dəstəyi
@@ -405,7 +446,7 @@ Güc Tələbləri
 
 <br>
 
-**Xüsusi PCB Dizaynı**
+<h3>Xüsusi PCB Dizaynı</h3>
 
 Bu xüsusi idarəetmə lövhəsi Raspberry Pi 5 və robot sisteminin periferik komponentləri arasında əsas interfeys kimi hazırlanmışdır. O, modullar arasında mütəşəkkil və təhlükəsiz əlaqəni təmin edən sensor birləşmələrini, istifadəçinin qarşılıqlı əlaqə elementlərini (LED, düymə, səs siqnalı) və enerji idarəetmə komponentlərini birləşdirir.
 
@@ -434,21 +475,42 @@ Bağlantı nöqtələri
 
 <br>
 
-**Ultrasonik Sensor (HC-SR04)**
+<h3>Ultrasonik Sensor (HC-SR04)</h3>
 
-<div style="width:310px; height:170px; text-align:center; background-color:white; display:flex; justify-content:center; align-items:center"><img src="media\image55.jpg" style="max-width:100%; max-height:100%;"></div>
-<br>
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <td rowspan="7" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image55.jpg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+    </td>
+    <td>Ölçmə diapazonu</td>
+    <td>2 sm – 400 sm</td>
+  </tr>
+  <tr>
+    <td>Ölçmə dəqiqliyi</td>
+    <td>±3 mm</td>
+  </tr>
+  <tr>
+    <td>Ölçmə bucağı</td>
+    <td>~15°</td>
+  </tr>
+  <tr>
+    <td>İş gərginliyi</td>
+    <td>5V DC</td>
+  </tr>
+  <tr>
+    <td>Ölçülər</td>
+    <td>45 × 20 × 15 mm</td>
+  </tr>
+  <td>
+    <td>Çəki</td>
+    <td>9 g</td>
+  </tr>
+  <tr>
+    <td colspan="2">Sürətli cavab müddəti (təxminən 10 µs trigger impulsu)</td>
+  </tr>
+</table>
 
 HC-SR04, maneələrin aşkarlanması və yaxın məsafələrin ölçülməsi üçün istifadə olunan ucuz və geniş yayılmış ultrasonik məsafə sensorudur. O, səs dalğalarının əks olunma prinsipinə əsaslanır və qısa məsafəli obyekt aşkarlanmasında yüksək dəqiqlik təmin edir.
-
-Əsas Xüsusiyyətlər:
--	**Ölçmə diapazonu:** 2 sm – 400 sm
--	**Ölçmə dəqiqliyi:** ±3 mm
--	**Ölçmə bucağı:** ~15°
--	**İş gərginliyi:** 5V DC
--	**Ölçülər:** 45 × 20 × 15 mm
--	**Çəki:** 9 g
--	Sürətli cavab müddəti (təxminən 10 µs trigger impulsu)
 
 Əlaqələr
 -	**VCC (5V):** Raspberry Pi və ya RRC Lite Controller-in 5V xəttinə qoşulur.
@@ -464,22 +526,47 @@ Güc Tələbləri
 
 <br>
 
-**Batareyanın Xüsusiyyətləri (Gərginlik, Tutum, C Qiyməti)**
+<h3>Batareyanın Xüsusiyyətləri (Gərginlik, Tutum, C Qiyməti)</h3>
 
-<div style="width:310px; height:170px; text-align:center; background-color:white; display:flex; justify-content:center; align-items:center"><img src="media\image5.jpeg" style="max-width:100%; max-height:100%;"></div>
-<br>
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <td rowspan="8" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image55.jpg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+    </td>
+    <td>Gərginlik</td>
+    <td>11.1 V (nominal)</td>
+  </tr>
+  <tr>
+    <td>Tutum</td>
+    <td>1300 mAh</td>
+  </tr>
+  <tr>
+    <td>Hüceyrə sayı</td>
+    <td>3S (3 hüceyrə, seriyalı)</td>
+  </tr>
+  <tr>
+    <td>Boşaltma dərəcəsi</td>
+    <td>50C davamlı / 100C pik (maksimum 10 s)</td>
+  </tr>
+  <tr>
+    <td>Çəki</td>
+    <td>110 g</td>
+  </tr>
+  <td>
+    <td>Ölçülər</td>
+    <td>74 × 33 × 21 mm</td>
+  </tr>
+  <tr>
+    <td>Boşaltma konnektoru</td>
+    <td>XT60 (qara)</td>
+  </tr>
+  <tr>
+    <td>Doldurma konnektoru</td>
+    <td>JST-XHR (ağ)</td>
+  </tr>
+</table>
 
 Layihədə istifadə olunan enerji mənbəyi — yüksək cərəyan tələb edən robototexnika, dron və müdafiə sistemləri üçün nəzərdə tutulmuş JetFire 3S Li-Po batareyasıdır. Bu batareya yüksək boşalma dərəcəsi və etibarlı hüceyrə quruluşu ilə sistemin sabit və uzunmüddətli işləməsini təmin edir.
-
-Texniki Spesifikasiyalar:
--	**Gərginlik:** 11.1 V (nominal)
--	**Tutum:** 1300 mAh
--	**Hüceyrə sayı:** 3S (3 hüceyrə, seriyalı)
--	**Boşaltma dərəcəsi:** 50C davamlı / 100C pik (maksimum 10 s)
--	**Çəki:** 110 g
--	**Ölçülər:** 74 × 33 × 21 mm
--	**Boşaltma konnektoru:** XT60 (qara)
--	**Doldurma konnektoru:** JST-XHR (ağ)
 
 # Proqram mühitinin hazıranması
 
