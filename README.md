@@ -5,7 +5,7 @@
 
 Bizim robotumuz **Raspberry Pi** bir-lövhəli kompüter ilə avtonom sürüş edir. Maneələri və hərəkətini təyin etmək üçün lidar, kamera, giroskop və məsafə sensorlarından istifadə edir. Robotun hərəkət etməsi üçün arxasında bir motor və bu motora qoşulmuş iki təkər vardır. Dönməsi üçünsə robotun qabağındakı servo motorundan və **Ackermann idarəetmə sistemindən** yararlanılır.
 
-<h3>Komanda Şəkilləri</h3>
+<h3>Komandamız</h3>
 
 <table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
@@ -14,7 +14,9 @@ Bizim robotumuz **Raspberry Pi** bir-lövhəli kompüter ilə avtonom sürüş e
   </tr>
 </table>
 
-<h3>Robot Şəkilləri</h3>
+Komandamız **Əhməd Qəmbərli** (Proqramlaşdırma və strategiyanın təyin olunması; [ehmedqemberli09](mailto:ehmedqemberli09@gmail.com); rəsmi şəkildə sağda), **Melisa Yıldız** (Ümumi dizayn; [melisa.17.yildiz](mailto:melisa.17.yildiz@gmail.com); rəsmi şəkildə solda) və **Eyüp Şenal** (Elektronika, mexanika, detalların print olması və işlədilən məhsullar üçün bazar araşdırması; [arduinoaz2022](mailto:arduinoaz2022@gmail.com); leftmost in the official photo).
+
+<h3>Robotumuz</h3>
 
 <table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
