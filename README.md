@@ -8,29 +8,29 @@ Bizim robotumuz **Raspberry Pi** bir-lövhəli kompüter ilə avtonom sürüş e
 <table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <td align="center" colspan="2">
-      <img src="v-photos/right.jpg" height="300"><br>
+      <img src="media/right.jpg" height="300"><br>
       <b>Sağ</b>
     </td>
     <td align="center" colspan="2">
-      <img src="v-photos/left.jpg" height="300"><br>
+      <img src="media/left.jpg" height="300"><br>
       <b>Sol</b>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="v-photos/up.jpg" height="300"><br>
+      <img src="media/up.jpg" height="300"><br>
       <b>Üst</b>
     </td>
     <td align="center">
-      <img src="v-photos/front.jpg" height="300"><br>
+      <img src="media/front.jpg" height="300"><br>
       <b>Qabaq</b>
     </td>
     <td align="center">
-      <img src="v-photos/back.jpg" height="300"><br>
+      <img src="media/back.jpg" height="300"><br>
       <b>Arxa</b>
     </td>
     <td align="center">
-      <img src="v-photos/down.jpg" height="300"><br>
+      <img src="media/down.jpg" height="300"><br>
       <b>Alt</b>
     </td>
   </tr>
