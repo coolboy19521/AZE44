@@ -220,8 +220,6 @@ Robotumuz maneə mərhələsi üçün effektiv alqoritmdən istifadə edir. Bel�
   </tr>
 </table>
 
-
-
 Raspberry Pi 5 robotun əsas nəzarətçisi kimi istifadə olunan yüksək performanslı bir lövhəli kompüterdir. Sensor məlumatlarını emal edir, aktuatorlara nəzarət siqnalları yaradır və ümumi sistem əməliyyatlarını ROS üzərindən idarə edir.
 
 Robotumuzda rolu:
@@ -230,34 +228,40 @@ Robotumuzda rolu:
 - Raspberry Pi Pico vasitəsilə motorların və servoların idarəsi
 - Başlat düyməsi və güc açarı üçün GPIO istifadə
 
-Əlaqələr və Pin Konfiqurasiyası:
-
--	**USB:** LiDAR sensoru və əlavə cihazların birləşdirilməsi
--	**CSI Kamera Portu:** Kamera Modulu 3 üçün qoşulma
--	**GPIO sancaqları:** Başlat düyməsi, güc açarı, kodlayıcı və digər sensor siqnalları
-
 Güc Tələbləri:
 
-- **İş gərginliyi:** 5V DC, minimum 3A
 - Li-Po 3S 1300 mAh batareya və gərginlik tənzimləyicisi ilə təchiz olunur
 - Periferik cihazlar üçün sabit enerji təmin edir
 
 <br>
 
-**Raspberry Pi Pico + DRV8833 Motor Sürücü**
+<h3>Raspberry Pi Pico + DRV8833 Motor Sürücü</h3>
+
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <td rowspan="5" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image49.jpeg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+    </td>
+    <td>RP2040 mikronəzarətçi (Pico)</td>
+  </tr>
+  <tr>
+    <td>Dual H-Bridge motor sürücü (DRV8833)</td>
+  </tr>
+  <tr>
+    <td>Enkoder oxunuşları üçün dəstək</td>
+  </tr>
+  <tr>
+    <td>PWM ilə sürət və istiqamət idarəsi</td>
+  </tr>
+  <tr>
+    <td>Kompakt ölçü və aşağı enerji istehlakı</td>
+  </tr>
+</table>
 
 <div style="width:310px; height:170px; text-align:center; background-color:white; display:flex; justify-content:center; align-items:center"><img src="media\image49.jpeg" style="max-width:100%; max-height:100%;"></div>
 <br>
 
 Raspberry Pi Pico mikronəzarətçisi DRV8833 motor sürücüsü ilə birlikdə DC mühərrikləri və servoları idarə etmək üçün istifadə olunur. Əsas nəzarətçi olan Raspberry Pi 5-dən gələn əmrləri qəbul edir və aktuator hərəkətlərinə çevirir.
-
-Əsas Xüsusiyyətlər:
-
--	RP2040 mikronəzarətçi (Pico)
--	Dual H-Bridge motor sürücü (DRV8833)
--	Enkoder oxunuşları üçün dəstək
--	PWM ilə sürət və istiqamət idarəsi
--	Kompakt ölçü və aşağı enerji istehlakı
 
 Mühərrik Birləşmələri
 -	2 kanal DC mühərrik idarəsi
