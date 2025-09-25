@@ -343,8 +343,8 @@ Nəzarət Siqnalları
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
-    <td rowspan="5" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
-      <img src="media/image3.jpeg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+    <td rowspan="5" style="width:330px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image3.jpeg" style="width:330px; height:210px; display:block; margin:0 auto; border:0;">
     </td>
     <td>Ölçü</td>
     <td>98.5 × 70 × 60 mm</td>
@@ -381,8 +381,8 @@ Güc Tələbləri
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
-    <td rowspan="4" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
-      <img src="media/image53.png" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+    <td rowspan="4" style="width:280px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image53.png" style="width:280px; height:210px; display:block; margin:0 auto; border:0;">
     </td>
     <td>Çözünürlük</td>
     <td>4608 × 2592 (11.9 MP)</td>
@@ -415,8 +415,8 @@ Güc Tələbləri
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
-    <td rowspan="4" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
-      <img src="media/image54.jpeg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+    <td rowspan="4" style="width:310px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image54.jpeg" style="width:310px; height:210px; display:block; margin:0 auto; border:0;">
     </td>
     <td>9 DOF</td>
     <td>Akselerometr, Giroskop, Maqnitometr</td>
@@ -479,8 +479,8 @@ Bağlantı nöqtələri
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
-    <td rowspan="7" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
-      <img src="media/image55.jpg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+    <td rowspan="7" style="width:300px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image55.jpg" style="width:300px; height:210px; display:block; margin:0 auto; border:0;">
     </td>
     <td>Ölçmə diapazonu</td>
     <td>2 sm – 400 sm</td>
@@ -501,7 +501,7 @@ Bağlantı nöqtələri
     <td>Ölçülər</td>
     <td>45 × 20 × 15 mm</td>
   </tr>
-  <td>
+  <tr>
     <td>Çəki</td>
     <td>9 g</td>
   </tr>
@@ -531,7 +531,7 @@ Güc Tələbləri
 <table style="width:80%; border-collapse:collapse;">
   <tr>
     <td rowspan="8" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
-      <img src="media/image55.jpg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+      <img src="media/image5.jpg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
     </td>
     <td>Gərginlik</td>
     <td>11.1 V (nominal)</td>
