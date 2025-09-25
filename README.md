@@ -567,6 +567,19 @@ Güc Tələbləri
 
 Layihədə istifadə olunan enerji mənbəyi — yüksək cərəyan tələb edən robototexnika, dron və müdafiə sistemləri üçün nəzərdə tutulmuş JetFire 3S Li-Po batareyasıdır. Bu batareya yüksək boşalma dərəcəsi və etibarlı hüceyrə quruluşu ilə sistemin sabit və uzunmüddətli işləməsini təmin edir.
 
+<h3>Dövrə Sxemləri</h3>
+
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <td style="margin:0; padding:0;"><img src="media/image57.png" height="500"><br></td>
+    <td><img src="media/image58.png" height="500"><br></td>
+  </tr>
+  <tr>
+    <td align="center">Raspberry Pi və sensorlar üçün dövrə sxemi</td>
+    <td align="center">Raspberry Pi Pico və motor sürücü üçün dövrə sxemi</td>
+  </tr>
+</table>
+
 # Proqram mühitinin hazıranması
 
 ### Raspberry Pi konfiqurasiyası
