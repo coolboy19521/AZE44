@@ -605,6 +605,118 @@ Mühafizə Mexanizmləri (Qoruyucu, Həddindən Artıq Cərəyandan Qorunma)
   </tr>
 </table>
 
+# Mexanika Bölməsi
+
+Yarışmaya başladıqdan bəri robotumuz hər zaman dəyişmişdir. Bunun səbəbi dəyişən elektronik dövrələr, dəyişən strategiyalara edilən adaptasiyalardır. İlk prototipimiz daha kəskin xətləri olan, kompakt və sıx şasseyə sahib idi və bu səbəbdən robot obyektlərə dəyərək hərəkət edirdi. Zamanla şassi ölçüləri genişləndi, xətləri hamarlaşdı və daha çox stabil və etibarlı struktura çevrildi.
+
+### Əsas təkmilləşdirmələr
+
+Robot şassi, motor və idarəetmə sistemləri optimallaşdırılmışdır. Xüsusilə stabil şassi quruluşu və sensor yerləşimi üzərində dəyişikliklər aparılmış, beləliklə robotun balansı və çevikliyi artırılmışdır. Bundan əlavə robotun kamera moduluna 4 ədəd ağ LED əlavə edilmişdir. Bu LEDlər işıqlandırmanı sabitləşdirərək ətraf işıqlandırmanın təsirini azaldır.
+
+<img src="media/robot_side.png" height="450"><br>
+<br>
+
+Robotun şassisi həm yüngül, həm də möhkəm olması üçün diqqətlə seçilmiş materiallardan hazırlanıb. Burada əsasən alüminium, PLA plastik və polikarbonatdan istifadə olunub. Bu materiallar sayəsində robot həm dayanıqlılığını qoruyur, həm də sərbəst və çevik hərəkət edə bilir.
+
+Konstruksiya zamanı modulyarlıq və uzunömürlülük əsas prinsiplər kimi götürülüb. Şassinin forması və təbəqələri elə qurulub ki, elektrik komponentləri və sensorlar həm müdafiə altında olsun, həm də möhkəm şəkildə bərkidilsin.
+
+Dizayn prosesi zamanı komponentlərin düzgün yerləşməsi və robotun sabit hərəkəti əsas hədəf olub. Enerji bloku, sensorlar, aktuatorlar və nəzarətçi vahidinin mövqeləri bir-birinə mane olmadan, səmərəli şəkildə yerləşdirilib. Bu yanaşma həm mexaniki, həm də elektron sistemlərin bir-birinə qarışmadan, ahəngdar şəkildə işləməsinə imkan yaradır.
+
+### Ölçülər və Montaj Məntiqi
+Robotun şassisi `28 sm` ölçüsündədir və komponentlərin yerləşdirilməsi üçün montaj deşikləri və aralayıcı standoff-lar nəzərə alınmışdır. Ümumilikdə 5 ədəd standoff istifadə olunmuşdur ki, şassinin üst və alt hissələri möhkəm şəkildə birləşdirilsin və eyni zamanda asan açılıb-bağlanma imkanı olsun. Bu, həm texniki xidmət, həm də modul dəyişdirmə proseslərini sadələşdirir.
+
+Komponentlərin yerləşdirilməsi çox həssas şəkildə planlaşdırılmışdır:
+-	Ön hissədə LIDAR,
+-	Robotun ortasında Gyro sensoru,
+-	Arxasında Raspberry Pi 5 və motor sürücü,
+-	Ən arxa hissədə ultrasonik sensor yerləşdirilmişdir.
+
+Bu yerləşdirmə sensorların optimal işləməsini və robotun stabil hərəkətini təmin edir. Komponentlər arasındakı məsafələr həm mexaniki müdaxiləni minimuma endirir, həm də istilik və vibrasiya kimi təsirlərin qarşısını alır.
+
+3D Print Tövsiyəsi:
+-	**İstifadə olunan filament:** PLA (Creality şirkətinə məxsus),
+-	**Printer:** Sidewinder X2,
+-	**Nozzle temperaturu:** 210°C,
+-	**Tabla temperaturu:** 60°C,
+-	Standoff aralayıcıları və vidalar şassinin möhkəmliyini və rahat montajını təmin edir.
+
+<br>
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <td style="margin:0; padding:0;"><img src="media/right_up.png" height="300"><br></td>
+    <td><img src="media/righter_up.png" height="300"><br></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">Üst, yan və alt görünüş.</td>
+  </tr>
+</table>
+<br>
+
+### Motor Növləri və Xüsusiyyətləri
+
+Robotun hərəkət və dəqiqlik tələblərinə uyğun olaraq iki əsas motor növü istifadə olunmuşdur:
+-	**DC dişli mühərrikləri:** Bu mühərriklər 5–12V DC diapazonunda işləyir və yüksək tork təmin edir. Hər bir motorun cərəyan və RPM xüsusiyyətləri robotun sürət və yük daşıma qabiliyyətinə uyğun seçilmişdir. Dişli sistemi mühərrikin çıxış sürətini optimallaşdıraraq, daha hamar və dəqiq hərəkət təmin edir.
+-	**Servo motorlar:** Servo motorlar robotun dönmə bucağı və dəqiq mövqe idarəsini təmin edir. Bu motorlar 4.8–6V DC ilə işləyir və yüksək tork tələb edən kiçik hərəkətlər üçün istifadə olunur. Servo motorların sürəti və dəqiqliyi robotun navigasiya və sensor yönləndirmə funksiyalarında kritik rol oynayır.
+
+### Motorların Robot Hərəkətinə Təsiri
+
+Motorların xüsusiyyətləri robotun ümumi performansına birbaşa təsir edir:
+-	**Hərəkət sürəti:** DC mühərriklərinin RPM-i robotun sürətini təyin edir.
+-	**Tork tələbləri:** Robotun şassisi və daşıdığı komponentlər nəzərə alınaraq motorlar seçilmişdir ki, həm sabit hərəkət, həm də yüklə maneələrdən keçmə imkanı təmin olunsun.
+-	**Yük daşıma qabiliyyəti:** Motorlar robotun əlavə sensor və akkutator çəkisini dəstəkləyəcək gücdə olmalıdır.
+
+### Mühərriklərin Mövqeləşdirilməsi
+
+Motorların şassidə yerləşdirilməsi robotun balansı və hərəkət səmərəliliyi üçün diqqətlə planlaşdırılmışdır:
+-	Hər bir DC motor şassinin yan hissələrinə yerləşdirilmişdir ki, torkun mərkəzə düzgün paylanması təmin olunsun.
+-	Kodlayıcılar motorların düzgün oxuya bilməsi üçün mühərrik dişlilərinə yaxın, lakin hərəkət məhdudiyyətləri olmayan mövqedə quraşdırılmışdır.
+-	Servo motorlar robotun xüsusi funksional hissələrinə yerləşdirilmişdir ki, hərəkət dəqiqliyi və sensor yönləndirməsi maksimal olsun.
+
+Bu yerləşdirmə həm mexaniki balansı qoruyur, həm də sensorlardan və digər aktuatorlardan müdaxiləni minimuma endirir.
+
+<br>
+<img src="media/up_gear.png" height="300">
+<br>
+
+### Batareya və Ağırlıq Balansı
+
+Robot şassisinin dizaynında batareya yalnız enerji təmin edən komponent kimi deyil, həm də ağırlıq mərkəzini optimallaşdıran element kimi nəzərə alınmışdır.
+-	**Batareya yerləşimi:** 11.1V 3S Li-Po batareyası şassinin ortasına yaxın bir mövqedə yerləşdirilmişdir ki, robotun irəli-geri və yan hərəkətləri zamanı balans pozulmasın.
+-	**Ağırlıq paylanması:** Bu yerləşdirmə motorlar, sensorlar və digər aktuatorların çəkisi ilə birgə robotun mərkəzi ağırlıq nöqtəsini aşağıda saxlayır, bu da daha stabil hərəkət və dönmə təmin edir.
+
+Robotun mexaniki dizaynında enerji kabellərinin keçid trayektoriyası mühüm rol oynayır:
+-	**Optimal marşrutlaşdırma:** Kabellər şassidə motorlardan, sensorlardan və Raspberry Pi-dən keçərkən həm hərəkət edən hissələrdən uzaq tutulur, həm də mexaniki müdaxilə riskini minimuma endirir.
+-	**Gərginlik və təhlükəsizlik:** Kabellərin yönləndirilməsi zamanı mümkün qısaqapanma və sürtünmə nöqtələri nəzərə alınmış, naqillər üçün əlavə izolyasiya və kabel kanalları təmin edilmişdir.
+-	**Servis rahatlığı:** Güc kabellərinin trayektoriyası, şassinin asan açılıb-qapanması və komponentlərin dəyişdirilməsi üçün nəzərdə tutulmuşdur.
+
+Bu yanaşma mexaniki sabitliyi qoruyarkən, elektrik enerjisinin təhlükəsiz və səmərəli ötürülməsini təmin edir.
+
+LIDAR və Kamera:
+-	**Optimal yerləşim:** LIDAR sensoru robotun tam ortasına yaxın yerləşdirilmişdir ki, 360° əhatə təmin olunsun və maneələr tam şəkildə aşkarlansın. Kamera isə ön qisimdə, robotun baxış sahəsini maksimuma çıxaracaq şəkildə yerləşdirilmişdir.
+-	**Stabil montaj:** Kamera üçün 4 ədəd ağ LED əlavə edilmişdir ki, robot işıq şəraitindən asılı olmayaraq rəngləri daha düzgün tanıya bilsin. Həm LIDAR, həm də kamera montajı möhkəm və vibrasiyadan qorunan standoff aralayıcılarla həyata keçirilmişdir.
+
+<br>
+<img src="media/frontt.png" height="400">
+<br>
+
+IMU və Ultrasonik Sensorlar:
+-	**Vibrasiyadan qoruma:** BNO055 IMU sensoru, robotun dönmə və hərəkət zamanı dəqiq məlumat verə biləcəyi üçün xüsusi amortizasiya təbəqəsi və montaj yerləri ilə yerləşdirilmişdir.
+-	**Əyilmə minimallaşdırılması:** Ultrasonik sensor robotun arxa hissəsində, şassinin sabit bir nöqtəsinə montaj edilmişdir ki, hərəkət zamanı əyilmə və paralaks xətası minimum olsun.
+-	**Optimal oxunuş:** Bütün sensorlar şassidə yerləşdirilərək məlumat axını və işləmə səmərəliliyi üçün optimal gərginlik səviyyələrinə uyğun trayektoriya ilə birləşdirilmişdir.
+
+### Təkmilləşdirmə
+-	**Öz motor sürücü kartının inteqrasiyası:** Robot əvvəlcə RRC Lite Controller-dən istifadə edirdi, lakin Raspberry Pi 5 ilə davamlı əlaqə problemləri səbəbindən öz motor sürücü kartımızı yaratdıq. Bu yeni kart mexanik şassi və digər komponentlərlə tam uyumlu şəkildə yerləşdirilmişdir, beləliklə robotun hərəkət və idarəetmə performansı artırılmışdır.
+-	**Şassi və montaj dizaynının optimallaşdırılması:** Şassi, sensor və aktuator yerləşimi robotun spesifik ehtiyaclarına uyğunlaşdırılmışdır. Komponentlər həm funksional, həm də mexaniki baxımdan ən optimal yerlərə yerləşdirilmişdir; LIDAR robotun ön mərkəzində, gyro arxada, Raspberry Pi 5 və motor sürücü en arxa hissədə, ultrasonik sensor isə ən arxada yerləşir. Bu yerləşim robotun balansını, maneələrdən yayınma qabiliyyətini və sabit hərəkətini təmin edir.
+-	**Texniki problemlərin həlli:** Əvvəlki sistemdə kabel ferritləri, kondensatorlar və güc xətlərinin optimallaşdırılması kimi tədbirlər sınanmışdır. Hər bir həll mexaniki və elektrik mühitində sınaqdan keçirilmiş, ən sonunda öz kartımızın hazırlanması ilə problemlər tam aradan qaldırılmışdır.
+-	**Yaradıcı dizayn və adaptasiya:** Robotun mexanik və elektrik komponentlərinin inteqrasiyasında özəl həllər tətbiq edilmişdir. Bu, həm robotun funksionallığını artırmış, həm də sistemin etibarlılığını yüksəltmişdir.
+
+<br>
+<img src="media/backk.png" height="400">
+<br>
+
+### Nəticə
+Mexaniki dizaynın nəticəsi olaraq, robotun bütün funksionallığı etibarlı şəkildə təmin edilmişdir. Şassi, sensorlar və aktuatorlar optimal şəkildə yerləşdirilmiş, vibrasiya və parazit minimuma endirilmişdir. Modul və optimallaşdırılmış struktur robotun həm prototipləşdirmə mərhələsində, həm də davamlı və uzunmüddətli istifadədə etibarlı performans göstərməsini təmin edir. Həmçinin, motor və sensor inteqrasiyaları, ağırlıq mərkəzinin balanslaşdırılması və kabel trayektoriyasının planlanması kimi mexaniki qərarlar, robotun stabil və səmərəli işləməsinə birbaşa töhfə vermişdir. Nəticədə, bu dizayn həm texniki effektivlik, həm də əməliyyat rahatlığı baxımından uğurlu sayılır.
+
 # Proqram mühitinin hazıranması
 
 ### Raspberry Pi konfiqurasiyası
