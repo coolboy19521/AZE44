@@ -53,14 +53,29 @@ Robotumuz maneə mərhələsi üçün effektiv alqoritmdən istifadə edir. Bel�
 
 ### Hesabat Mündəricatı
 
-- [Robot elektronikası]()
-  - [Materialların siyahısı]()
-- [Proqram mühitinin hazırlanması]()
-  - [Raspberry Pi konfiqurasiyası]()
-  - [Lazımlı paketlərin yüklənilməsi]()
-  - [Kodu yoxlama və işlətmə]()
-- [Strategiyanın izahı]()
-- [Robotun videoları]()
+### Mündəricat
+
+- [Voltivarius Komandasının Hesabatı](#voltivarius-komandasının-hesabatı)
+- [Komandamız](#komandamız)
+- [Robotumuz](#robotumuz)
+- [Elektronika](#robot-elektronikası)
+  - [Sistemə baxış](#sistemə-baxış)
+  - [Əsas komponentlər](#raspberry-pi-5)
+    - [Raspberry Pi 5 və Pico](#raspberry-pi-5)
+    - [LiDAR və Kamera](#lidar-sensor-rplidar-a1m8)
+    - [IMU və Ultrasonik sensorlar](#gyroskop-imu-sensoru--adafruit-bno055)
+  - [Enerji və qoruma sistemi](#batareyanın-xüsusiyyəti)
+- [Mexanika](#mexanika-bölməsi)
+  - [Əsas təkmilləşdirmələr](#əsas-təkmilləşdirmələr)
+  - [Ölçülər və balans](#ölçülər-və-montaj-məntiqi)
+  - [Mühərriklər və yerləşdirilməsi](#motor-növləri-və-xüsusiyyətləri)
+  - [Sensorların mövqeləri](#lidar-və-kamera)
+- [Proqram təminatı](#proqram-mühitinin-hazırlanması)
+  - [Konfiqurasiya və paketlər](#raspberry-pi-konfiqurasiyası)
+  - [Kodun test edilməsi](#kodun-işlədilməsi-və-test-edilməsi)
+- [Strategiya](#strategiyanın-izahı)
+- [Robotun videoları](#robotun-videoları)
+- [Əlaqə](#ps-kod-elektronika-mexanika-və-s-strategiya-üçün)
 
 # Robot elektronikası
 ### Materialların siyahısı
