@@ -275,8 +275,8 @@ Güc Tələbləri
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
-    <td rowspan="5" style="width:300px; text-align:center; vertical-align:middle; padding:0; margin:0;">
-      <img src="media/image51.png" style="width:300px; height:210px; display:block; margin:0 auto; border:0;">
+    <td rowspan="5" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image51.png" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
     </td>
     <td>İş gərginliyi</td>
     <td>5–12V DC</td>
@@ -301,8 +301,8 @@ Güc Tələbləri
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
-    <td rowspan="4" style="width:300px; text-align:center; vertical-align:middle; padding:0; margin:0;">
-      <img src="media/image52.png" style="width:300px; height:210px; display:block; margin:0 auto; border:0;">
+    <td rowspan="4" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image52.png" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
     </td>
     <td>Fırlanma bucağı</td>
     <td>30°–160°</td>
@@ -316,7 +316,7 @@ Güc Tələbləri
     <td>13–15 kg·cm</td>
   </tr>
   <tr>
-    <td>Metal dişli, yüksək davamlılıq</td>
+    <td colspan="2">Metal dişli, yüksək davamlılıq</td>
   </tr>
 </table>
 
