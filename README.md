@@ -5,6 +5,17 @@
 
 Bizim robotumuz **Raspberry Pi** bir-lövhəli kompüter ilə avtonom sürüş edir. Maneələri və hərəkətini təyin etmək üçün lidar, kamera, giroskop və məsafə sensorlarından istifadə edir. Robotun hərəkət etməsi üçün arxasında bir motor və bu motora qoşulmuş iki təkər vardır. Dönməsi üçünsə robotun qabağındakı servo motorundan və **Ackermann idarəetmə sistemindən** yararlanılır.
 
+<h3>Komanda Şəkilləri</h3>
+
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <td style="margin:0; padding:0;"><img src="media/funny.jpg" height="300"><br></td>
+    <td><img src="media/official.jpg" height="300"><br></td>
+  </tr>
+</table>
+
+<h3>Robot Şəkilləri</h3>
+
 <table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <td align="center" colspan="2">
@@ -820,14 +831,5 @@ Now that you get how we are treating the data, we would like to talk a little bi
 After all this is our strategy diagram:
 
 ![Diagram of Strategy](media/Diagram_Future_Engineers.png)
-
-### Komanda Şəkilləri
-
-<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
-  <tr>
-    <td style="margin:0; padding:0;"><img src="media/funny.jpg" height="300"><br></td>
-    <td><img src="media/official.jpg" height="300"><br></td>
-  </tr>
-</table>
 
 **P.S. You can contact us for any help needed or for unclear points. But before contacting us please make sure you did not find anything related on the report.**
