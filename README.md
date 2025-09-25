@@ -200,9 +200,9 @@ Robotumuz maneə mərhələsi üçün effektiv alqoritmdən istifadə edir. Bel�
 
 <table style="width:100%;">
   <tr>
-    <td style="width:400px; text-align:center; vertical-align:middle;padding:0;margin:0;" rowspan="4">
-      <div style="width:400px; height:210px; background-color:white; display:flex; justify-content:center; align-items:center;">
-        <img src="media/image1.jpeg" style="max-width:100%; max-height:100%;">
+    <td style="width:400px; text-align:center; vertical-align:middle;padding:0!important;margin:0!important;" rowspan="4">
+      <div style="width:400px; height:210px; background-color:white; display:flex; justify-content:center; align-items:center;padding:0!important;margin:0!important;">
+        <img src="media/image1.jpeg" style="max-width:100%; max-height:100%;padding:0!important;margin:0!important;">
       </div>
     </td>
     <td>USB</td><td>LiDAR sensoru və əlavə cihazların birləşdirilməsi</td>
