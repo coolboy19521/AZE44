@@ -567,6 +567,31 @@ Güc Tələbləri
 
 Layihədə istifadə olunan enerji mənbəyi — yüksək cərəyan tələb edən robototexnika, dron və müdafiə sistemləri üçün nəzərdə tutulmuş JetFire 3S Li-Po batareyasıdır. Bu batareya yüksək boşalma dərəcəsi və etibarlı hüceyrə quruluşu ilə sistemin sabit və uzunmüddətli işləməsini təmin edir.
 
+<h3>Güc Paylama Diaqramı və Mühafizə Sistemləri</h3>
+
+11.1V 3S Li-Po batareyası bütün sistemi təmin edir. Enerji mərkəzi paylama lövhəsi vasitəsilə bölünərək yüksək cərəyan xətləri (mühərriklər, sürücülər) və aşağı cərəyan xətləri (nəzarətçilər, sensorlar) ayrılır. Bu, həm səmərəliliyi artırır, həm də sistemdə gərginlik sabitliyini təmin edir.
+
+Gərginlik Tənzimləyiciləri və Çeviricilər (5V, 3.3V və s.)
+-	**5V:** Raspberry Pi 5, LiDAR və kamera üçün təmin edilir.
+-	**3.3V:** IMU və digər aşağı güclü sensorlar üçün istifadə olunur.
+-	**XL4015 Çevirici:**
+  - DRV8833 sürücü lövhəsi üçün 10V çıxış təmin edir.
+  -	Servo motor üçün 6V çıxış təmin edir.
+
+Səmərəlilik və enerji sabitliyi üçün keçid tənzimləyicilərindən istifadə olunub.
+
+BMS Li-Po batareyasının təhlükəsiz işləməsini təmin edir:
+-	Həddindən artıq yüklənmənin qarşısını alır,
+-	Həddindən artıq boşalmadan qoruyur,
+-	Qısaqapanma və qızdırma risklərini azaldır.
+
+Balanslaşdırılmış doldurma **iMAX B6AC balans şarj cihazı** vasitəsilə həyata keçirilir.
+
+Mühafizə Mexanizmləri (Qoruyucu, Həddindən Artıq Cərəyandan Qorunma)
+-	Qoruyucular və çox qoruyucu sxemlər əlavə olunub.
+-	Tərs polarite qorunması və gərginlik monitorinq modulları istifadə edilib.
+-	Parazitlənmənin qarşısını almaq üçün mühərrik xətlərinə kapasitörlər qoşulub. Bu, motorların işini sabitləşdirir və siqnal qarışıqlığını minimuma endirir.
+
 <h3>Dövrə Sxemləri</h3>
 
 <table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
