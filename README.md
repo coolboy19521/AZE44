@@ -609,7 +609,7 @@ Mühafizə Mexanizmləri (Qoruyucu, Həddindən Artıq Cərəyandan Qorunma)
 
 ### Raspberry Pi konfiqurasiyası
 
-> Aşağıdakı əməliyyatları yerinə yetirə bilmək üçün kompüterinizə ən az `16GB` yaddaşı olan microSD kart taxmalısınız. Raspberry Pi əməliyyat sistemi bu karta yüklənəcək.
+> Aşağıdakı əməliyyatları yerinə yetirə bilmək üçün kompüterinizə ən az `16GB` yaddaşı olan microSD kart taxmalısınız. Raspberry Pi əməliyyat sistemi bu karta yüklənəcək. **Əgər microSD kart içərisində fayllarınız varsa silinəcəklər**.
 
 Biz Raspberry Pi üçün Ubuntu Server 24.04.3 LTS (64-bit) əməliyyat sistemini işlədirik. Bu əməliyyat sistemini mikrroSD kartına istədiyiniz kimi yükləyə bilərsiniz, ancaq məsləhət görülən üsul rəsmi Raspbery Pi saytından [Raspberry PI Imager tool](https://www.raspberrypi.com/software/) proqramını işlətməkdir. 
 
@@ -853,23 +853,38 @@ Bu faylların ikincisi (`color_selector.py`) rəng tanıma dəyərlərinin kalib
 
 Axırıncı fayl (`visualizer.py`) isə robotun gördüklərini anlıq olaraq vizualizasiya etmək üçündür. Bu proqramı da istifadəçi öz kompüterində işlətməlidir.
 
-### Explanation of Strategy
+### Strategiyanın izahı
 
-Before explaining the strategy it would be smart to explain how we read the data and how we work on it:
+Strategiyanı izah etməzdən əvvəl robotumuzun bu strategiya üçün işlətdiyi alqoritmlərə baxaq:
+- Maneənin tapılması:
+  - Lidar sensor özünə ən yaxın və ən uzaq nöqtəni tapır. Bundan sonra əgər bu iki nöqtənin məsafəsi `5 sm` dən böyükdürsə deməli robotun qabağında maneə var. Bundan sonra maneənin çöl divara olan məsafəsi tapılır və bu məlumat işlədilərək maneənin robotun solunda yoxsa sağında olmağı anlaşılır. Bu nöqtələri taparkən lidar iç və çöl divara məsafəsi minimum `30 sm` olan və robotdan uzaqlığı robotun mərkəzindən `90 sm` radiusda olan nöqtələri nəzərə alır. Bu hazırda işlətdiyimiz alqoritmdir. Zaman mürəkkəbli `O(n)`.
+  - Əvvəl işlətdiyimiz alqortimsə belədir: Robot özündən solda və ən uzaqda bir nöqtə tapır. Sonra bu nöqtəni referans nöqtəsi kimi istifadə edir və digər nöqtələri referans nöqtəsinə nisbətən koordinatlarıyla tanıyır. Sonra isə bütün nöqtələri qruplaşdırmağa çalışır (birbirinə məsfasə `5 sm` - dən kiçik olan nöqtələr eyni qrupa daxil olur). Əgər bizə ən yaxın olan qrupun tərəfləri uzunluğu `5 sm` - dən kiçikdirsə onda o maneədir. Bu alqoritmi işlətməməyimizin səbəblərindən biri `O(n^2)` zaman mürəkkəbliyində olmasıdır. Yeni işlətdiyimiz alqoritm sayəsində robot maneələrə daha həssasdır.
+- Giroskop xətasının düzəldilməsi:
+  - Robotumuz hərəkət edərkən həmişə əyilib əyilmədiyini yoxlayır. Bu dəyər kodda `gyro_angle = robot_car.read_gyro()` vasitəsilə alınır. Bundan sonra robot girospok xətası qədər dönüş edib özünü düzəltməyə çalışır. Ancaq dönüş edərkən `gyro_angle` qədər yox, PİD kontrollerindən alınan dəyər qədər dönüş edir. PİD kontroller robotların hərəkətinin tənzimlənməsi üçün istifadə olunan riyazi formuladır. Bizim kodumuzda PİD kontroller `pid.py` faylındadır.
+  - İdeal dünyada sadəcə giroskop xətasını nəzərə almaq bəs etsə də, giroskoplar bəzən düzgünlüklərini itirə bilirlər. Biz robotumuzun zamanla hərəkət etdiyi istiqamətdə əyri getməyə başladığını gördük. Bundan sonra giroskop dəyərlərinə baxdıqda fikir verdik ki, robot əyri olduqda özünü düzmüş kimi görməyə başlayır. Bu problemi həll etmək üçün bir çox üsulu yoxladıq. İlk olaraq dönüşlərdən sonra robotun arxasını divara vurmağa qərar verdik. Bunu etməyimizin səbəbi odur ki, robot arxasını divara vurduqda giroskop robotun düşündüyündən nə qədər əyri olduğunu göstərirdi. Bu dəyəri aldıqdan sonra giroskopun aldığı yeni dəyərləri bu dəyərdən çıxmağa başlayırdır. Ancaq bu bizim üçün çox zaman itkisinə yol açırdı və biz üç dəqiqə limitinə sığa bilmirdik.
+  - İkinci olaraq yoxladığımız üsul hər dönüşdən sonra robotun oxudğu giroskop dəyərinə əlavə dəyər artırmaq oldu. Məsələn əgər ikinci dönüş edildikdən sonra robot öz dərəcəsini `0°` olaraq görürsə biz bundan `4°` çıxırdıq və robot əslində dörd dərəcə əyri olduğunu anlayırdı. Bu üsul daha sürətli idi ancaq həm də riskli idi. Çünki hər dönüşdə robotun giroskop xətası eyni qədər olmurdu və həmişə eyni ədədi əlavə etmək bəzi problemlərə yol açırdı.
+  - Son olaraq belə bir həll yolu tapdıq: Hər dönüşdən sonra robot çöl divarın özünə nisbətlə əyriliyini hesablayır və öz giroskop dəyərini buna görə dəyişir. Maneələr və robotun hərəkət istiqaməti hər zaman çöl divara paralel olduğuna görə bu üsul yaxşı işlədi. Çöl divarın robota nisbətən əyriliyini hesablamaq üçün robotun hərəkət istiqamətinin tərsində yerləşən, robotdan `15 sm` və `5 sm` uzaqda olan iki nöqtə tapırıq və bu nöqtələr arasındakı dərəcəni hesablayırıq. Bu üsulun tək pis cəhəti hər dönüşdən sonra LiDAR sensorun yenidən dəyər vermək üçün `500 ms` - yə ehtiyacı olmasıdır. Ancaq zaman limiti ilə bağlı problemimiz olmadığına görə bu həlli işlətməyə qərar verdik.
 
-* Lidar values are in radians and inverted by default. Also distances are given in meters. That is why before using lidar data we convert angles to degrees, invert it once more and multiply distances by 100 to work with centimeters (e.g. `(-math.degrees(angle), dis * 100)`).
-* Lidar angles are based on the rotation (yaw angle) of the robot. Therefore it is a little bit inconsistent for our usage. To fix this we shift lidar angles by gyro error (e.g. `angle -= gyro_error`).
-* It is not stable enough to turn our robot by gyro_error itself without any additional work. That is why we added a PID controller. We were adjusting the PID values while we were testing our robot. PID is also used for wall following (e.g. `self.move(self.gyro_pid.pid(gyro_error))`).
-* Our sensor reading (including camera) is not happening synchronously. The main reason for that is the unmatching refresh frequencies of our sensors (lidar is 5-10Hz, camera is almost consistently 30Hz and gyro sensor is stacking all previous values). We are running all reading asynchronously and make cruicial decisions in lidar's callback. Because lidar's callback is responsible for obstacle detection.
+Alqoritmlərdən danışdığımıza görə indi maneə mərhələsi üçün strategiyamıza nəzər sala bilərik. Robotu park yerində başladırıq və robot təsvirdəki kimi park yerindən çıxıb maneə görənə qədər hərəkət etməyə başlayır:
 
-Now that you get how we are treating the data, we would like to talk a little bit about obstacle detection with lidar as it is very cruicial for our runs:
+![Start_pos](media/out_park_first_turn.png)
 
-* To detect an obstacle we first had to find a way to differentiate the obstacle from other stuff. It is not very straightforward. Because at some aspects lidar's readings of outer and inner walls look just like an obstacle. F.e. look at this: TODO.
-* To resolve this issue we first tried to limit the vision angle of the robot so it would not see anything else. But this strategy turned out to be not that 'good'. You see, when you give a large angle it is pointless, as robot still sees inner and outer walles. And when you give a small degree now it is not able to see obstacle itself when very close :|
-* After this failing strategy we came up with something more reliable (we still use it): TODO.
+<br>
 
-After all this is our strategy diagram:
+Robot maneəni gördükdən sonra əvvəlcə ona paralel nöqtəyə dönür və maneəyə yaxınlaşır. Yaxınlaşdıqdan sonra maneənin rəngini kamerayla təyin edir və maneənin düzgün tərəfindən keçir (əgər maneə yaşıldır sol, əgər maneə qırmızıdırsa sağ):
+
+![Uc](media/uc.png)
+
+<br>
+
+İlk tur boyunca robot yuxarıdakı təsvirdəki kimi maneələrə yaxınlaşır və rənglərini oxuyur. Ancaq ikinci və üçüncü turda bunu artıq etmir. Çünki artıq bütün maneələrin rəngini görmüş olur:
+
+![Tc](media/tc.png)
+
+Beləcə tur üçün sərf etdiyimiz zamanı **yarıya** endirmiş oluruq və sürətli hərəkətlərlə turları tamamlayırıq.
+
+İlk tur üçün strategiyamızın diaqramına nəzər yetirə bilərsiniz:
 
 ![Diagram of Strategy](media/Diagram_Future_Engineers.png)
 
-**P.S. You can contact us for any help needed or for unclear points. But before contacting us please make sure you did not find anything related on the report.**
+**P.S. Kod, elektronika, mexanika və ya strategiya ilə bağlı hər hansısa sualınız olduqda bu GitHub hesabı və ya iştirakçıların mail hesabı ilə əlaqəyə keçə bilərsiniz.**
