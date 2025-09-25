@@ -10,34 +10,34 @@
     </td>
     <!-- Parameters column -->
     <td style="vertical-align:middle;">
-      <table style="border:1px solid #ccc; border-collapse: collapse; width:100%;">
+      <table style="border-collapse: collapse; width:100%; margin:0; padding:0;">
         <tr>
-          <th style="border:1px solid #ccc; padding:5px; text-align:left;">Əsas Parametrlər</th>
-          <th style="border:1px solid #ccc; padding:5px; text-align:left;">Dəyərlər</th>
+          <th style="border-bottom:1px solid #ccc; border-right:1px solid #ccc; text-align:left;">Əsas Parametrlər</th>
+          <th style="border-bottom:1px solid #ccc; text-align:left;">Dəyərlər</th>
         </tr>
         <tr>
-          <td style="border:1px solid #ccc; padding:5px;">DOF</td>
-          <td style="border:1px solid #ccc; padding:5px;">9 (Akselerometr, Giroskop, Maqnitometr)</td>
+          <td style="border-bottom:1px solid #ccc; border-right:1px solid #ccc;">DOF</td>
+          <td style="border-bottom:1px solid #ccc;">9 (Akselerometr, Giroskop, Maqnitometr)</td>
         </tr>
         <tr>
-          <td style="border:1px solid #ccc; padding:5px;">Çıxış</td>
-          <td style="border:1px solid #ccc; padding:5px;">Euler bucaqları, Kvaternion, Vektorlar</td>
+          <td style="border-bottom:1px solid #ccc; border-right:1px solid #ccc;">Çıxış</td>
+          <td style="border-bottom:1px solid #ccc;">Euler bucaqları, Kvaternion, Vektorlar</td>
         </tr>
         <tr>
-          <td style="border:1px solid #ccc; padding:5px;">Tezlik</td>
-          <td style="border:1px solid #ccc; padding:5px;">100 Hz-ə qədər</td>
+          <td style="border-bottom:1px solid #ccc; border-right:1px solid #ccc;">Tezlik</td>
+          <td style="border-bottom:1px solid #ccc;">100 Hz-ə qədər</td>
         </tr>
         <tr>
-          <td style="border:1px solid #ccc; padding:5px;">Ölçü / Çəki</td>
-          <td style="border:1px solid #ccc; padding:5px;">20 × 27 × 4 mm, 3 q</td>
+          <td style="border-bottom:1px solid #ccc; border-right:1px solid #ccc;">Ölçü / Çəki</td>
+          <td style="border-bottom:1px solid #ccc;">20 × 27 × 4 mm, 3 q</td>
         </tr>
         <tr>
-          <td style="border:1px solid #ccc; padding:5px;">Rabitə</td>
-          <td style="border:1px solid #ccc; padding:5px;">I²C (0x28 / 0x29), UART dəstəyi, Reset və Interrupt pinləri</td>
+          <td style="border-bottom:1px solid #ccc; border-right:1px solid #ccc;">Rabitə</td>
+          <td style="border-bottom:1px solid #ccc;">I²C (0x28 / 0x29), UART dəstəyi, Reset və Interrupt pinləri</td>
         </tr>
         <tr>
-          <td style="border:1px solid #ccc; padding:5px;">İş gərginliyi</td>
-          <td style="border:1px solid #ccc; padding:5px;">3.3V (5V tolerant I²C girişləri ilə)</td>
+          <td style="border-right:1px solid #ccc;">İş gərginliyi</td>
+          <td>3.3V (5V tolerant I²C girişləri ilə)</td>
         </tr>
       </table>
     </td>
