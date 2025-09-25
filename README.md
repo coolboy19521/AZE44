@@ -14,7 +14,7 @@ Bizim robotumuz **Raspberry Pi** bir-lövhəli kompüter ilə avtonom sürüş e
   </tr>
 </table>
 
-Komandamız **Əhməd Qəmbərli** (Proqramlaşdırma və strategiyanın təyin olunması; [ehmedqemberli09](mailto:ehmedqemberli09@gmail.com); rəsmi şəkildə sağda), **Melisa Yıldız** (Ümumi dizayn; [melisa.17.yildiz](mailto:melisa.17.yildiz@gmail.com); rəsmi şəkildə solda) və **Eyüp Şenal** (Elektronika, mexanika, detalların print olması və işlədilən məhsullar üçün bazar araşdırması; [arduinoaz2022](mailto:arduinoaz2022@gmail.com); leftmost in the official photo).
+Komandamız **Əhməd Qəmbərli** (Proqramlaşdırma və strategiyanın təyin olunması; [ehmedqemberli09](mailto:ehmedqemberli09@gmail.com); rəsmi şəkildə sağda), **Melisa Yıldız** (Ümumi dizayn; [melisa.17.yildiz](mailto:melisa.17.yildiz@gmail.com); rəsmi şəkildə solda) və **Eyüp Şenal** (Elektronika, mexanika, detalların print olması və işlədilən məhsullar üçün bazar araşdırması; [arduinoaz2022](mailto:arduinoaz2022@gmail.com); rəsmi şəkildə mərkəzdə).
 
 <h3>Robotumuz</h3>
 
