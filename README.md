@@ -271,28 +271,54 @@ Güc Tələbləri
 
 <br>
 
-**Mühərriklər və Servo Motor**
+<h3>Mühərriklər və Servo Motor</h3>
 
-<div style="width:310px; height:170px; text-align:center; background-color:white; display:flex; justify-content:center; align-items:center"><img src="media\image51.png" style="max-width:100%; max-height:100%;"></div>
-<br>
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <td rowspan="5" style="width:300px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image51.png" style="width:300px; height:210px; display:block; margin:0 auto; border:0;">
+    </td>
+    <td>İş gərginliyi</td>
+    <td>5–12V DC</td>
+  </tr>
+  <tr>
+    <td>Enkoder gərginliyi</td>
+    <td>3.3–5V DC</td>
+  </tr>
+  <tr>
+    <td>Yüksüz cərəyan</td>
+    <td>200 mA, nominal: 300 mA, dayanma: 800 mA</td>
+  </tr>
+  <tr>
+    <td>Sürət</td>
+    <td>~1000 RPM @ 12V</td>
+  </tr>
+  <tr>
+    <td>Ölçü</td>
+    <td>25 × 71 mm, Çəki: 95 q</td>
+  </tr>
+</table>
 
-DC Enkoderli Mühərriklər:
--	**İş gərginliyi:** 5–12V DC
--	**Enkoder gərginliyi:** 3.3–5V DC
--	**Yüksüz cərəyan:** 200 mA, nominal: 300 mA, dayanma: 800 mA
--	**Sürət:** ~1000 RPM @ 12V
--	**Ölçü:** 25 × 71 mm, Çəki: 95 q
-
-<br>
-
-<div style="width:310px; height:170px; text-align:center; background-color:white; display:flex; justify-content:center; align-items:center"><img src="media\image52.png" style="max-width:100%; max-height:100%;"></div>
-<br>
-
-Servo Motor (Tower Pro MG995):
--	**Fırlanma bucağı:** 30°–160°
--	**Sürət:** 0.15 s/60°
--	**Tork:** 13–15 kg·cm
--	Metal dişli, yüksək davamlılıq
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <td rowspan="4" style="width:300px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image52.png" style="width:300px; height:210px; display:block; margin:0 auto; border:0;">
+    </td>
+    <td>Fırlanma bucağı</td>
+    <td>30°–160°</td>
+  </tr>
+  <tr>
+    <td>Sürət</td>
+    <td>0.15 s/60°</td>
+  </tr>
+  <tr>
+    <td>Tork</td>
+    <td>13–15 kg·cm</td>
+  </tr>
+  <tr>
+    <td>Metal dişli, yüksək davamlılıq</td>
+  </tr>
+</table>
 
 Əlaqələr və İnteqrasiya
 -	**DC mühərriklər:** DRV8833 vasitəsilə idarə olunur
