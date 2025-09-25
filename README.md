@@ -239,8 +239,8 @@ Güc Tələbləri:
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
-    <td rowspan="5" style="width:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
-      <img src="media/image49.jpeg" style="width:400px; height:210px; display:block; margin:0 auto; border:0;">
+    <td rowspan="5" style="width:300px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="media/image49.jpeg" style="width:300px; height:210px; display:block; margin:0 auto; border:0;">
     </td>
     <td>RP2040 mikronəzarətçi (Pico)</td>
   </tr>
@@ -257,9 +257,6 @@ Güc Tələbləri:
     <td>Kompakt ölçü və aşağı enerji istehlakı</td>
   </tr>
 </table>
-
-<div style="width:310px; height:170px; text-align:center; background-color:white; display:flex; justify-content:center; align-items:center"><img src="media\image49.jpeg" style="max-width:100%; max-height:100%;"></div>
-<br>
 
 Raspberry Pi Pico mikronəzarətçisi DRV8833 motor sürücüsü ilə birlikdə DC mühərrikləri və servoları idarə etmək üçün istifadə olunur. Əsas nəzarətçi olan Raspberry Pi 5-dən gələn əmrləri qəbul edir və aktuator hərəkətlərinə çevirir.
 
