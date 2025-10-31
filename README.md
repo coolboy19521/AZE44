@@ -4,21 +4,11 @@
   <dd style="margin:0px;">
     <details open="" style="margin:0px;">
     <summary> Refreshers </summary>
-    <!-- <ul style="margin:0px; padding:0px;">
-      <li> Algorithmics </li>
-      <li> Basic tools </li>
-    </ul> -->
-    Hello, World!
     </details>
   </dd>
   <dd style="margin:0px">
     <details style="margin:0px;">
     <summary> Semester 1 </summary>
-    <!-- <ul style="margin:0px; padding:0px;">
-      <li> Data Visualization </li>
-      <li> Ethics </li>
-    </ul> -->
-    Fuck world!
     </details>
   </dd>
 </dl>
