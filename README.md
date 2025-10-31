@@ -4,19 +4,21 @@
   <dd>
     <details>
     <summary> Refreshers </summary>
-    <ul>
+    Hello, World!
+    <!-- <ul>
       <li> Algorithmics </li>
       <li> Basic tools </li>
-    </ul>
+    </ul> -->
     </details>
   </dd>
   <dd>
     <details>
     <summary> Semester 1 </summary>
-    <ul>
+    <!-- <ul>
       <li> Data Visualization </li>
       <li> Ethics </li>
-    </ul>
+    </ul> -->
+    Fuck world!
     </details>
   </dd>
 </dl>
