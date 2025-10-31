@@ -2,7 +2,7 @@
 <summary> Year 1 (2021 - 2022) </summary>
 <dl>
   <dd style="margin:0px;">
-    <details>
+    <details style="margin:0px;">
     <summary> Refreshers </summary>
     <!-- <ul style="margin:0px; padding:0px;">
       <li> Algorithmics </li>
@@ -12,7 +12,7 @@
     </details>
   </dd>
   <dd style="margin:0px">
-    <details>
+    <details style="margin:0px;">
     <summary> Semester 1 </summary>
     <!-- <ul style="margin:0px; padding:0px;">
       <li> Data Visualization </li>
