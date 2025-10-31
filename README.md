@@ -1,24 +1,22 @@
 <details>
 <summary> Year 1 (2021 - 2022) </summary>
 <dl>
-  <dd>
+  <dd style="margin:0px;">
     <details>
     <summary> Refreshers </summary>
-    Hello, World!
-    <!-- <ul>
+    <ul style="margin:0px; padding:0px;">
       <li> Algorithmics </li>
       <li> Basic tools </li>
-    </ul> -->
+    </ul>
     </details>
   </dd>
-  <dd>
+  <dd style="margin:0px">
     <details>
     <summary> Semester 1 </summary>
-    <!-- <ul>
+    <ul style="margin:0px; padding:0px;">
       <li> Data Visualization </li>
       <li> Ethics </li>
-    </ul> -->
-    Fuck world!
+    </ul>
     </details>
   </dd>
 </dl>
