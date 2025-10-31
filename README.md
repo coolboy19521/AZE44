@@ -2,7 +2,7 @@
 <summary> Year 1 (2021 - 2022) </summary>
   <div style="list-style-type: none;">
     <ul>
-      <li>
+      <div>
         <details>
         <summary> Refreshers </summary>
         <ul>
@@ -10,8 +10,8 @@
           <li> Basic tools </li>
         </ul>
         </details>
-      </li>
-      <li>
+      </div>
+      <div>
         <details>
         <summary> Semester 1 </summary>
         <ul>
@@ -19,7 +19,7 @@
           <li> Ethics </li>
         </ul>
         </details>
-      </li>
+      </div>
     </ul>
   </div>
 </details>
