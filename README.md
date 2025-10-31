@@ -10,7 +10,6 @@
         </ul>
       </details>
     </div>
-
     <div style="margin:0; padding:0;">
       <details style="margin:0; padding:0;">
         <summary>Semester 1</summary>
