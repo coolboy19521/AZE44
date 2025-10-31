@@ -4,10 +4,10 @@
   <dd>
     <details>
     <summary> Refreshers </summary>
-    <dl>
-      <dd> Algorithmics </dd>
-      <dd> Basic tools </dd>
-    </dl>
+    <ul>
+      <li> Algorithmics </li>
+      <li> Basic tools </li>
+    </ul>
     </details>
   </dd>
   <dd>
