@@ -1,6 +1,6 @@
 <details>
 <summary> Year 1 (2021 - 2022) </summary>
-  <ul>
+  <ul style="list-style-type: none;">
   <li>
   <details>
   <summary> Refreshers </summary>
