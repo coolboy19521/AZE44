@@ -1,19 +1,23 @@
 <details>
 <summary> Year 1 (2021 - 2022) </summary>
-<div style="margin-right: 30px;">
+<dl>
+  <dd>
     <details>
     <summary> Refreshers </summary>
-    <ul style="margin-bottom:0;padding-bottom:0">
+    <ul>
       <li> Algorithmics </li>
       <li> Basic tools </li>
     </ul>
     </details>
+  </dd>
+  <dd>
     <details>
     <summary> Semester 1 </summary>
-    <ul style="margin-bottom:0;padding-bottom:0">
+    <ul>
       <li> Data Visualization </li>
       <li> Ethics </li>
     </ul>
     </details>
-</div>
+  </dd>
+</dl>
 </details>
