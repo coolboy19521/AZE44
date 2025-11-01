@@ -49,3 +49,5 @@ We also have an API file on Raspberry Pi side to communicate with Raspberry Pi P
 
 > [!NOTE]
 > Our motor driver API support motor commands at a frequency up to `50 Hz`, and we are using it at `20 Hz`. The limit for our usage is bound by our strategy and the overall logic for the solution.
+
+![Open Challange Strategy](WROMapScene.gif)
