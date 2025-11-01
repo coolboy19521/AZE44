@@ -5,8 +5,8 @@ In this section of the documentation software solution of our strategy is discus
 2. **Have a margin of error**: There is nothing such as *at STP* in the competition arena. So you can't just solely rely on robot's mechanic design and right perfect code. Software should always be able to tolerate some amount of hardware error. So should hardware, as perfection lies in balance of both.
 
 3. **Test enough**: Sometimes we get new ideas for our strategy or overall robot behaviour. It is not appropriate to use it if it works once. Before moving on and accepting the solution, it should be tested. Many of the ideas look bright at first glance but with proper testing its faults are much more observable.
-    > [!CAUTION]
-    > For every problem, there is a solution which is simple, fast, and wrong 😉.
+> [!CAUTION]
+> For every problem, there is a solution which is simple, fast, and wrong 😉.
 
 
 4. **Never be afraid of trying new ideas**: Most of our ideas about the robot and strategy has changed since we started working on the actual map. Almost nothing has stayed the same 🙂. Because of that, we always think of alternative ways of doing something in parallel to implementing our already existing ideas.
