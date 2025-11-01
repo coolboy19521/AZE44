@@ -8,13 +8,13 @@ In this section of the documentation software solution of our strategy is discus
 > [!NOTE]
 > For every problem, there is a solution which is simple, fast, and wrong 😉.
 
-
 4. **Never be afraid of trying new ideas**: Most of our ideas about the robot and strategy has changed since we started working on the actual map. Almost nothing has stayed the same 🙂. Because of that, we always think of alternative ways of doing something in parallel to implementing our already existing ideas.
 
 5. **Stay positive**: It is really easy to get pessimistic when a solution does not work, especially when you spend a lot of time on it. In times like these we remind ourselves why we started this journey. To learn something new, experience new stuff and compete fairly.
 
 Now that we got our principles out of the way, we can start with the actual software. Our structure for software flow is such:
 
+![Diagram](CodeComponentDiagram_ManimCE_v0.19.0.png)
 **HERE WILL BE AN IMAGE**
 
 Let's get into setting up the development environment. We have a very generic development environment for the host machine. The only programs you need to develop is `ssh` and any text editor of your choice. All of the modern machines nowadays come with these by default. To develop on the host machine we used `Command Prompt` in our Windows machine and `Terminal` in our Ubuntu machine.
