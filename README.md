@@ -15,16 +15,18 @@ In this section of the documentation software solution of our strategy is discus
 Now that we got our principles out of the way, we can start with the actual software. Our structure for software flow is such:
 
 ![Diagram](CodeComponentDiagram_ManimCE_v0.19.0.png)
+*Figure 1.1 Software Flow Diagram*
 
 Let's get into setting up the development environment. We have a very generic development environment for the host machine. The only programs you need to develop is `ssh` and any text editor of your choice. All of the modern machines nowadays come with these by default. To develop on the host machine we used `Command Prompt` in our Windows machine and `Terminal` in our Ubuntu machine.
 
 Environment for the Raspberry Pi is a little bit more complex but to make it simpler we developed a solution as such:
 
-**HERE WILL BE A FILE**
+[![⬇ ISO File](https://img.shields.io/badge/⬇%20ISO%20File-aze44__live__image.iso-df3e3e)](https://your-download-link)
 
-This is our Raspberry Pi image. If you flash this file into your Raspberry, you will get the exactly same environment as us. To flash this image you can use **HERE WILL BE A PROGRAM NAME**:
+This is our Raspberry Pi image. If you flash this file into your Raspberry, you will get the exactly same environment as us. To flash this image you can use ``Rufus`` for Windows, ``UNetbootin`` for Linux or ``WonderISO`` for MacOS.
 
-**HERE WILL BE ANOTHER IMAGE**
+![Rufus](rufus.webp)
+*Figure 1.2 Flushing through Rufus*
 
 But if you want to customize installation you can just flush the Raspberry Pi from the official Raspberry Pi Imager. **HERE WILL BE A LINK TO THE FULL GUIDE** After installing the operating system you can install the ROS2 environment. **HERE WILL BE A LINK TO THE FULL GUIDE**
 
