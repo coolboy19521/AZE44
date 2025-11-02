@@ -16,7 +16,7 @@ Now that we got our principles out of the way, we can start with the actual soft
 
 <div>
   <img src="CodeComponentDiagram_ManimCE_v0.19.0.png" alt="Diagram" />
-  <p style="margin-top:0; font-style:italic;">Figure 1.1 Software Flow Diagram</p>
+  <p style="margin-top:0;"><i>Figure 1.1 Software Flow Diagram</i></p>
 </div>
 
 Let's get into setting up the development environment. We have a very generic development environment for the host machine. The only programs you need to develop is `ssh` and any text editor of your choice. All of the modern machines nowadays come with these by default. To develop on the host machine we used `Command Prompt` in our Windows machine and `Terminal` in our Ubuntu machine.
@@ -29,7 +29,7 @@ This is our Raspberry Pi image. If you flash this file into your Raspberry, you 
 
 <div>
   <img src="rufus.webp" alt="Rufus" />
-  <p style="margin-top:0; font-style:italic;">Figure 1.2: Rufus flashing tool</p>
+  <p style="margin-top:0;"><i>Figure 1.2: Rufus flashing tool</i></p>
 </div>
 
 But if you want to customize installation you can just flush the Raspberry Pi from the official Raspberry Pi Imager. **HERE WILL BE A LINK TO THE FULL GUIDE** After installing the operating system you can install the ROS2 environment. **HERE WILL BE A LINK TO THE FULL GUIDE**
