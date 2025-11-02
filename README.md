@@ -51,6 +51,15 @@ After selection your Raspberry Pi model press "Choose OS". Afterwards select the
 > [!NOTE]
 > It is not possible to use `Raspberry Pi OS (Raspbian)` for this project. The reason for that is `ROS2 JAZZY`, a dependency for this project, not being supported by `Raspbian`. There might be some workarounds to get it to work, but it would be a waste of time as `Ubuntu Server 24.04.3 LTS (64-bit)` is already as minimal as official `Raspbian`.
 
+Now to configure the operating system press `Ctrl` `Shift` `X` or `⌘` `Shift` `X`. In the panel that opened, under the `General` tab set your internet settings and your credentials for Raspberry Pi user. After that switch to `Services` tab and enable `SSH` and `Password Authentication`. After doing all the configurations press `Next` and the installation will start.
+
+After the installation is complete plug the microSD card into Raspberry Pi. After it boots, it is recommended to execute following commands:
+
+```
+$ sudo apt update
+$ sudo apt upgrade
+```
+
 After installing the operating system you can install the ROS2 environment. **HERE WILL BE A LINK TO THE FULL GUIDE**
 
 From now on we will talk about different section of the software as describe in figure 1.1.
