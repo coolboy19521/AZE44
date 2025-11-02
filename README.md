@@ -32,7 +32,20 @@ This is our Raspberry Pi image. If you flash this file into your Raspberry, you 
   <p style="margin-top:0;"><i>Figure 1.2: Rufus flashing tool</i></p>
 </div>
 
-But if you want to customize installation you can just flush the Raspberry Pi from the official Raspberry Pi Imager. **HERE WILL BE A LINK TO THE FULL GUIDE** After installing the operating system you can install the ROS2 environment. **HERE WILL BE A LINK TO THE FULL GUIDE**
+But if you want to customize installation you should flush the Raspberry Pi from the official Raspberry Pi Imager. If not, just skip to the `Code and Strategy` section.
+
+> [!IMPORTANT]
+> For every problem, there is a solution which is simple, fast, and wrong.
+
+We are using `Ubuntu Server 24.04.3 LTS (64-bit)` for our Raspberry Pi. You can install this OS to your microSD as you want, but the recommended way is to use the official [Raspberry PI Imager tool](https://www.raspberrypi.com/software/).
+
+![Raspberry PI Imager](media/Imager.PNG)
+
+After selection your Raspberry Pi model press "Choose OS". Afterwards select the `Other general-purpose OS` > `Ubuntu` > `Ubuntu Server 24.04.3 LTS (64-bit)` operating system.
+
+![Ubuntu Server 24.04.3 LTS (64-bit)](media/OS.PNG)
+
+After installing the operating system you can install the ROS2 environment. **HERE WILL BE A LINK TO THE FULL GUIDE**
 
 From now on we will talk about different section of the software as describe in figure 1.1.
 
