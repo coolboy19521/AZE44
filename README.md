@@ -60,7 +60,200 @@ $ sudo apt update
 $ sudo apt upgrade
 ```
 
-After installing the operating system you can install the ROS2 environment. **HERE WILL BE A LINK TO THE FULL GUIDE**
+After installing the operating system you can install the ROS2 environment.
+
+Start with installing `Git`. This package will be used for installing other packages from the internet:
+
+```bash
+$ sudo apt-get install git
+```
+
+To be able to use Raspberry Pi camera module, the packages `libcamera` and `rpicam-apps` should be installed. Start with installing the dependencies:
+
+```bash
+$ sudo apt install -y libboost-dev
+$ sudo apt install -y libgnutls28-dev openssl libtiff5-dev pybind11-dev
+$ sudo apt install -y meson cmake
+$ sudo apt install -y python3-yaml python3-ply
+$ sudo apt install -y libglib2.0-dev libgstreamer-plugins-base1.0-dev
+```
+
+And now to install the package:
+
+```bash
+$ git clone https://github.com/raspberrypi/libcamera.git
+```
+
+Go to the root directory:
+
+```bash
+$ cd libcamera
+```
+
+To configure the package build:
+
+```bash
+$ meson setup build --buildtype=release -Dpipelines=rpi/vc4,rpi/pisp -Dipas=rpi/vc4,rpi/pisp -Dv4l2=true -Dgstreamer=enabled -Dtest=false -Dlc-compliance=disabled -Dcam=disabled -Dqcam=disabled -Ddocumentation=disabled -Dpycamera=enabled
+```
+
+And finally to install `libcamera` package:
+
+```bash
+$ sudo ninja -C build install
+```
+
+After installing `libcamera` package we can install `rpicam-apps`. Start with dependencies:
+
+```bash
+$ sudo apt install -y cmake libboost-program-options-dev libdrm-dev libexif-dev
+$ sudo apt install -y meson ninja-build
+```
+
+Go to the root directory and download the package:
+
+```bash
+$ git clone https://github.com/raspberrypi/rpicam-apps.git
+```
+
+Move to the package directory:
+
+```bash
+$ cd rpicam-apps
+```
+
+Before doing the configuration install `libav` package to be able to record videos using the camera:
+
+```bash
+$ sudo apt install -y libavcodec-dev libavformat-dev libavutil-dev libswscale-dev libavdevice-dev libavfilter-dev
+```
+
+Now you can configure the build:
+
+```bash
+$ meson setup build -Denable_libav=enabled -Denable_drm=enabled -Denable_egl=disabled -Denable_qt=disabled -Denable_opencv=disabled -Denable_tflite=disabled -Denable_hailo=disabled
+```
+
+And finally install `rpicam-apps`:
+
+```bash
+$ meson compile -C build
+$ sudo meson install -C build
+```
+
+You should end the installation with updating the `ldconfig cache`. This is handy for using the installed packages in other directories:
+
+```bash
+$ sudo ldconfig
+```
+
+Now that all the required packages are installed we can install `ROS2 Jazzy` integration.
+
+[`ROS2 Jazzy`](https://docs.ros.org/en/jazzy/index.html) is a collection of robot integration packages. With the following instructions you should be able to get `ROS2 Jazzy` on your system.
+
+Configure the locale for Raspberry Pi:
+
+```bash
+$ locale 
+$ sudo apt update && sudo apt install locales
+$ sudo locale-gen en_US en_US.UTF-8
+$ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+$ export LANG=en_US.UTF-8
+$ locale 
+```
+
+Add required repositories to the `apt` package manager to be able to install required apps:
+
+```bash
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository universe
+```
+
+Now add `ros2-apt-source` package:
+
+```bash
+$ sudo apt update && sudo apt install curl -y
+$ export ROS_APT_SOURCE_VERSION=$(curl -s https://api.github.com/repos/ros-infrastructure/ros-apt-source/releases/latest | grep -F "tag_name" | awk -F\" '{print $4}')
+$ curl -L -o /tmp/ros2-apt-source.deb "https://github.com/ros-infrastructure/ros-apt-source/releases/download/${ROS_APT_SOURCE_VERSION}/ros2-apt-source_${ROS_APT_SOURCE_VERSION}.$(. /etc/os-release && echo $VERSION_CODENAME)_all.deb" # If using Ubuntu derivates use $UBUNTU_CODENAME
+$ sudo dpkg -i /tmp/ros2-apt-source.deb
+```
+
+To enable the programming environment:
+
+```bash
+$ sudo apt update && sudo apt install -y \
+  python3-flake8-blind-except \
+  python3-flake8-class-newline \
+  python3-flake8-deprecated \
+  python3-mypy \
+  python3-pip \
+  python3-pytest \
+  python3-pytest-cov \
+  python3-pytest-mock \
+  python3-pytest-repeat \
+  python3-pytest-rerunfailures \
+  python3-pytest-runner \
+  python3-pytest-timeout \
+  ros-dev-tools
+```
+
+Now create a `ROS2 Jazzy` workspace and install required `ROS2 Jazzy` packages:
+
+```bash
+$ mkdir -p ~/ros2_jazzy/src
+$ cd ~/ros2_jazzy
+$ vcs import --input https://raw.githubusercontent.com/ros2/ros2/jazzy/ros2.repos src
+```
+
+To be confident that all the packages are up-to-date:
+
+```bash
+$ sudo apt upgrade
+```
+
+Finally install everything:
+
+```bash
+$ sudo rosdep init
+$ rosdep update
+$ rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-6.0.1 urdfdom_headers"
+```
+
+After installing the `ROS2 Jazzy` system we can install required packages for the project.
+
+Installing `ROS2 Jazzy` system is not enough to use it. You need to source `/opt/ros/jazzy/setup.bash` everytime you want to use it. If you don't want to explicitely do it everytime execute this command, which add the command to startup:
+
+```bash
+$ echo "source /opt/ros/jazzy/setup.bash">>~/.bashrc
+```
+
+After executing the command restart the console.
+
+`camera_ros` is a package to integrate camera with `ROS2 Jazzy`. To install `camera_ros` execute the following commands:
+
+```bash
+$ cd ~/ros2_jazzy/src
+$ sudo apt -y install python3-colcon-meson
+$ git clone https://github.com/christianrauch/camera_ros.git
+$ source /opt/ros/$ROS_DISTRO/setup.bash
+$ cd ~/ros2_jazzy/
+$ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO --skip-keys=libcamera
+$ colcon build --event-handlers=console_direct+
+```
+
+`rplidar_ros` is a package to use RPLidar system. To install it:
+
+```bash
+$ cd ~/ros2_jazzy/src
+$ git clone https://github.com/Slamtec/rplidar_ros.git
+$ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO --skip-keys=libcamera
+$ colcon build --symlink-install
+```
+
+To use the packages after installing them you should source `~/ros2_jazzy/install/setup.bash` everytime. If you don't want to add it to the `~/.bashrc`:
+
+```bash
+$ echo "source ~/ros2_jazzy/install/setup.bash">>~/.bashrc
+```
 
 From now on we will talk about different section of the software as describe in figure 1.1.
 
