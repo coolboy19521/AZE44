@@ -48,6 +48,9 @@ After selection your Raspberry Pi model press "Choose OS". Afterwards select the
 > [!NOTE]
 > `Ubuntu Server 24.04.3 LTS (64-bit)` is the latest release for Ubuntu Server. Despite this, it support many Raspberry Pi versions. Without the loss of generality, you do not need to install this specific version of Ubuntu to be able to execute the instructions and commands, but it is recommended as it is what we used.
 
+> [!NOTE]
+> It is not possible to use `Raspberry Pi OS (Raspbian)` for this project. The reason for that is `ROS2 JAZZY`, a dependency for this project, not being supported by `Raspbian`. There might be some workarounds to get it to work, but it would be a waste of time as `Ubuntu Server 24.04.3 LTS (64-bit)` is already as minimal as official `Raspbian`.
+
 After installing the operating system you can install the ROS2 environment. **HERE WILL BE A LINK TO THE FULL GUIDE**
 
 From now on we will talk about different section of the software as describe in figure 1.1.
