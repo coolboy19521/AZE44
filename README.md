@@ -45,6 +45,9 @@ After selection your Raspberry Pi model press "Choose OS". Afterwards select the
 
 ![Ubuntu Server 24.04.3 LTS (64-bit)](media/OS.PNG)
 
+> [!NOTE]
+> `Ubuntu Server 24.04.3 LTS (64-bit)` is the latest release for Ubuntu Server. Despite this, it support many Raspberry Pi versions. Without the loss of generality, you do not need to install this specific version of Ubuntu to be able to execute the instructions and commands, but it is recommended as it is what we used.
+
 After installing the operating system you can install the ROS2 environment. **HERE WILL BE A LINK TO THE FULL GUIDE**
 
 From now on we will talk about different section of the software as describe in figure 1.1.
