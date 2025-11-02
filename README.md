@@ -267,11 +267,70 @@ Let's start with the Raspberry Pi Pico - motor driver. We have created our own A
 
 After having these issues we decided it was not worth risking a faulty motor driver. When we made this decision there was only a week left before the national qualifications so we were too late to buy a new motor driver. That's why we decided to make our own using Raspberry Pi Pico. Pico receives the commands from Raspberry Pi and sends them to the internat motor driver. When designing the work flow of our API we relied on our previous hypothesis of why a motor drive could fail. The new API we have created has never failed since we have created it and we hope it will stay so. Let's look at some cruicial parts and explain them on code:
 
-**HERE WILL BE A CODE AND COMMENTS EXPLAINING HOW THIS WORKS**
+```python
+while True: # While Pico is alive
+    position = encoder.position # Get current position
+    if position != last_position: # If current position is not same as last position
+        send_command(position) # We send new encoder value
+        last_position = position # And update last position
 
-We also have an API file on Raspberry Pi side to communicate with Raspberry Pi Pico:
+    time.sleep(0.001) # Add a little delay
+```
 
-**HERE WILL BE A CODE AND COMMENTS EXPLAINING HOW THIS WORKS**
+We are only sending when the encoder value changes. Because if we'd always send encoder value usb data storage would be extremely polluted by zeros, and it results in slip.
+
+```python
+def read_command():
+    global buffer
+    if usb_serial.in_waiting > 0:
+        buffer += usb_serial.read(usb_serial.in_waiting) # Accumulate buffer globally
+    while len(buffer) >= 3: # All packets are siz of 3
+        frame = buffer[:3]
+        servo_val = frame[0]
+        motor_raw = frame[1]
+        checksum = frame[2]
+        if checksum == ((servo_val + motor_raw) & 0xFF): # If checksums match
+            motor_val = motor_raw
+            if motor_val >= 128: # Packets are unsigned but to give negative speeds
+                motor_val -= 256 # we subtract 256 when speed is over 128.
+            buffer = buffer[3:]  # This idea comes from how two's complement works.
+            return servo_val, motor_val
+        else:
+            buffer = buffer[1:] # If checksums mismatch we shift by a byte.
+    return None
+```
+
+We are securing the commands using checksums. When the checksums don't match we know there has been a byte lost. Despite we have this algorithm we have almost never observed a checksum mismatch.
+
+```python
+def send_command(value):
+    data = value.to_bytes(4, 'big', signed=True)
+    checksum = sum(data) & 0xFF # Value is checksummed
+    if usb_serial.out_waiting < 64: # Send data if there is not much queue in usb storage
+        usb_serial.write(data + bytes([checksum]))
+```
+
+Cruicial part about this function is limiting how much data is sent at any moment. We don't allow a queue of size more than `64 bytes`. This way usb does not get flooded. We actually did not have this logic at some point and we were losing connection between our motor driver.
+
+```python
+while True:
+    cmd = read_command()
+    if cmd is not None: # If there is an incomming command
+        servo_angle, motor_speed = cmd
+        set_angle(servo_angle)
+        move_motor(motor_speed)
+
+    position = encoder.position
+    if position != last_position:
+        send_command(position)
+        last_position = position
+
+    time.sleep(0.001)
+```
+
+This is the main loop of the API. As you can see transmitting encoder values and receiving commands happen concurrently. You can view this API further in `src/pico.py`.
+
+There is also another API inside of the Raspberry Pi to communicate with Raspberry Pi Pico. API for Raspberry Pi is almost identical to this code, and you can view it in `src/robot_car.py`.
 
 > [!NOTE]
 > Our motor driver API support motor commands at a frequency up to `50 Hz`, and we are using it at `20 Hz`. The limit for our usage is bound by our strategy and the overall logic for the solution.
