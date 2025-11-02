@@ -255,7 +255,7 @@ To use the packages after installing them you should source `~/ros2_jazzy/instal
 $ echo "source ~/ros2_jazzy/install/setup.bash">>~/.bashrc
 ```
 
-From now on we will talk about different section of the software as describe in figure 1.1.
+From now on we will talk about different section of the software as described in figure 1.1.
 
 Let's start with the Raspberry Pi Pico - motor driver. We have created our own API for motor and servo control which also supports motor encoders. Before developping our own motor driver we actually tried an already existing one, but it had many issues. The motor driver we used before was consistently losing connection with Raspberry Pi. It was stopping to receive any commands transmitted from the Raspberry Pi and executed the last one. We had many ideas to fix this issue:
 
