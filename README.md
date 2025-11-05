@@ -47,6 +47,8 @@ Our team consists of 3 members: Eyyub Şenal (center in the official photo), Əh
 
 Before the national qualification our work schedule was very full, we were working every day before the competition. We started in summer so we had plenty of time during the holiday. After qualifying to the international finals we had to limit how much we work every week, because we had school, exams and a **personal life**. We worked every Monday, Wednesday, Thursday and Saturday. On Sundays we had a meeting about the improvements over the week and what we are planning to do next week.
 
+<h1>Our Robot</h1>
+
 <table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <td align="center" colspan="2">
@@ -80,7 +82,7 @@ Before the national qualification our work schedule was very full, we were worki
 
 Our robot is called “miav”. Miav is a ROS2-based four-wheeled mobile robot developed on the Raspberry Pi 5 platform. It integrates advanced hardware including a T-MINI-Plus Lidar TOF, a BNO085 IMU, and a Raspberry Pi Camera for vision. The system supports intelligent functions such as mapping, localization, obstacle avoidance, and autonomous navigation, while ensuring safe operation with Li-Po monitoring, fuse protection, and modular electronic design. Our robot is powered with Python as everything including motor drivers is written in it.
 
-## Table of Contents
+<h1>Table of Contents</h1>
 
 ### [Evolution of our robot](/Our%20Journey.md)
 ### [Philosophy and habits](/Ideas_and_principles.md)
