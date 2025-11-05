@@ -354,3 +354,9 @@ We have a very simple strategy for Open Challange. All we do is to go straight a
   <img src="../WROMapScene.gif" alt="Straighten Strategy" />
   <p style="margin-top:0;"><i>Figure 1.6: Open Challange Strategy</i></p>
 </div>
+
+<hr>
+
+<p align="center">
+  <img src="../media/my_image.png" alt="Sublime's custom image" height="400"/>
+</p>
