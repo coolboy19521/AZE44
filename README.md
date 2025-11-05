@@ -10,7 +10,7 @@
   </tr>
 </table>
 
-Our team consists of 3 members: Eyyub Şenal, Əhməd Qəmbərli, Melisa Yıldız. Everyone in this team has an experience of WRO at least at national level. Eyyub and Melisa have even participated at international stages. Eyyub received a silver medal in WRO 2023 Panama and Melisa received a gold medal in WRO 2024 İzmir. Here are communication informations for our team:
+Our team consists of 3 members: Eyyub Şenal (center in the official photo), Əhməd Qəmbərli (rightmost in the official photo), and Melisa Yıldız (leftmost in the official photo). Everyone in this team has an experience of WRO at least at national level. Eyyub and Melisa have even participated at international stages. Eyyub received a silver medal in WRO 2023 Panama and Melisa received a gold medal in WRO 2024 İzmir. Here are communication informations for our team:
 
 - Eyyub Şenal from [Bakı Türk Anadolu Liseyi](https://btal.meb.k12.tr/):
   - <a href="mailto:arduinoaz2022@gmail.com" style="text-decoration:none;">
@@ -53,29 +53,29 @@ Before the national qualification our work schedule was very full, we were worki
   <tr>
     <td align="center" colspan="2">
       <img src="media/right.jpg" height="300"><br>
-      <b>Sağ</b>
+      <b>Right</b>
     </td>
     <td align="center" colspan="2">
       <img src="media/left.jpg" height="300"><br>
-      <b>Sol</b>
+      <b>Left</b>
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="media/up.jpg" height="300"><br>
-      <b>Üst</b>
+      <b>Top</b>
     </td>
     <td align="center">
       <img src="media/front.jpg" height="300"><br>
-      <b>Qabaq</b>
+      <b>Front</b>
     </td>
     <td align="center">
       <img src="media/back.jpg" height="300"><br>
-      <b>Arxa</b>
+      <b>Back</b>
     </td>
     <td align="center">
       <img src="media/down.jpg" height="300"><br>
-      <b>Alt</b>
+      <b>Bottom</b>
     </td>
   </tr>
 </table>
