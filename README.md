@@ -38,3 +38,6 @@ Our team consists of 3 members: Eyyub Şenal, Əhməd Qəmbərli, Melisa Yıldı
       <img src="https://cdn.simpleicons.org/instagram/E4405F" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
       melisa_yildiz_17
     </a>
+
+> [!NOTE]
+> Fun fact: Every pair of our team members' have worked as a team before. It is first time that we are working as a trio.
