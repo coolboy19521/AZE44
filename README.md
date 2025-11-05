@@ -10,31 +10,31 @@
 Our team consists of 3 members: Eyyub Şenal, Əhməd Qəmbərli, Melisa Yıldız. Everyone in this team has an experience of WRO at least at national level. Eyyub and Melisa have even participated at international stages. Eyyub received a silver medal in WRO 2023 Panama and Melisa received a gold medal in WRO 2024 İzmir. Here are communication informations for our team:
 
 - Eyyub Şenal:
-  - <a href="mailto:arduinoaz2022@gmail.com">
+  - <a href="mailto:arduinoaz2022@gmail.com" style="text-decoration:none">
       <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
-      arduinoaz2024@gmail.com
+      Gmail
     </a>
   - <a href="https://www.instagram.com/shenaleyup?igsh=MWpqMHJieTc5MXM1Ng==">
       <img src="https://cdn.simpleicons.org/instagram/E4405F" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
-      shenaleup
+      Instagram
     </a>
 
 - Əhməd Qəmbərli:
   - <a href="mailto:ehmedqemberli09@gmail.com">
       <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
-      ehmedqemberli09@gmail.com
+      Gmail
     </a>
   - <a href="https://discord.gg/your_discord_invite">
       <img src="https://cdn.simpleicons.org/discord/5865F2" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
-      coolboy19521
+      Discord
     </a>
 
 - Melisa Yıldız:
   - <a href="mailto:melisa.17.yildiz@gmail.com">
       <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
-      melisa.17.yildiz
+      Gmail
     </a>
   - <a href="https://www.instagram.com/melisa_yildiz_17?igsh=MWN1cGxsMXF5YndtOQ==">
       <img src="https://cdn.simpleicons.org/instagram/E4405F" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
-      melisa_yildiz_17
+      Instagram
     </a>
