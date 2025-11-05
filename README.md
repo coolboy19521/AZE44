@@ -47,8 +47,6 @@ Our team consists of 3 members: Eyyub Şenal (center in the official photo), Əh
 
 Before the national qualification our work schedule was very full, we were working every day before the competition. We started in summer so we had plenty of time during the holiday. After qualifying to the international finals we had to limit how much we work every week, because we had school, exams and a **personal life**. We worked every Monday, Wednesday, Thursday and Saturday. On Sundays we had a meeting about the improvements over the week and what we are planning to do next week.
 
-<h3>Our Robot</h3>
-
 <table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <td align="center" colspan="2">
