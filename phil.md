@@ -7,7 +7,7 @@ In our working environment we had a whiteboard. We used this whiteboard to note 
 - Don't go to other labs while working (We had a brother team in neighbouring room, and we sometimes went there to chit-chat. It is something normal actually, but we observed that we are spending a lot extra time there, so we just spent time in there only during break times).
 
 Our break times were as follows:
-- Afternoon break: 1 PM - 2 PM.
-- Evening break: 5 PM - 6 PM.
+- Afternoon break: `1 PM - 2 PM`.
+- Evening break: `5 PM - 6 PM`.
 
 This organized working plan let us be way more productive. We kept this whiteboard technique till the international stage.
