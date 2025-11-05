@@ -41,3 +41,38 @@ Our team consists of 3 members: Eyyub Şenal, Əhməd Qəmbərli, Melisa Yıldı
 
 > [!NOTE]
 > Fun fact: Every pair of our team members' have worked as a team before. It is first time that we are working as a trio.
+
+Before the national qualification our work schedule was very full, we were working every day before the competition. We started in summer so we had plenty of time during the holiday. After qualifying to the international finals we had to limit how much we work every week, because we had school, exams and a **personal life**. We worked every Monday, Wednesday, Thursday and Saturday. On Sundays we had a meeting about the improvements over the week and what we are planning to do next week.
+
+<h3>Our Robot</h3>
+
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <td align="center" colspan="2">
+      <img src="media/right.jpg" height="300"><br>
+      <b>Sağ</b>
+    </td>
+    <td align="center" colspan="2">
+      <img src="media/left.jpg" height="300"><br>
+      <b>Sol</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="media/up.jpg" height="300"><br>
+      <b>Üst</b>
+    </td>
+    <td align="center">
+      <img src="media/front.jpg" height="300"><br>
+      <b>Qabaq</b>
+    </td>
+    <td align="center">
+      <img src="media/back.jpg" height="300"><br>
+      <b>Arxa</b>
+    </td>
+    <td align="center">
+      <img src="media/down.jpg" height="300"><br>
+      <b>Alt</b>
+    </td>
+  </tr>
+</table>
