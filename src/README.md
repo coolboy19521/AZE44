@@ -15,7 +15,7 @@ In this section of the documentation software solution of our strategy is discus
 Now that we got our principles out of the way, we can start with the actual software. Our structure for software flow is such:
 
 <div>
-  <img src="CodeComponentDiagram_ManimCE_v0.19.0.png" alt="Diagram" />
+  <img src="../CodeComponentDiagram_ManimCE_v0.19.0.png" alt="Diagram" />
   <p style="margin-top:0;"><i>Figure 1.1 Software Flow Diagram</i></p>
 </div>
 
@@ -28,7 +28,7 @@ Environment for the Raspberry Pi is a little bit more complex but to make it sim
 This is our Raspberry Pi image. If you flash this file into your Raspberry, you will get the exactly same environment as us. To flash this image you can use ``Rufus`` for Windows, ``UNetbootin`` for Linux or ``WonderISO`` for MacOS.
 
 <div>
-  <img src="rufus.webp" alt="Rufus" />
+  <img src="../rufus.webp" alt="Rufus" />
   <p style="margin-top:0;"><i>Figure 1.2: Rufus flashing tool</i></p>
 </div>
 
@@ -40,14 +40,14 @@ But if you want to customize installation you should flush the Raspberry Pi from
 We are using `Ubuntu Server 24.04.3 LTS (64-bit)` for our Raspberry Pi. You can install this OS to your microSD as you want, but the recommended way is to use the official [Raspberry PI Imager tool](https://www.raspberrypi.com/software/).
 
 <div>
-  <img src="media/Imager.PNG" alt="Raspberry Pi Imager" />
+  <img src="../media/Imager.PNG" alt="Raspberry Pi Imager" />
   <p style="margin-top:0;"><i>Figure 1.3: Raspberry Pi Imager</i></p>
 </div>
 
 After selection your Raspberry Pi model press "Choose OS". Afterwards select the `Other general-purpose OS` > `Ubuntu` > `Ubuntu Server 24.04.3 LTS (64-bit)` operating system.
 
 <div>
-  <img src="media/OS.PNG" alt="Ubuntu Server 24.04.3 LTS (64-bit)" />
+  <img src="../media/OS.PNG" alt="Ubuntu Server 24.04.3 LTS (64-bit)" />
   <p style="margin-top:0;"><i>Figure 1.4: Ubuntu Server 24.04.3 LTS (64-bit)</i></p>
 </div>
 
@@ -344,13 +344,13 @@ There is also another API inside of the Raspberry Pi to communicate with Raspber
 We would like to talk a little bit about how the robot goes straight. Gyro sensor is not reliable enough, and drifts very often. To fix this we have developed such a strategy: using lidar we get closest point on our left. Geometrically this point is always perpendicular to the robot if the robot is straight. Otherwise the angle between us and the point gives how tilted the robot is. You can inspect the illustration to see what is going on:
 
 <div>
-  <img src="RobotWithArcMask.gif" alt="Straighten Strategy" />
+  <img src="../RobotWithArcMask.gif" alt="Straighten Strategy" />
   <p style="margin-top:0;"><i>Figure 1.5: Straighten Strategy</i></p>
 </div>
 
 We have a very simple strategy for Open Challange. All we do is to go straight as much as we can, and when we get to close we make a turn. You can see the illustration to get a better idea:
 
 <div>
-  <img src="WROMapScene.gif" alt="Straighten Strategy" />
+  <img src="../WROMapScene.gif" alt="Straighten Strategy" />
   <p style="margin-top:0;"><i>Figure 1.6: Open Challange Strategy</i></p>
 </div>
