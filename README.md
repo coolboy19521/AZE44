@@ -9,7 +9,7 @@
 
 Our team consists of 3 members: Eyyub Şenal, Əhməd Qəmbərli, Melisa Yıldız. Everyone in this team has an experience of WRO at least at national level. Eyyub and Melisa have even participated at international stages. Eyyub received a silver medal in WRO 2023 Panama and Melisa received a gold medal in WRO 2024 İzmir. Here are communication informations for our team:
 
-- Eyyub Şenal:
+- Eyyub Şenal from [Bakı Türk Anadolu Liseyi](https://btal.meb.k12.tr/):
   - <a href="mailto:arduinoaz2022@gmail.com" style="text-decoration:none;">
       <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
       arduinoaz2024@gmail.com
@@ -19,7 +19,7 @@ Our team consists of 3 members: Eyyub Şenal, Əhməd Qəmbərli, Melisa Yıldı
       shenaleup
     </a>
 
-- Əhməd Qəmbərli:
+- Əhməd Qəmbərli from [Bakı Türk Anadolu Liseyi](https://btal.meb.k12.tr/):
   - <a href="mailto:ehmedqemberli09@gmail.com">
       <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
       ehmedqemberli09@gmail.com
@@ -29,7 +29,7 @@ Our team consists of 3 members: Eyyub Şenal, Əhməd Qəmbərli, Melisa Yıldı
       coolboy19521
     </a>
 
-- Melisa Yıldız:
+- Melisa Yıldız from [Bakı Türk Anadolu Liseyi](https://btal.meb.k12.tr/):
   - <a href="mailto:melisa.17.yildiz@gmail.com">
       <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
       melisa.17.yildiz
