@@ -77,3 +77,5 @@ Before the national qualification our work schedule was very full, we were worki
     </td>
   </tr>
 </table>
+
+Our Robot is called “miav”. Miav is a ROS2-based four-wheeled mobile robot developed on the Raspberry Pi 5 platform. It integrates advanced hardware including a T-MINI-Plus Lidar TOF, a BNO085 IMU, and a Raspberry Pi Camera for vision. The system supports intelligent functions such as mapping, localization, obstacle avoidance, and autonomous navigation, while ensuring safe operation with Li-Po monitoring, fuse protection, and modular electronic design.
