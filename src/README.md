@@ -1,3 +1,5 @@
+### Software Structure and Principles 
+
 In this section of the documentation software solution of our strategy is discussed. Before starting to explain how our code works we would like to present our principles while creating the software:
 
 1. **Keep it simple**: The computing power of our SBC and the accuracy of our sensors are limited. There is no point in designing an extra accurate algorithm, because it most probably would not work in practice mose of the time. Also maintaining a complex algorithmic structure is not easy and would require a lot of time, which we could more effectively spend on optimizing existing simpler algorithms or our strategy.
@@ -18,6 +20,8 @@ Now that we got our principles out of the way, we can start with the actual soft
   <img src="../CodeComponentDiagram_ManimCE_v0.19.0.png" alt="Diagram" />
   <p style="margin-top:0;"><i>Figure 1.1 Software Flow Diagram</i></p>
 </div>
+
+### Development Environment
 
 Let's get into setting up the development environment. We have a very generic development environment for the host machine. The only programs you need to develop is `ssh` and any text editor of your choice. All of the modern machines nowadays come with these by default. To develop on the host machine we used `Command Prompt` in our Windows machine and `Terminal` in our Ubuntu machine.
 
@@ -261,6 +265,8 @@ To use the packages after installing them you should source `~/ros2_jazzy/instal
 $ echo "source ~/ros2_jazzy/install/setup.bash">>~/.bashrc
 ```
 
+### Implementation details
+
 From now on we will talk about different section of the software as described in figure 1.1.
 
 Let's start with the Raspberry Pi Pico - motor driver. We have created our own API for motor and servo control which also supports motor encoders. Before developping our own motor driver we actually tried an already existing one, but it had many issues. The motor driver we used before was consistently losing connection with Raspberry Pi. It was stopping to receive any commands transmitted from the Raspberry Pi and executed the last one. We had many ideas to fix this issue:
@@ -351,7 +357,7 @@ We would like to talk a little bit about how the robot goes straight. Gyro senso
 We have a very simple strategy for Open Challange. All we do is to go straight as much as we can, and when we get to close we make a turn. You can see the illustration to get a better idea:
 
 <div>
-  <img src="../WROMapScene.gif" alt="Straighten Strategy" />
+  <img src="../WROMapScene.gif" alt="Straighten Strategy" height="300px" />
   <p style="margin-top:0;"><i>Figure 1.6: Open Challange Strategy</i></p>
 </div>
 
