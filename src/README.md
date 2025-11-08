@@ -350,14 +350,14 @@ There is also another API inside of the Raspberry Pi to communicate with Raspber
 We would like to talk a little bit about how the robot goes straight. Gyro sensor is not reliable enough, and drifts very often. To fix this we have developed such a strategy: using lidar we get closest point on our left. Geometrically this point is always perpendicular to the robot if the robot is straight. Otherwise the angle between us and the point gives how tilted the robot is. You can inspect the illustration to see what is going on:
 
 <div>
-  <img src="../RobotWithArcMask.gif" alt="Straighten Strategy" />
+  <img src="../RobotWithArcMask.gif" alt="Straighten Strategy" height="600px" />
   <p style="margin-top:0;"><i>Figure 1.5: Straighten Strategy</i></p>
 </div>
 
 We have a very simple strategy for Open Challange. All we do is to go straight as much as we can, and when we get to close we make a turn. You can see the illustration to get a better idea:
 
 <div>
-  <img src="../WROMapScene.gif" alt="Straighten Strategy" height="300px" />
+  <img src="../WROMapScene.gif" alt="Straighten Strategy" />
   <p style="margin-top:0;"><i>Figure 1.6: Open Challange Strategy</i></p>
 </div>
 
