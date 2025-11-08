@@ -412,6 +412,104 @@ This is a pretty basic terminal code which end the opmode when it is the last se
   <p style="margin-top:0;"><i>Figure 1.6: Open Challange Strategy</i></p>
 </div>
 
+Now let's talk about the famous Obstacle Challange! *Everyone is so excited!* Core idea of our obstacle challange is very simple. We break the obstacle challenge into wro subchallanges:
+
+<ol>
+  <li><b>UC</b> (Untraced Cubes): In this section, we assume (and we actually do) that we don't know colors of any pillars. Because of this reason we first approach to each pillar and try to identify its color. Only after identifying its color we either surpass it on the right or the left. We also save the color of the pillar for later.</li>
+  <li><b>TC</b> (Traced Cubes): In this section we assume (yet we do) know every pillar's color. So only thing left to do is just surpass it from the correct side. We read every pillar's color from the list and behave accordingly. After surpassing every cube we increment the pointer by one and assume that next pillar will have the next color in the list.</li>
+</ol>
+
+As you may have noticed we can do TC rounds twice as we only need to see each pillar once to know its color. We find it very interesting that TC rounds are twice as fast than UC rounds. UC rounds take `70 s` in average and TC rounds only take approximately `30 s`. We also speed things up a little bit when doing TC rounds, because we no longer need high precision when detecting the pillars, even if they are detected late we still have enough reaction time to surpass it on the correct side.
+
+Let's look at the code which determins the round to be executed:
+
+```python
+kubik = self.find_kubik(scan, r_wall_dis) # this is a method which finds kubik's position
+
+if kubik is not None and self.on_this_side < 2: # if there is at least one pillar yet to be seen
+    self.kubik = kubik
+    if self.count < 5: # if we are still on first lap
+        print('KUBIK_UC prog')
+        self.exec = KUBIK_UC # it is a UC round because we have not memorized all colors yet
+        self.on_this_side += 1
+    else: # otherwise if it is second or third lap
+        side, y_dis = self.kubik
+        var = self.dir == 90 and (self.last_side is None or side != self.last_side)
+        if self.last_dis is None or (y_dis > self.last_dis and not abs(y_dis - self.last_dis) < 2) or var:
+            self.kubik_ix = (self.kubik_ix + 1) % len(self.kubiks) # we increase the pointer by one
+            if self.seen_start and self.kubik_ix == len(self.kubiks) - 2:
+                self.lap_cnt += 1
+            elif not self.seen_start and self.kubik_ix == len(self.kubiks) - 1:
+                self.lap_cnt += 1
+            self.last_side = side
+            self.exec = KUBIK_TC
+            print('KUBIK_TC prog', self.last_dis)
+            self.on_this_side += 1
+        self.last_dis = y_dis
+```
+
+As you may see we have more checks on pillars when executing TC rounds. That is because, with high speed there is a greater chance of error. The checks we are doing here are sufficient enough to avoid false positives. The main checks we are doing are:
+- If the pillar side (left or right, based on distance to the wall which is always either `40 cm` or `60 cm`) does not match with the memorized pillar side;
+- If the pillar detected now is closer than the previously detected pillar (we keep track of the pillar distance as we approach it, if it gets less or remains the same it means the robot is detecting the same pillar over again).
+
+```python
+def find_kubik(self, data, wall_dis):
+    """
+    A pillar is detected using two points only: the closest one,
+    and the furthest one. If the distance between them is greater than
+    some threshhold it means there is some object in sight which is
+    further away than the front outer wall. This can either be an inner
+    wall or the pillar. To avoid the inner wall case, we limit the
+    relative x distance from paralel outer wall. This way the closest
+    point can only be a pillar.
+    """
+
+    if wall_dis is None: # if lidar values are unsificient
+        return None # there can't be any pillars detected
+
+    # limits for relative distance from the outer wall
+    left_lim = self.off_x - wall_dis
+    right_lim = 100 - self.off_x - wall_dis
+
+    if self.dir == -90: # they switch up if going counterclockwise
+        left_lim, right_lim = -right_lim, -left_lim
+
+    closest, furthest = None, None
+
+    for point in data:
+        y_dis, x_dis = self.find_katets(point)
+        if left_lim <= x_dis <= right_lim:
+            if closest is None or closest[0] > y_dis:
+                closest = (y_dis, x_dis)
+            if furthest is None or furthest[0] < y_dis:
+                furthest = (y_dis, x_dis)
+
+    var = closest is not None and ((self.dir == 90 and closest[0] >= 100) or (self.dir == -90 and closest[0] >= 100))
+
+    # if any unsificient data, or if closest point is too close to the furthest point
+    if closest is None or furthest is None or \
+            furthest[0] - closest[0] <= 60 or \
+            var or closest[0] <= 15:
+        return None
+
+    # calculate pillar's relative distance to the parallel outer wall
+    if self.dir == 90:
+        from_wall_dis = wall_dis + closest[1]
+    elif self.dir == -90:
+        from_wall_dis = wall_dis - closest[1]
+
+    if (self.dir == 90 and from_wall_dis <= 50) or (self.dir == -90 and from_wall_dis <= 43):
+        return 40, closest[0] # it is on the left side, with y distance closest[0]
+    else:
+        return 60, closest[0] # it is the right side, with y distance closest[0]
+```
+
+We have designed this algorithm after many unsuccessful iterations. But this one was pretty efficient. It has a time complexity of `O(N)` with a pretty low constant coefficient. We would like to share a previous idea we had:
+
+Cluster the points according their distance with each other. If there is a group with a diameter of at most `~8 cm` (`√5²+5²`) it is a pillar. This method worked poorly, because clustering the points according their distance took `O(N²)` complexity as we looked at each pair of them. To optimize this method we used an algorithm so called DSU (Disjoing Set Union). Using this technique it is possible to cluster `N` points with almost linear time complexity (with an inverse ackermann coefficient). Even after optimizing this method, we discovered that our lidar does not give precise enough data to use this method.
+
+Thankfully, we switched to our current approach and did not think much to fix the previous one.
+
 <hr>
 
 <p align="center">
