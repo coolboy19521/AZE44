@@ -354,7 +354,58 @@ We would like to talk a little bit about how the robot goes straight. Gyro senso
   <p style="margin-top:0;"><i>Figure 1.5: Straighten Strategy</i></p>
 </div>
 
-We have a very simple strategy for Open Challange. All we do is to go straight as much as we can, and when we get to close we make a turn. You can see the illustration to get a better idea:
+Now let's continue with Open Challange overall logic. We have a very simple strategy for Open Challange: all we do is to go straight as much as we can, and when we get to close we make a turn. Let's take a look at some cruicial parts:
+
+```python
+gyro_angle = robot_car.read_gyro() # read the gyro angle from our robot_car api
+scan, rad = [], msg.angle_min
+for dis in msg.ranges:
+    deg = gyro_angle - math.degrees(rad) # shift every angle by robot yaw
+    if -90 <= deg <= 90 and math.isfinite(dis): # if an angle is valid
+        scan.append((deg, dis * 100)) # add it to scan list
+    rad += msg.angle_increment
+```
+
+As you can see from the code, we are shifting lidar angles by robot yaw. The reason for that is, we try to assume that angle `0°` is parallel to the outer wall. This is cruicial because we are making all detections and calculating wall distance according to lidar values. We also only take angles less than `90°` and greater than `-90°` because the back of our lidar is facing itself, and that data is not proprietary.
+
+```python
+if not self.f_dir: # if direction is not yet found
+    forr_dis = robot_car.find(min, scan, -5, 5) # robot's front distance to outer wall
+    if forr_dis is None or forr_dis > 100: # if front distance is too great
+        gyro_angle = robot_car.read_gyro()
+        gyro_error = -gyro_angle
+        robot_car.move(head = gyro_error, speed = 40) # go straight following a straight line
+    else: # if some distance is achieved
+        left = robot_car.find(max, scan, -90, -10)
+        right = robot_car.find(max, scan, 10, 90)
+        if left is not None and (right is None or left > right): # if there is more to the left than to the right
+            self.dir = -90 # movement direction is towards left
+        else:
+            self.dir = 90 # otherwise it is to right
+        self.f_dir = True # now the direction is found and we can proceed
+```
+
+We detect movement direction by detecting if there is a greater gap to the left of the robot than the right of the robot, and vice versa. The reason why we don't do it directly at the start is because robot's front could be placed far away from the outer wall. In this case robot can't really determine which side is more emptier, because the inner walls are not allowing it to.
+
+```python
+accel_speed = robot_car.calc_ccel(30, 60, 300 - for_dis, 70) # calculate acceleration according to front distance
+if self.count == 12: # go slower if this is the last section
+    deaccel_speed = robot_car.calc_ccel(30, 30, for_dis, 300)
+else: # other deaccelerate a little bit lighter
+    deaccel_speed = robot_car.calc_ccel(30, 60, for_dis, 130)
+self.idle_speed = min(accel_speed, deaccel_speed) # we go with minimum value among both
+```
+
+At every point we calculate acceleration and deacceleration values. We go as fast as the minimum of them, this creates an effect of speeding up, then going steady and then slowing down. Slowing down when getting closer helps us to make turns more accurate as we have more space to make a turn. When approaching the outer wall fast, the turning algorithm might be triggered later than it should because of the low frequency of our lidar. And speeding slowly up after turns make our robot go more straight considering slow speed bumps make robot slip from the ground less.
+
+```python
+if self.count == 12 and forr_dis is not None and forr_dis <= 180: # if it is last section and some distance is achieved
+    robot_car.move(0, 0) # soft brake
+    robot_car.ser.close() # close the communication with motor driver
+    raise Exception # end the opmode
+```
+
+This is a pretty basic terminal code which end the opmode when it is the last section of the run and some distance is achieved. You can see the illustration to get a better idea of our open runs:
 
 <div>
   <img src="../WROMapScene.gif" alt="Straighten Strategy" />
