@@ -748,8 +748,8 @@ added to prevent system failures and protect sensitive electronics.
 
 <table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
-    <td style="margin:0; padding:0;"><img src="media/scheme_2.png" height="500"><br></td>
-    <td><img src="../media/scheme_2.png" height="500"><br></td>
+    <td style="margin:0; padding:0;"><img src="scheme_1.png" height="500"><br></td>
+    <td><img src="scheme_2.png" height="500"><br></td>
   </tr>
   <tr>
     <td align="center">Raspberry Pi Distribution Board</td>
