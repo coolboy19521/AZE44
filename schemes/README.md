@@ -203,9 +203,9 @@ sensors , and external motor drivers.
 • **Wi-Fi:** Supports TCP/IP communication, OTA updates, and wireless
 control.
 
-## **3.3 Motors and Servo Motor** {#motors-and-servo-motor}
+## **3.3 Motors and Servo Motor**
 
-### **3.3.1 Motor Types and Technical Specifications** {#motor-types-and-technical-specifications}
+### **3.3.1 Motor Types and Technical Specifications**
 
 **DC Gear Motors:**
 
@@ -238,7 +238,7 @@ control.
 • **Dimensions:** 40.5 × 20 × 38 mm  
 • **Weight:** 60 g
 
-### **3.3.2 Connections and Driver Integration** {#connections-and-driver-integration}
+### **3.3.2 Connections and Driver Integration**
 
 **DC Motors:**
 
@@ -254,12 +254,12 @@ control.
 
 - Provides precise angular movement for turning or positioning.
 
-### **3.3.3 Power Requirements** {#power-requirements}
+### **3.3.3 Power Requirements**
 
 **DC Motors:** 5--12V DC, regulated by **Raspberry Pi Pico 2W**.  
 **Servo Motor:** 4.8--6V DC, powered via regulated supply.
 
-### **3.3.4 Control Signals** {#control-signals}
+### **3.3.4 Control Signals**
 
 **DC Motors:** PWM signals for speed, encoder feedback for rotation
 monitoring.  
@@ -311,9 +311,9 @@ control
 • Fully supported by **Yahboom ROS packages** for SLAM mapping, obstacle
 avoidance, and path planning
 
-## **3.5 Camera** {#camera}
+## **3.5 Camera**
 
-### **3.5.1 Definition and Features** {#definition-and-features}
+### **3.5.1 Definition and Features**
 
 The Raspberry Pi Camera Module v3 is equipped with the **Sony IMX708
 image sensor**, offering **11.9 megapixel resolution** with **4608 ×
@@ -338,7 +338,7 @@ pixel correction (DPC)**, it ensures clear and stable image quality.
 
 - Weight: Lightweight module for robotics applications
 
-### **3.5.2 Connections** {#connections}
+### **3.5.2 Connections**
 
 - Interface: **15-pin 1 mm pitch FPC connector**
 
@@ -348,14 +348,14 @@ pixel correction (DPC)**, it ensures clear and stable image quality.
 
 - Connects via **CSI-2 camera port**
 
-### **3.5.3 Power Requirements** {#power-requirements-1}
+### **3.5.3 Power Requirements**
 
 - Power is supplied directly from the **Raspberry Pi board** via CSI-2
   interface
 
 - Low power consumption, optimized for embedded vision applications
 
-### **3.5.4 Data Transmission Interface** {#data-transmission-interface}
+### **3.5.4 Data Transmission Interface**
 
 - **CSI-2 serial data output** for image and video streaming
 
@@ -367,7 +367,7 @@ pixel correction (DPC)**, it ensures clear and stable image quality.
 
 ## 
 
-## **3.6 Gyroscope (IMU) Sensor** {#gyroscope-imu-sensor}
+## **3.6 Gyroscope (IMU) Sensor**
 
 **3.6.1 Definition and Features**
 
@@ -423,7 +423,7 @@ stable 9-DOF orientation output
 
 **3.7. Custom PCB Design**
 
-#### **3.7.1. Function and Purpose** {#function-and-purpose}
+#### **3.7.1. Function and Purpose**
 
 This custom control board was designed as the main interface between the
 Raspberry Pi 5 and peripheral components of the robotic system. It
@@ -431,7 +431,7 @@ integrates sensor connections, user interaction elements (LEDs, button,
 buzzer), and power management components, ensuring organized and safe
 communication between modules.
 
-#### **3.7.2. Circuit Elements and Layer Structure** {#circuit-elements-and-layer-structure}
+#### **3.7.2. Circuit Elements and Layer Structure**
 
 The circuit is built on a **dual-layer PCB (printed cicuit board)** and
 includes the following key components:
@@ -475,7 +475,7 @@ height="1.321738845144357in"}
 
 These boards name is "Raspberry Pi Distribution Board"
 
-#### **3.7.3. Connection Points** {#connection-points}
+#### **3.7.3. Connection Points**
 
 - **Power Input:** Operates with an external power supply of **6--14
   V**.
@@ -489,9 +489,9 @@ These boards name is "Raspberry Pi Distribution Board"
 - **Connectors:** JST and pin header connectors are used for both power
   and signal interfaces.
 
-### **3.7.4 Electronic Design and PCB Implementation** {#electronic-design-and-pcb-implementation}
+### **3.7.4 Electronic Design and PCB Implementation**
 
-#### **3.7.5 Electronic Schematic Description** {#electronic-schematic-description}
+#### **3.7.5 Electronic Schematic Description*
 
 The electronic schematic was designed using **EasyEDA**.  
 It includes the following functional blocks:
@@ -544,7 +544,7 @@ height="1.594339457567804in"}
 
 **OUR MOTOR DRIVER**
 
-### 3.7.7 PCB Layer Structure and Design Rules {#pcb-layer-structure-and-design-rules}
+### 3.7.7 PCB Layer Structure and Design Rules
 
 - The PCB design was implemented on a **two-layer FR4 board**,
   manufactured by **JLCPCB**.
@@ -565,7 +565,7 @@ height="1.594339457567804in"}
 - A solid ground plane helps reduce sensor noise and improve overall
   system stability.
 
-### 3.7.8 Connectors and Component Placement {#connectors-and-component-placement}
+### 3.7.8 Connectors and Component Placement
 
 - **Connectors:** JST connectors and pin headers were used to allow easy
   connection of external modules such as the battery, button, and
@@ -589,7 +589,7 @@ height="1.594339457567804in"}
   lines) to be routed over a continuous ground plane for improved noise
   shielding.
 
-### 3.7.9 Manufacturing and Assembly Notes {#manufacturing-and-assembly-notes}
+### 3.7.9 Manufacturing and Assembly Notes
 
 - The PCB was fabricated by **JLCPCB** using **FR4 material (1.6 mm
   thickness, 1 oz copper)** with **green solder mask** and **white
@@ -623,9 +623,9 @@ height="1.594339457567804in"}
 >
 > [video](https://www.youtube.com/watch?v=SGsfiHOE9Fk&t=466s)
 
-## **3.8 Power Supply (3S Li-Po Battery)** {#power-supply-3s-li-po-battery}
+## **3.8 Power Supply (3S Li-Po Battery)**
 
-### **3.8.1 Battery Specifications (Voltage, Capacity, C Rating)** {#battery-specifications-voltage-capacity-c-rating}
+### **3.8.1 Battery Specifications (Voltage, Capacity, C Rating)**
 
 The power source of the project is a **JetFire 3S Li-Po battery**,
 specifically designed for high-current demanding applications such as
@@ -650,7 +650,7 @@ and reliable cell quality, it ensures stable and long-term operation.
 
 - Charging Connector: **JST-XHR (white)**
 
-### **3.8.2 Power Management Circuits (BMS, Charging Circuit)** {#power-management-circuits-bms-charging-circuit}
+### **3.8.2 Power Management Circuits (BMS, Charging Circuit)**
 
 Li-Po batteries require safe charging and monitoring systems. A
 **Battery Management System (BMS)** or balance charger must be used to:
@@ -661,14 +661,14 @@ Li-Po batteries require safe charging and monitoring systems. A
 
 - Provide safe current limits during operation.
 
-### **3.8.3 Connections and Connectors** {#connections-and-connectors}
+### **3.8.3 Connections and Connectors**
 
 The battery is connected to the system using an **XT60 connector** for
 power delivery and a **JST-XHR balance connector** for charging and
 monitoring. Proper wiring and insulation are critical to ensure safe
 operation and prevent short circuits.
 
-### **3.8.4 How to Charge the Battery (with iMAX B6AC)** {#how-to-charge-the-battery-with-imax-b6ac}
+### **3.8.4 How to Charge the Battery (with iMAX B6AC)**
 
 The **JetFire 3S Li-Po battery** must be charged using a balance charger
 such as the **iMAX B6AC** to ensure safe and efficient charging. The
@@ -715,16 +715,16 @@ overcharging.
 
 - Always charge on a non-conductive, fireproof surface.
 
-## **4. Power Distribution and Management** {#power-distribution-and-management}
+## **4. Power Distribution and Management**
 
-### **4.1 Power Distribution Diagram** {#power-distribution-diagram}
+### **4.1 Power Distribution Diagram**
 
 The 11.1V 3S Li-Po battery supplies the entire system. Power is
 distributed through a central board, separating high-current lines
 (motors, drivers) and low-current lines (controllers, sensors) for
 stability.
 
-### **4.2 Voltage Regulators and Converters (5V, 3.3V, etc.)** {#voltage-regulators-and-converters-5v-3.3v-etc.}
+### **4.2 Voltage Regulators and Converters (5V, 3.3V, etc.)**
 
 - **5V:** Raspberry Pi, LiDAR, camera.
 
@@ -733,13 +733,13 @@ stability.
 - **11.1V Direct:** Motors and motor drivers.  
   Switching regulators are used for efficiency.
 
-### **4.3 Battery Management System (BMS, Charging Control)** {#battery-management-system-bms-charging-control}
+### **4.3 Battery Management System (BMS, Charging Control)**
 
 The BMS protects the Li-Po battery from overcharge, overdischarge, short
 circuit, and overheating. Charging is done with a balance charger (iMAX
 B6AC) to ensure safe and balanced operation.
 
-### **4.4 Protection Mechanisms (Fuse, Overcurrent Protection)** {#protection-mechanisms-fuse-overcurrent-protection}
+### **4.4 Protection Mechanisms (Fuse, Overcurrent Protection)**
 
 Fuses, polyfuses, reverse polarity, and voltage monitoring circuits are
 added to prevent system failures and protect sensitive electronics.
