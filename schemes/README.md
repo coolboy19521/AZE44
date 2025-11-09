@@ -746,15 +746,16 @@ added to prevent system failures and protect sensitive electronics.
 
 **Circuit Scheme:**
 
-**Scheme 1(Raspberry Pi Distribution Board):**
-
-![](media/image41.png){width="3.3766819772528436in"
-height="3.765217629046369in"}
-
-**Scheme 2(Motor Driver):**
-
-![](media/image42.png){width="3.3043482064741907in"
-height="3.6845603674540683in"}
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <td style="margin:0; padding:0;"><img src="media/scheme_2.png" height="500"><br></td>
+    <td><img src="../media/scheme_2.png" height="500"><br></td>
+  </tr>
+  <tr>
+    <td align="center">Raspberry Pi Distribution Board</td>
+    <td align="center">Motor Driver</td>
+  </tr>
+</table>
 
 **6. Motor and Sensor Control Electronics**
 

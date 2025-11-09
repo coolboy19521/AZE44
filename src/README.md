@@ -17,7 +17,7 @@ In this section of the documentation software solution of our strategy is discus
 Now that we got our principles out of the way, we can start with the actual software. Our structure for software flow is such:
 
 <div>
-  <img src="../CodeComponentDiagram_ManimCE_v0.19.0.png" alt="Diagram" />
+  <img src="../media/CodeComponentDiagram_ManimCE_v0.19.0.png" alt="Diagram" />
   <p style="margin-top:0;"><i>Figure 1.1 Software Flow Diagram</i></p>
 </div>
 
@@ -32,7 +32,7 @@ Environment for the Raspberry Pi is a little bit more complex but to make it sim
 This is our Raspberry Pi image. If you flash this file into your Raspberry, you will get the exactly same environment as us. To flash this image you can use ``Rufus`` for Windows, ``UNetbootin`` for Linux or ``WonderISO`` for MacOS.
 
 <div>
-  <img src="../rufus.webp" alt="Rufus" />
+  <img src="../media/rufus.webp" alt="Rufus" />
   <p style="margin-top:0;"><i>Figure 1.2: Rufus flashing tool</i></p>
 </div>
 
@@ -350,7 +350,7 @@ There is also another API inside of the Raspberry Pi to communicate with Raspber
 We would like to talk a little bit about how the robot goes straight. Gyro sensor is not reliable enough, and drifts very often. To fix this we have developed such a strategy: using lidar we get closest point on our left. Geometrically this point is always perpendicular to the robot if the robot is straight. Otherwise the angle between us and the point gives how tilted the robot is. You can inspect the illustration to see what is going on:
 
 <div>
-  <img src="../RobotWithArcMask.gif" alt="Straighten Strategy" height="600px" />
+  <img src="../media/RobotWithArcMask.gif" alt="Straighten Strategy" height="600px" />
   <p style="margin-top:0;"><i>Figure 1.5: Straighten Strategy</i></p>
 </div>
 
@@ -408,7 +408,7 @@ if self.count == 12 and forr_dis is not None and forr_dis <= 180: # if it is las
 This is a pretty basic terminal code which end the opmode when it is the last section of the run and some distance is achieved. You can see the illustration to get a better idea of our open runs:
 
 <div>
-  <img src="../WROMapScene.gif" alt="Straighten Strategy" />
+  <img src="../media/WROMapScene.gif" alt="Straighten Strategy" />
   <p style="margin-top:0;"><i>Figure 1.6: Open Challange Strategy</i></p>
 </div>
 
