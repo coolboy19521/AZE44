@@ -17,7 +17,7 @@
   </tr>
 
   <tr>
-    <td>3s Li-Po x 1</td><td><img src="../media/lipo.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>3s Li-Po x 1</td><td><img src="../media/lipo.jpeg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
     <td>IMAX B6AC batareya doldurucu x 1</td><td><img src="../media/charger.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 
