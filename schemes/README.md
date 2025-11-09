@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th colspan="2">Electronics</th>
+    <th colspan="4">Electronics</th>
   </tr>
 
   <tr>
