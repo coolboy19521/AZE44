@@ -2,6 +2,10 @@
 
 <table>
   <tr>
+    <th colspan="2">Electronics</th>
+  </tr>
+
+  <tr>
     <th>Komponent</th><th>Şəkil</th>
     <th>Komponent</th><th>Şəkil</th>
   </tr>
