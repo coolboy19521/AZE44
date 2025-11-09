@@ -15,11 +15,11 @@ Our team consists of 3 members: Eyyub Şenal (center in the official photo), Əh
 - Eyyub Şenal from [Bakı Türk Anadolu Liseyi](https://btal.meb.k12.tr/):
   - <a href="mailto:arduinoaz2022@gmail.com" style="text-decoration:none;">
       <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
-      arduinoaz2024@gmail.com
+      arduinoaz2022@gmail.com
     </a>
   - <a href="https://www.instagram.com/shenaleyup?igsh=MWpqMHJieTc5MXM1Ng==">
       <img src="https://cdn.simpleicons.org/instagram/E4405F" width="16" height="16" style="vertical-align:middle; margin-right:6px;" />
-      shenaleup
+      shenaleyup
     </a>
 
 - Əhməd Qəmbərli from [Bakı Türk Anadolu Liseyi](https://btal.meb.k12.tr/):

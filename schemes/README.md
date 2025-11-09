@@ -6,13 +6,13 @@
   </tr>
 
   <tr>
-    <th>Komponent</th><th>Şəkil</th>
-    <th>Komponent</th><th>Şəkil</th>
+    <th>Component</th><th>Picture</th>
+    <th>Component</th><th>Picture</th>
   </tr>
 
   <tr>
     <td>Raspberry Pi 5 x 1</td><td><img src="../media/rasppi.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
-    <td>Motor Sürücü x 1</td><td><img src="../media/driver.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>Motor Driver x 1</td><td><img src="../media/driver.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 
   <tr>
@@ -22,47 +22,47 @@
 
   <tr>
     <td>3s Li-Po x 1</td><td><img src="../media/lipo.jpeg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
-    <td>IMAX B6AC batareya doldurucu x 1</td><td><img src="../media/charger.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>IMAX B6AC battery charger x 1</td><td><img src="../media/charger.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 
   <tr>
     <td>Servo Motor TD8120MG x 1</td><td><img src="../media/digital.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
-    <td>Raspberry Pi Kamera Modulu 3 x 1</td><td><img src="../media/cam.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>Raspberry Pi Camera Module 3 x 1</td><td><img src="../media/cam.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 
   <tr>
-    <td>Enkoder mühərriki x 1</td><td><img src="../media/motor.jpeg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
-    <td>Dəyişdiricini ON-OFF x 1</td><td><img src="../media/switch.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>Encoder motor x 1</td><td><img src="../media/motor.jpeg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>Switch ON-OFF x 1</td><td><img src="../media/switch.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 
   <tr>
-    <td>2,54 mm JST-XH Bağlayıcı Kişi x 5</td><td><img src="../media/male.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
-    <td>2,54 mm JST-XH Konnektor Dişi x 5</td><td><img src="../media/female.jpeg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>2,54 mm JST-XH Connector Male x 5</td><td><img src="../media/male.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>2,54 mm JST-XH Connector Female x 5</td><td><img src="../media/female.jpeg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 
   <tr>
     <td>XT-60 x 1</td><td><img src="../media/lipo_cable.png" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
-    <td>2.54 mm Pin Başlığı Dişi x 1</td><td><img src="../media/pins.jpeg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>2.54 mm Pin Header x 1</td><td><img src="../media/pins.jpeg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 
   <tr>
-    <td>Sigorta x 1</td><td><img src="../media/fuse.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
-    <td>10K ohm Rezistor x 1</td><td><img src="../media/10k.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>Fuse x 1</td><td><img src="../media/fuse.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>10K ohm resistor x 1</td><td><img src="../media/10k.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 
   <tr>
-    <td>330ohm rezistor x 2</td><td><img src="../media/330.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
-    <td>GPIO kabeli x 1</td><td><img src="../media/ribbon.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>330ohm resistor x 2</td><td><img src="../media/330.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>GPIO cable x 1</td><td><img src="../media/ribbon.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 
   <tr>
-    <td>Li-Po Batareya Test Cihazı Gərginlik Monitoru x 1</td><td><img src="../media/power_val.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>Li-Po Battery Test Device Amper Monitor x 1</td><td><img src="../media/power_val.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
     <td>Type-c - Type-c Kabel x 1</td><td><img src="../media/usbc.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 
   <tr>
-    <td>32 GB Yaddaş Kartı x 1</td><td><img src="../media/sd.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
-    <td>Aktiv soyuducu x 1</td><td><img src="../media/fan.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>32 GB Storage Card x 1</td><td><img src="../media/sd.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>Heat sink x 1</td><td><img src="../media/fan.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 
   <tr>
