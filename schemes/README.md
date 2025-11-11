@@ -684,20 +684,20 @@ operation.
   <tr>
     <td>Raspberry Pi Distributon Board 1</td>
     <td><a href="dist1.zip">dist1.zip</a></td>
-    <td><a href="bom1.csv">bom1.csv</a></td>
-    <td><a href="pnp1.csv">pnp1.csv</a></td>
+    <td><a href="bom1.xlsx">bom1.xlsx</a></td>
+    <td><a href="pnp1.xlsx">pnp1.xlsx</a></td>
   </tr>
   <tr>
     <td>Raspberry Pi Distributon Board 2</td>
     <td><a href="dist2.zip">dist1.zip</a></td>
-    <td><a href="bom2.csv">bom1.csv</a></td>
-    <td><a href="pnp2.csv">pnp1.csv</a></td>
+    <td><a href="bom2.xlsx">bom1.xlsx</a></td>
+    <td><a href="pnp2.xlsx">pnp1.xlsx</a></td>
   </tr>
   <tr>
     <td>Motor Driver</td>
     <td><a href="dist3.zip">dist1.zip</a></td>
-    <td><a href="bom3.csv">bom1.csv</a></td>
-    <td><a href="pnp3.csv">pnp1.csv</a></td>
+    <td><a href="bom3.xlsx">bom1.xlsx</a></td>
+    <td><a href="pnp3.xlsx">pnp1.xlsx</a></td>
   </tr>
 </table>
 
