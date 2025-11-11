@@ -70,7 +70,7 @@
   </tr>
 </table>
 
-# System Overview
+# 2. System Overview
 
 ### 2.1 Electronic System Architecture
 
