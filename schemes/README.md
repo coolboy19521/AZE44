@@ -255,9 +255,9 @@ the main controller of the robot. Its purpose in our robot is:
     <th colspan="3">Gear Motor</th>
   </tr>
   <tr>
-    <td rowspan="3" style="height:300px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <td rowspan="3" style="height:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
-      <img src="../media/motor.png" height="300px" alt="Gear Motor" />
+      <img src="../media/motor.png" height="400px" alt="Gear Motor" />
       <p style="margin-top:0;" align="left"><i>Figure 4.1: Gear Motor</i></p>
     </div>
     </td>
@@ -291,7 +291,7 @@ may reduce lifespan.
 
 <div>
   <img src="motor_pinout.png" width="700" alt="TB6612FNG Pinout" />
-  <p style="margin-top:0;"><i>Figure 4.2: TB6612FNG Pinout</i></p>
+  <p style="margin-top:0;"><i>Figure 4.2: Gear Motor Pinout</i></p>
 </div>
 
 ### Servo Motor (TD8120MG):
