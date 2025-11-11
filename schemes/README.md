@@ -112,7 +112,7 @@ via the motor controller.
     <td>Raspberry Pi Pico 2W and T-MINI-PLUS Lidar sensor</td>
   </tr>
   <tr>
-    <td>CSI Camera Port:</td>
+    <td>CSI Camera Port</td>
     <td>Connects to Camera Module 3</td>
   </tr>
   <tr>
