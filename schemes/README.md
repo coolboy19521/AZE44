@@ -99,23 +99,25 @@ via the motor controller.
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
-    <td rowspan="4" style="width:400; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <td rowspan="3" style="width:400; text-align:center; vertical-align:middle; padding:0; margin:0;">
       <img src="../media/raspb_up.png" style="display:block; margin:0 auto; border:0;">
     </td>
     <td>USB</td>
-    <td>LiDAR sensoru və əlavə cihazların birləşdirilməsi</td>
+    <td>Raspberry Pi Pico 2W and T-MINI-PLUS Lidar sensor</td>
   </tr>
   <tr>
-    <td>CSI Kamera Poru:</td>
-    <td>Kamera Modulu 3 üçün qoşulma</td>
+    <td>CSI Camera Port:</td>
+    <td>Connects to Camera Module 3</td>
   </tr>
   <tr>
-    <td>GPIO sancaqları</td>
-    <td>Başlat düyməsi, güc açarı, kodlayıcı və digər sensor siqnalları</td>
+    <td>GPIO Pins</td>
+    <td>Start button, imu, ultrasonic, leds and buzzer</td>
   </tr>
   <tr>
-    <td>İş gərginliyi</td>
-    <td>5V DC, minimum 3A</td>
+    <td colspan="3">Quad-core CPU, 64-bit @ 2.4 GHz, 8 GB RAM</td>
+    <td colspan="3">2 × USB 3.0, 2 × USB 2.0 ports</td>
+    <td colspan="3">40-pin GPIO header</td>
+    <td colspan="3">USB-C power input 5V/5A</td>
   </tr>
 </table>
 
