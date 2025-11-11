@@ -154,6 +154,45 @@ control actuators, and manage overall system operations.
 
 **3.2.1 Description and Features**
 
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <th colspan="3">Raspberry Pi 5</th>
+  </tr>
+  <tr>
+    <td rowspan="3" style="width:400; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <div>
+      <img src="../media/ppico.jpg" alt="Raspberry Pi" />
+      <p style="margin-top:0;" align="left"><i>Figure 1.3: Raspberry Pi 5</i></p>
+    </div>
+    </td>
+    <td>USB</td>
+    <td>Raspberry Pi Pico 2W and T-MINI-PLUS Lidar sensor</td>
+  </tr>
+  <tr>
+    <td>CSI Camera Port</td>
+    <td>Connects to Camera Module 3</td>
+  </tr>
+  <tr>
+    <td>GPIO Pins</td>
+    <td>Start button, imu, ultrasonic, leds and buzzer</td>
+  </tr>
+  <tr>
+    <td colspan="3">Quad-core CPU, 64-bit @ 2.4 GHz, 8 GB RAM</td>
+  </tr>
+  <tr>
+    <td colspan="3">2 × USB 3.0, 2 × USB 2.0 ports</td>
+  </tr>
+  <tr>
+    <td colspan="3">40-pin GPIO header</td>
+  </tr>
+  <tr>
+    <td colspan="3">USB-C power input 5V/5A</td>
+  </tr>
+  <tr>
+    <td colspan="3">Powered by Li-Po 3S 1300 mAh battery</td>
+  </tr>
+</table>
+
 The **Raspberry Pi Pico 2W** is a compact and efficient microcontroller
 board designed for real-time embedded control, IoT, and robotic
 applications. It features a dual-core ARM Cortex-M0+ processor,
@@ -192,8 +231,6 @@ external 5 V power).
   <img src="pico_pinout.png" height="500" alt="Raspberry Pi Pinout" />
   <p style="margin-top:0;"><i>Figure 1.4: Raspberry Pi Pinout</i></p>
 </div>
-
-<img src="scheme_1.svg" height="800">
 
 **3.2.3 Power Requirement**
 
