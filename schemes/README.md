@@ -214,7 +214,7 @@ multiple communication and control interfaces.
   <tr>
     <td rowspan="3" style="height:300px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
-      <img src="../media/tb6612fng.jpeg" alt="TB6612FNG" />
+      <img src="../media/tb6612fng.jpeg" height="300px" alt="TB6612FNG" />
       <p style="margin-top:0;" align="left"><i>Figure 3.1: TB6612FNG</i></p>
     </div>
     </td>
