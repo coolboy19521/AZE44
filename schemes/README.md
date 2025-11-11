@@ -458,7 +458,7 @@ Our gyro has a built-in fusion algorithm, which means it can in theory fuse acce
 
 ### 3.8 Ultrasonic Sensor
 
-#### 3.7.1 Definition and Features
+#### 3.8.1 Definition and Features
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
@@ -514,128 +514,94 @@ $$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2} \implies 5\text{V}
   </tr>
 </table>
 
-**3.7. Custom PCB Design**
+**3.9. Custom PCB Design**
 
-#### **3.7.1. Function and Purpose**
+#### 3.9.1. Function and Purpose
 
-This custom control board was designed as the main interface between the
-Raspberry Pi 5 and peripheral components of the robotic system. It
-integrates sensor connections, user interaction elements (LEDs, button,
-buzzer), and power management components, ensuring organized and safe
-communication between modules.
+To make our electronics more compact we decided to design a custom PCB. The PCB includes our LEDs, buzzer, button, switch and etc.
 
-#### **3.7.2. Circuit Elements and Layer Structure**
+#### 3.9.2. Circuit Elements and Layer Structure
 
-The circuit is built on a **dual-layer PCB (printed cicuit board)** and
-includes the following key components:
+The circuit is built on a dual-layer PCB and includes the following key components:
 
 - **Two LEDs (red and green):** Used as status and warning indicators.
-
-- **One buzzer:** Provides audible alerts.
-
-- **One push button:** User input control.
-
-- **One fuse:** Overcurrent protection.
-
-- **One gyro sensor (BNO085 IMU):** Orientation and motion sensing.
-
+- **Buzzer:** Provides audible alerts.
+- **Push button:** User input control.
+- **Fuse:** Overcurrent protection.
+- **BNO085:** Orientation and motion sensing.
 - **One switch:** Power on/off control.
-
 - **Raspberry Pi 5 GPIO connections:** For system control and
   communication.
-
-- **One ultraconic sensor:** For measure distance.
-
-- **Some capacitor:** For sudden surges.
-
+- **Ultraconic sensor:** For measure distance.
+- **Capacitor:** For sudden surges.
 - **One ferrit bead:** For EMI.
 
-On the PCB, **power lines** are routed with thick copper wires, while
-**signal lines** are routed with thinner wires to ensure current
-handling capacity and minimize interference.
+On the PCB, power lines are routed with thick copper wires, while signal lines are routed with thinner wires to ensure current handling capacity and minimize interference.
 
-**Board 1:**
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="2">Board 1</th>
+  </tr>
+  <tr>
+    <td align="center" style="margin:0; padding:0;"><img src="board_1.png" height="300"><br><i>Figure 10.1: 3D view of first PCB board</i></td>
+    <td align="center"><img src="board_1_2d.jpg" height="300"><br><i>Figure 10.2: 2D view of first PCB board</i></td>
+  </tr>
+</table>
 
-![](media/image35.png){width="3.313043525809274in"
-height="1.4232655293088363in"}![](media/image36.jpeg){width="3.1304352580927386in"
-height="1.3434787839020121in"}
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="2">Board 2</th>
+  </tr>
+  <tr>
+    <td align="center" style="margin:0; padding:0;"><img src="board_2.png" height="300"><br><i>Figure 10.3: 3D view of second PCB board</i></td>
+    <td align="center"><img src="board_2_2d.jpg" height="300"><br><i>Figure 10.4: 2D view of second PCB board</i></td>
+  </tr>
+</table>
 
-**Board 2:**
-
-![](media/image37.png){width="3.212276902887139in"
-height="1.3652176290463691in"}![](media/image38.jpg){width="3.058459098862642in"
-height="1.321738845144357in"}
-
-These boards name is "Raspberry Pi Distribution Board"
-
-#### **3.7.3. Connection Points**
+#### **3.9.3. Connection Points**
 
 - **Power Input:** Operates with an external power supply of **6--14
   V**.
-
 - **Raspberry Pi 5 GPIO:** Direct connections for LEDs, button, buzzer,
   and the sensor.
-
 - **Sensor Connection:** The BNO085 IMU is connected via the **I²C
   interface (SCL, SDA)** to the Raspberry Pi 5.
-
 - **Connectors:** JST and pin header connectors are used for both power
   and signal interfaces.
 
-### **3.7.4 Electronic Design and PCB Implementation**
+**3.9.4 Hardware Issues and Troubleshooting Process**
 
-#### **3.7.5 Electronic Schematic Description*
+At the beginning, we were using the **Hiwonder RRC Lite Controller**. At first glance, it appeared to be an ideal solution for our needs --- a single board that could easily interface with the Raspberry Pi, included a buzzer, button, encoder motor driver, and servo
+ports, and seemed capable of handling all our system requirements.
 
-The electronic schematic was designed using **EasyEDA**.  
-It includes the following functional blocks:
-
-- **Power Section:** Battery input (6--14 V), fuse protection, power
-  switch, and monitoring connector.
-
-- **Sensor Section:** BNO085 IMU connected to the Raspberry Pi 5 via the
-  I²C interface (SDA, SCL).
-
-- **Control Unit:** Raspberry Pi 5 serves as the central controller,
-  managing input and output signals.
-
-- **User Interaction Components:** Two LEDs (status indicators), one
-  buzzer (alert), and one push button (input).
-
-Each component is clearly assigned to its corresponding GPIO pins,
-ensuring reliable communication and power delivery.
-
-**3.7.6 Hardware Issues and Troubleshooting Process**
-
-At the beginning, we were using the **Hiwonder RRC Lite Controller**. At
-first glance, it appeared to be an ideal solution for our needs --- a
-single board that could easily interface with the **Raspberry Pi**,
-included a **buzzer**, **button**, **encoder motor driver**, and **servo
-ports**, and seemed capable of handling all our system requirements.
-
-However, as we started using it, we began experiencing **connection
-losses** between the **Raspberry Pi 5** and the controller while the
+However, as we started using it, we began experiencing connection
+losses between the Raspberry Pi 5 and the controller while the
 robot was operating. Initially, we didn't pay much attention to it since
 the disconnections were quite rare. But over time, the issue worsened
---- what started as a once-a-week problem eventually became **three to
-four disconnections per day** during testing.
+--- what started as a once-a-week problem eventually became three to
+four disconnections per day during testing.
 
 We investigated the possible causes. Our first assumption was **EMI
 (Electromagnetic Interference)** since the data cable was routed close
-to the motor. To address this, we added a **ferrite bead** to the cable,
-but it didn't help. Then we suspected a **power issue**, so we separated
-the power connection and supplied the **Raspberry Pi** from an external
-**power bank** instead. Unfortunately, the problem persisted.
+to the motor. To address this, we added a ferrite bead to the cable,
+but it didn't help. Then we suspected a power issue, so we separated
+the power connection and supplied the Raspberry Pi from an external
+power bank instead. Unfortunately, the problem persisted.
 
-We also added **capacitors** to the power input and replaced the cables,
-yet the **RRC Lite Controller** continued to malfunction. Eventually, we
-decided to **design our own motor driver board** to ensure stable
+We also added capacitors to the power input and replaced the cables,
+yet the RRC Lite Controller continued to malfunction. Eventually, we
+decided to design our own motor driver board to ensure stable
 operation.
 
-![](media/image39.png){width="3.3301881014873143in"
-height="1.7099234470691163in"}![](media/image40.jpeg){width="3.036836176727909in"
-height="1.594339457567804in"}
-
-**OUR MOTOR DRIVER**
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="2">Motor driver board</th>
+  </tr>
+  <tr>
+    <td align="center" style="margin:0; padding:0;"><img src="board_pico.png" height="300"><br><i>Figure 10.3: 3D view of our motor driver PCB board</i></td>
+    <td align="center"><img src="board_pico_2d.jpg" height="300"><br><i>Figure 10.4: 2D view of our motor driver PCB board</i></td>
+  </tr>
+</table>
 
 ### 3.7.7 PCB Layer Structure and Design Rules
 
