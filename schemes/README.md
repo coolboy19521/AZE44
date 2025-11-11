@@ -140,7 +140,7 @@ Raspberry Pi 5 is a high-performance single-board computer used as
 the main controller of the robot. Its purpose in our robot is:
 - Gather lidar, camera, gyro, and encoder data. All of our sensors are connected to Raspberry Pi.
 - Proccess the data gathered and make decisions. It could be some kind of a brain, if sensors could be considered as the sense organs.
-- Send the decisions made to Raspberry Pi Pico. Raspberry Pi is connected to Raspberry Pi Pico via USB. More information about these kind of connections could be found in `3.7.9. Scheme 2`.
+- Send the decisions made to Raspberry Pi Pico. Raspberry Pi is connected to Raspberry Pi Pico via USB. More information about these kind of connections could be found in [`3.9.7`](#397-circuit-schemes).
 
 #### 3.1.2 Connections and Pin Configuration
 
@@ -150,7 +150,7 @@ the main controller of the robot. Its purpose in our robot is:
 </div>
 
 >[!NOTE]
->Refer to the Raspberry Pi 5 pinout for accurate connections. If you want to see connection diagram, you need to go to `3.7.9. Scheme 2`.
+>Refer to the Raspberry Pi 5 pinout for accurate connections. If you want to see connection diagram, you need to go to [`3.9.7`](#397-circuit-schemes).
 
 ### 3.2 Raspberry Pi Pico 2W Control Board
 
@@ -190,7 +190,7 @@ the main controller of the robot. Its purpose in our robot is:
 </table>
 
 **Raspberry Pi Pico 2W** is a compact and efficient microcontroller board designed for real-time embedded control, IoT, and robotic applications. It features a dual-core ARM Cortex-M0+ processor, integrated Wi-Fi connectivity, and flexible GPIO pins supporting multiple communication and control interfaces. Its purpose in our robot is:
-- Read encoder sensor and send them to Raspberry Pi. Encoder sensors are connected to Raspberry Pi Pico. More information on this could be found in `3.7.9. Scheme 2`.
+- Read encoder sensor and send them to Raspberry Pi. Encoder sensors are connected to Raspberry Pi Pico. More information on this could be found in [`3.9.7`](#397-circuit-schemes).
 - Read motor command values from Raspberry Pi and send them to motor driver. Motor drivers are connected to Raspberry Pi Pico but the decisions are made in Raspberry Pi. That's why Raspberry Pi Pico should read the decisions from the Raspberry Pi.
 
 #### 3.2.2 Connections and Pin Configuration
@@ -201,7 +201,7 @@ the main controller of the robot. Its purpose in our robot is:
 </div>
 
 >[!NOTE]
->Refer to the Raspberry Pi Pico 2W pinout for accurate connections.  If you want to see connection diagram, you need to go to `3.7.9. Scheme 2`.
+>Refer to the Raspberry Pi Pico 2W pinout for accurate connections.  If you want to see connection diagram, you need to go to [`3.9.7`](#397-circuit-schemes).
 
 ### 3.3 TB6612FNG Control Board
 
