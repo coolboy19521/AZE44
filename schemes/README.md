@@ -704,171 +704,100 @@ operation.
 > [!NOTE]
 > If you don\'t know how to order a PCB, click the link and watch this [video](https://www.youtube.com/watch?v=SGsfiHOE9Fk&t=466s).
 
-## **3.8 Power Supply (3S Li-Po Battery)**
+## 3.10 Power Supply (3S Li-Po Battery)
 
-### **3.8.1 Battery Specifications (Voltage, Capacity, C Rating)**
+### 3.10.1 Battery Specifications (Voltage, Capacity, C Rating)
 
 The power source of the project is a **JetFire 3S Li-Po battery**,
 specifically designed for high-current demanding applications such as
 robotics, drones, and defense systems. Thanks to its high discharge rate
 and reliable cell quality, it ensures stable and long-term operation.
 
-**Technical Specifications:**
-
+Technical Specifications:
 - Voltage: **11.1 V** (nominal)
-
 - Capacity: **1300 mAh**
-
 - Cells: **3S (3 cells in series)**
-
 - Discharge Rate: **50C continuous / 100C peak (max 10s)**
-
 - Weight: **110 g**
-
 - Dimensions: **74 × 33 × 21 mm**
-
 - Discharge Connector: **XT60 (black)**
-
 - Charging Connector: **JST-XHR (white)**
 
-### **3.8.2 Power Management Circuits (BMS, Charging Circuit)**
+### 3.10.2 Power Management Circuits (BMS, Charging Circuit)
 
 Li-Po batteries require safe charging and monitoring systems. A
 **Battery Management System (BMS)** or balance charger must be used to:
-
 - Monitor individual cell voltages,
-
 - Prevent overcharging or deep discharge,
-
 - Provide safe current limits during operation.
 
-### **3.8.3 Connections and Connectors**
+### 3.10.3 Connections and Connectors
 
 The battery is connected to the system using an **XT60 connector** for
 power delivery and a **JST-XHR balance connector** for charging and
 monitoring. Proper wiring and insulation are critical to ensure safe
 operation and prevent short circuits.
 
-### **3.8.4 How to Charge the Battery (with iMAX B6AC)**
+### 3.10.4 How to Charge the Battery (with iMAX B6AC)
 
 The **JetFire 3S Li-Po battery** must be charged using a balance charger
 such as the **iMAX B6AC** to ensure safe and efficient charging. The
 iMAX B6AC allows monitoring of individual cell voltages and prevents
 overcharging.
 
-**Charging Procedure:**
-
-1.  **Connection:**
-
+Charging Procedure:
+1.  Connection:
     - Plug the **XT60 connector** into the charger's discharge port.
-
     - Connect the **JST-XHR balance connector** to the charger's balance
       port.
-
-2.  **Charger Setup:**
-
+2.  Charger Setup:
     - Select **LiPo BALANCE CHARGE** mode.
-
     - Set the battery type to **LiPo** and cell count to **3S (11.1V)**.
-
     - Set the charging current to **1.3A** (equal to the battery's 1C
       rate).
-
-3.  **Charging Process:**
-
+3.  Charging Process:
     - Start the charging process and monitor the charger display.
-
     - Ensure that each cell voltage remains within the safe range
       (**3.7V -- 4.2V**).
-
-4.  **Completion:**
-
+4.  Completion:
     - Charging is complete when the total voltage reaches approximately
       **12.6V (4.2V per cell)**.
-
     - Disconnect the battery from the charger and store it safely.
 
-**Safety Notes:**
+>[!IMPORTANT]
+>If you want to see charging instructions, you can watch this [video](https://www.youtube.com/watch?v=WvyrB9QOp4Y)
 
-- Never leave the battery unattended during charging.
+## 4. Power Distribution and Management
 
-- Do not exceed the recommended charging current.
-
-- Always charge on a non-conductive, fireproof surface.
-
-## **4. Power Distribution and Management**
-
-### **4.1 Power Distribution Diagram**
+### 4.1 Power Distribution Diagram
 
 The 11.1V 3S Li-Po battery supplies the entire system. Power is
 distributed through a central board, separating high-current lines
 (motors, drivers) and low-current lines (controllers, sensors) for
 stability.
 
-### **4.2 Voltage Regulators and Converters (5V, 3.3V, etc.)**
-
+### 4.2 Voltage Regulators and Converters (5V, 3.3V, etc.)
 - **5V:** Raspberry Pi, LiDAR, camera.
-
 - **3.3V:** IMU and low-power sensors.
-
 - **11.1V Direct:** Motors and motor drivers.  
   Switching regulators are used for efficiency.
 
-### **4.3 Battery Management System (BMS, Charging Control)**
+### 4.3 Battery Management System (BMS, Charging Control)
 
 The BMS protects the Li-Po battery from overcharge, overdischarge, short
 circuit, and overheating. Charging is done with a balance charger (iMAX
 B6AC) to ensure safe and balanced operation.
 
-### **4.4 Protection Mechanisms (Fuse, Overcurrent Protection)**
+### 4.4 Protection Mechanisms (Fuse, Overcurrent Protection)
 
 Fuses, polyfuses, reverse polarity, and voltage monitoring circuits are
 added to prevent system failures and protect sensitive electronics.
 
-**Circuit Scheme:**
+<hr>
 
-<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
-  <tr>
-    <td style="margin:0; padding:0;"><img src="scheme_1.png" height="500"><br></td>
-    <td><img src="scheme_2.png" height="500"><br></td>
-  </tr>
-  <tr>
-    <td align="center">Raspberry Pi Distribution Board</td>
-    <td align="center">Motor Driver</td>
-  </tr>
-</table>
-
-**6. Motor and Sensor Control Electronics**
-
-**6.1. Motor Driver Circuits (PWM Control, Speed Feedback)**
-
-The robot uses an Motor Controller, which is a dedicated motor and servo
-driver board. This controller takes commands from the Raspberry Pi and
-translates them into movements for the encoder motor and servo motor.
-
-PWM Control: The DC motors are controlled using PWM signals. The servo
-motor is also controlled via PWM from the Motor Controller or a
-microcontroller. The PWM signals for the DC motors are used to control
-their speed.
-
-Speed Feedback: The encoder DC motor provides forward and backward
-motion, and its encoder sends speed and position feedback to the
-Raspberry Pi via the Motor Controller.
-
-**6.2. Sensor Interface Circuits (Filtering, Level Shifting)**
-
-The sensors are connected to the Raspberry Pi and other components
-through various interfaces and circuits.
-
-Sensor Connections: The BNO085 IMU sensor is connected to the Raspberry
-Pi 5 via the I²C interface.
-
-Voltage Levels: The system uses voltage regulators and converters to
-provide the correct voltage levels for different components. The
-Raspberry Pi, LiDAR, and camera operate on 5V, while the IMU and other
-low-power sensors use 3.3V.
-
-Noise Reduction: The custom PCB design, implemented on a PCB, uses
-thicker wires for power lines and thinner wires for signal lines to
-ensure current handling and minimize interference. The ground lines were
-also carefully routed to reduce noise in sensor readings.
+<p align="center">
+  <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../media/my_image.png">
+  <img height="400" alt="logo" src="../media/my_image_light.png">
+  </picture>
+</p>
