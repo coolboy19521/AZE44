@@ -504,7 +504,7 @@ To know which resistors should be used, we took advantage of level-shifting form
 
 $$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2} \implies 5\text{V} \times \frac{2\text{k}\Omega}{1\text{k}\Omega + 2\text{k}\Omega} \approx 3.33\text{V}$$
 
-<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;" align="center">
   <tr>
     <th colspan="2">Level Shifting</th>
   </tr>
