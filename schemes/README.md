@@ -145,7 +145,7 @@ the main controller of the robot. Its purpose in our robot is:
 #### 3.1.2 Connections and Pin Configuration
 
 <div>
-  <img src="raspberry_pinout.png" height="500" alt="Raspberry Pi Pinout" />
+  <img src="../media/raspberry_pinout.png" height="500" alt="Raspberry Pi Pinout" />
   <p style="margin-top:0;"><i>Figure 1.2: Raspberry Pi Pinout</i></p>
 </div>
 
@@ -196,7 +196,7 @@ the main controller of the robot. Its purpose in our robot is:
 #### 3.2.2 Connections and Pin Configuration
 
 <div>
-  <img src="pico_pinout.png" height="500" alt="Raspberry Pi Pico 2 Pinout" />
+  <img src="../media/pico_pinout.png" height="500" alt="Raspberry Pi Pico 2 Pinout" />
   <p style="margin-top:0;"><i>Figure 2.2: Raspberry Pi Pico 2 Pinout</i></p>
 </div>
 
@@ -240,7 +240,7 @@ the main controller of the robot. Its purpose in our robot is:
 #### 3.3.2 Connections and Pin Configuration
 
 <div>
-  <img src="tb6612fng-pinout.png" height="400" alt="TB6612FNG Pinout" />
+  <img src="../media/tb6612fng-pinout.png" height="400" alt="TB6612FNG Pinout" />
   <p style="margin-top:0;"><i>Figure 3.2: TB6612FNG Pinout</i></p>
 </div>
 
@@ -303,7 +303,7 @@ may reduce lifespan.
 #### 3.4.2.2 Connections and Pin Configuration
 
 <div>
-  <img src="motor_pinout.png" width="700" alt="Motor Pinout" />
+  <img src="../media/motor_pinout.png" width="700" alt="Motor Pinout" />
   <p style="margin-top:0;"><i>Figure 4.2: Gear Motor Pinout</i></p>
 </div>
 
@@ -350,7 +350,7 @@ We are using this digital servo for our steering (using an Ackermann controller)
 #### 3.4.3.2 Connections and Pin Configuration
 
 <div>
-  <img src="servo_pinout.png" width="700" alt="Servo Pinout" />
+  <img src="../media/servo_pinout.png" width="700" alt="Servo Pinout" />
   <p style="margin-top:0;"><i>Figure 5.2: Servo Pinout</i></p>
 </div>
 
@@ -509,8 +509,8 @@ $$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2} \implies 5\text{V}
     <th colspan="2">Level Shifting</th>
   </tr>
   <tr>
-    <td align="center" style="margin:0; padding:0;"><img src="shift_1.png" height="300"><br><i>Figure 9.2: Diagram to show how voltage is remapped</i></td>
-    <td align="center"><img src="shift_2.png" height="300"><br><i>Figure 9.3: To show the electric circuit</i></td>
+    <td align="center" style="margin:0; padding:0;"><img src="../media/shift_1.png" height="300"><br><i>Figure 9.2: Diagram to show how voltage is remapped</i></td>
+    <td align="center"><img src="../media/shift_2.png" height="300"><br><i>Figure 9.3: To show the electric circuit</i></td>
   </tr>
 </table>
 
@@ -543,8 +543,8 @@ On the PCB, power lines are routed with thick copper wires, while signal lines a
     <th colspan="2">Board 1</th>
   </tr>
   <tr>
-    <td align="center" style="margin:0; padding:0;"><img src="board_1.png" height="300"><br><i>Figure 10.1: 3D view of first PCB board</i></td>
-    <td align="center"><img src="board_1_2d.jpg" height="300"><br><i>Figure 10.2: 2D view of first PCB board</i></td>
+    <td align="center" style="margin:0; padding:0;"><img src="../media/board_1.png" height="300"><br><i>Figure 10.1: 3D view of first PCB board</i></td>
+    <td align="center"><img src="../media/board_1_2d.jpg" height="300"><br><i>Figure 10.2: 2D view of first PCB board</i></td>
   </tr>
 </table>
 
@@ -553,8 +553,8 @@ On the PCB, power lines are routed with thick copper wires, while signal lines a
     <th colspan="2">Board 2</th>
   </tr>
   <tr>
-    <td align="center" style="margin:0; padding:0;"><img src="board_2.png" height="300"><br><i>Figure 10.3: 3D view of second PCB board</i></td>
-    <td align="center"><img src="board_2_2d.jpg" height="300"><br><i>Figure 10.4: 2D view of second PCB board</i></td>
+    <td align="center" style="margin:0; padding:0;"><img src="../media/board_2.png" height="300"><br><i>Figure 10.3: 3D view of second PCB board</i></td>
+    <td align="center"><img src="../media/board_2_2d.jpg" height="300"><br><i>Figure 10.4: 2D view of second PCB board</i></td>
   </tr>
 </table>
 
@@ -598,8 +598,8 @@ operation.
     <th colspan="2">Motor driver board</th>
   </tr>
   <tr>
-    <td align="center" style="margin:0; padding:0;"><img src="board_pico.png" height="300"><br><i>Figure 10.5: 3D view of our motor driver PCB board</i></td>
-    <td align="center"><img src="board_pico_2d.jpg" height="300"><br><i>Figure 10.6: 2D view of our motor driver PCB board</i></td>
+    <td align="center" style="margin:0; padding:0;"><img src="../media/board_pico.png" height="300"><br><i>Figure 10.5: 3D view of our motor driver PCB board</i></td>
+    <td align="center"><img src="../media/board_pico_2d.jpg" height="300"><br><i>Figure 10.6: 2D view of our motor driver PCB board</i></td>
   </tr>
 </table>
 
