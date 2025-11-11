@@ -1,4 +1,4 @@
-**1. BOM (Bill of Materials)**
+# 1. Bill of Materials (BOM)
 
 <table>
   <tr>
@@ -70,9 +70,9 @@
   </tr>
 </table>
 
-**2. System Overview**
+# System Overview
 
-**2.1 Electronic System Architecture**
+### 2.1 Electronic System Architecture
 
 **Raspberry Pi 5 (Main Controller):** The central processing unit
 running the ROS-based software. It collects data from all sensors and
@@ -91,11 +91,11 @@ via the motor controller.
 
 2.2 Block Diagram:
 
-**3. Hardware and Component Introduction**
+# 3. Hardware and Component Introduction
 
-**3.1 Raspberry Pi 5**
+### 3.1 Raspberry Pi 5
 
-**3.1.1 Description and Features**
+#### 3.1.1 Description and Features
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
@@ -140,7 +140,7 @@ The Raspberry Pi 5 is a high-performance single-board computer used as
 the main controller of the robot. It runs ROS to process sensor data,
 control actuators, and manage overall system operations.
 
-**3.1.2 Connections and Pin Configuration**
+#### 3.1.2 Connections and Pin Configuration
 
 <div>
   <img src="raspberry_pinout.png" height="500" alt="Raspberry Pi Pinout" />
@@ -150,9 +150,9 @@ control actuators, and manage overall system operations.
 >[!NOTE]
 >Refer to the Raspberry Pi 5 pinout for accurate connections. If you want to see connection diagram, you need to go to 3.7.9. Scheme 2.
 
-**3.2 Raspberry Pi Pico 2W Control Board**
+### 3.2 Raspberry Pi Pico 2W Control Board
 
-**3.2.1 Description and Features**
+#### 3.2.1 Description and Features
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
@@ -193,7 +193,7 @@ applications. It features a dual-core ARM Cortex-M0+ processor,
 integrated Wi-Fi connectivity, and flexible GPIO pins supporting
 multiple communication and control interfaces.
 
-**3.2.2 Connections and Pin Configuration**
+#### 3.2.2 Connections and Pin Configuration
 
 <div>
   <img src="pico_pinout.png" height="500" alt="Raspberry Pi Pico 2 Pinout" />
@@ -203,9 +203,9 @@ multiple communication and control interfaces.
 >[!NOTE]
 >Refer to the Raspberry Pi Pico 2W pinout for accurate connections.  If you want to see connection diagram, you need to go to 3.7.9. Scheme 2.
 
-**3.3 TB6612FNG Control Board**
+### 3.3 TB6612FNG Control Board
 
-**3.3.1 Description and Features**
+#### 3.3.1 Description and Features
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
@@ -237,7 +237,7 @@ multiple communication and control interfaces.
   </tr>
 </table>
 
-**3.3.2 Connections and Pin Configuration**
+#### 3.3.2 Connections and Pin Configuration
 
 <div>
   <img src="tb6612fng-pinout.png" height="500" alt="TB6612FNG Pinout" />
