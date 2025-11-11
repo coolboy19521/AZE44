@@ -299,7 +299,7 @@ may reduce lifespan.
     <th colspan="3">Servo Motor</th>
   </tr>
   <tr>
-    <td rowspan="3" style="height:350px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <td rowspan="4" style="height:350px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/servo.webp" height="350px" alt="Gear Motor" />
       <p style="margin-top:0;" align="left"><i>Figure 5.1: Servo Motor</i></p>
