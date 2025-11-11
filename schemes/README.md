@@ -342,6 +342,11 @@ may reduce lifespan.
   </tr>
 </table>
 
+We are using this digital servo for our steering (using an Ackermann controller). We previously used an analog servo but we switched because of some reasons:
+- Digital servos have more frequency. They accept commands with smaller delays than analog servos.
+- They turn faster and more on point. While an analog servo slowly reaches some steering point digital servos change their direction almost instantly.
+- Has a greater precision. In comparison to analog servos we observed higher precision on turns, almost all turns made between countless tries were the same.
+
 #### 3.4.3.2 Connections and Pin Configuration
 
 <div>
