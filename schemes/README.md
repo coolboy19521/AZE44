@@ -598,8 +598,8 @@ operation.
     <th colspan="2">Motor driver board</th>
   </tr>
   <tr>
-    <td align="center" style="margin:0; padding:0;"><img src="board_pico.png" height="300"><br><i>Figure 10.3: 3D view of our motor driver PCB board</i></td>
-    <td align="center"><img src="board_pico_2d.jpg" height="300"><br><i>Figure 10.4: 2D view of our motor driver PCB board</i></td>
+    <td align="center" style="margin:0; padding:0;"><img src="board_pico.png" height="300"><br><i>Figure 10.5: 3D view of our motor driver PCB board</i></td>
+    <td align="center"><img src="board_pico_2d.jpg" height="300"><br><i>Figure 10.6: 2D view of our motor driver PCB board</i></td>
   </tr>
 </table>
 
