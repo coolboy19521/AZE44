@@ -646,10 +646,10 @@ operation.
     <th colspan="1">Circuit Schemes</th>
   </tr>
   <tr>
-    <td align="center" style="margin:0; padding:0;"><a id="motor-driver"></a><img src="control_board.svg" id="control-board"><br><i>Figure 10.7: Control Board scheme</i></td>
+    <td align="center" style="margin:0; padding:0;"><a id="motor-driver"></a><img src="control_board.svg"><br><i>Figure 10.7: Control Board scheme</i></td>
   </tr>
   <tr>
-    <td align="center"><img src="motor_board.svg" id="motor-driver"><br><i>Figure 10.8: Motor Driver scheme</i></td>
+    <td align="center"><img src="motor_board.svg"><br><i>Figure 10.8: Motor Driver scheme</i></td>
   </tr>
 </table>
 
