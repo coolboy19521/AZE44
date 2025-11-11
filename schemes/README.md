@@ -771,6 +771,11 @@ Charging Procedure:
 
 ### 4.1 Power Distribution Diagram
 
+<div>
+  <img src="../media/lipo_bat.webp" height="400px" alt="Lipo" />
+  <p style="margin-top:0;"><i>Figure 11.1 Lipo Battery</i></p>
+</div>
+
 The 11.1V 3S Li-Po battery supplies the entire system. Power is
 distributed through a central board, separating high-current lines
 (motors, drivers) and low-current lines (controllers, sensors) for
