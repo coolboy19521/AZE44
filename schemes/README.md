@@ -156,13 +156,13 @@ control actuators, and manage overall system operations.
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
-    <th colspan="3">Raspberry Pi 5</th>
+    <th colspan="3">Raspberry Pi Pico 2 W</th>
   </tr>
   <tr>
     <td rowspan="3" style="width:400; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
-      <img src="../media/ppico.jpg" alt="Raspberry Pi" />
-      <p style="margin-top:0;" align="left"><i>Figure 1.3: Raspberry Pi 5</i></p>
+      <img src="../media/ppico.jpg" alt="Raspberry Pi Pico" />
+      <p style="margin-top:0;" align="left"><i>Figure 1.3: Raspberry Pi Pico 2 W</i></p>
     </div>
     </td>
     <td>USB</td>
