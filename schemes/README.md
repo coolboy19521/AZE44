@@ -212,7 +212,7 @@ multiple communication and control interfaces.
     <th colspan="3">TB6612FNG</th>
   </tr>
   <tr>
-    <td rowspan="3" style="width:200; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <td rowspan="3" style="width:200px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/tb6612fng.jpeg" alt="TB6612FNG" />
       <p style="margin-top:0;" align="left"><i>Figure 3.1: TB6612FNG</i></p>
