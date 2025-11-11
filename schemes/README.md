@@ -240,7 +240,7 @@ the main controller of the robot. Its purpose in our robot is:
 #### 3.3.2 Connections and Pin Configuration
 
 <div>
-  <img src="tb6612fng-pinout.png" height="500" alt="TB6612FNG Pinout" />
+  <img src="tb6612fng-pinout.png" height="400" alt="TB6612FNG Pinout" />
   <p style="margin-top:0;"><i>Figure 3.2: TB6612FNG Pinout</i></p>
 </div>
 
@@ -255,9 +255,9 @@ the main controller of the robot. Its purpose in our robot is:
     <th colspan="3">Gear Motor</th>
   </tr>
   <tr>
-    <td rowspan="3" style="height:400px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <td rowspan="3" style="height:350px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
-      <img src="../media/motor.png" height="400px" alt="Gear Motor" />
+      <img src="../media/motor.png" height="350px" alt="Gear Motor" />
       <p style="margin-top:0;" align="left"><i>Figure 4.1: Gear Motor</i></p>
     </div>
     </td>
