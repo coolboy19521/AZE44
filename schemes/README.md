@@ -1,6 +1,6 @@
 # 1. Bill of Materials (BOM)
 
-<table>
+<table align="center">
   <tr>
     <th colspan="4">Electronics</th>
   </tr>
@@ -97,7 +97,7 @@ via the motor controller.
 
 #### 3.1.1 Description and Features
 
-<table style="width:80%; border-collapse:collapse;">
+<table align="center" style="width:80%; border-collapse:collapse;">
   <tr>
     <th colspan="3">Raspberry Pi 5</th>
   </tr>
@@ -156,7 +156,7 @@ the main controller of the robot. Its purpose in our robot is:
 
 #### 3.2.1 Description and Features
 
-<table style="width:80%; border-collapse:collapse;">
+<table align="center" style="width:80%; border-collapse:collapse;">
   <tr>
     <th colspan="3">Raspberry Pi Pico 2 W</th>
   </tr>
@@ -207,7 +207,7 @@ the main controller of the robot. Its purpose in our robot is:
 
 #### 3.3.1 Description and Features
 
-<table style="width:80%; border-collapse:collapse;">
+<table align="center" style="width:80%; border-collapse:collapse;">
   <tr>
     <th colspan="3">TB6612FNG</th>
   </tr>
@@ -261,7 +261,7 @@ the main controller of the robot. Its purpose in our robot is:
 
 #### 3.4.2.1 Description and Features
 
-<table style="width:80%; border-collapse:collapse;">
+<table align="center" style="width:80%; border-collapse:collapse;">
   <tr>
     <th colspan="3">Gear Motor</th>
   </tr>
@@ -311,7 +311,7 @@ may reduce lifespan.
 
 #### 3.4.3.1 Description and Features
 
-<table style="width:80%; border-collapse:collapse;">
+<table align="center" style="width:80%; border-collapse:collapse;">
   <tr>
     <th colspan="3">Servo Motor</th>
   </tr>
@@ -361,7 +361,7 @@ We are using this digital servo for our steering (using an Ackermann controller)
 Yahboom T-mini Plus LiDAR is a 2D lidar used for simple obstacle detection. Its main advantage is that it utilizes Time-of-Flight (ToF) measurement technology to deliver fast and accurate distance data. With high sampling frequency and good-enough
 ambient light resistance, it performs well for our strategy.
 
-<table style="width:80%; border-collapse:collapse;">
+<table align="center" style="width:80%; border-collapse:collapse;">
   <tr>
     <th colspan="3">Yahboom T-mini Plus LiDAR</th>
   </tr>
@@ -397,7 +397,7 @@ We are using a camera for detecting colors. There is no other usage of camera in
 
 ### 3.6.1 Definition and Features
 
-<table style="width:80%; border-collapse:collapse;">
+<table align="center" style="width:80%; border-collapse:collapse;">
   <tr>
     <th colspan="3">Camera Module 3</th>
   </tr>
@@ -434,7 +434,7 @@ The reason why we selected this camera is that it supports HDR mode, phase-detec
 
 #### 3.7.1 Definition and Features
 
-<table style="width:80%; border-collapse:collapse;">
+<table align="center" style="width:80%; border-collapse:collapse;">
   <tr>
     <th colspan="3">BNO085</th>
   </tr>
@@ -460,7 +460,7 @@ Our gyro has a built-in fusion algorithm, which means it can in theory fuse acce
 
 #### 3.8.1 Definition and Features
 
-<table style="width:80%; border-collapse:collapse;">
+<table align="center" style="width:80%; border-collapse:collapse;">
   <tr>
     <th colspan="3">HCSR04</th>
   </tr>
@@ -504,7 +504,7 @@ To know which resistors should be used, we took advantage of level-shifting form
 
 $$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2} \implies 5\text{V} \times \frac{2\text{k}\Omega}{1\text{k}\Omega + 2\text{k}\Omega} \approx 3.33\text{V}$$
 
-<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;" align="center">
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <th colspan="2">Level Shifting</th>
   </tr>
@@ -538,7 +538,7 @@ The circuit is built on a dual-layer PCB and includes the following key componen
 
 On the PCB, power lines are routed with thick copper wires, while signal lines are routed with thinner wires to ensure current handling capacity and minimize interference.
 
-<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <th colspan="2">Board 1</th>
   </tr>
@@ -548,7 +548,7 @@ On the PCB, power lines are routed with thick copper wires, while signal lines a
   </tr>
 </table>
 
-<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <th colspan="2">Board 2</th>
   </tr>
@@ -593,7 +593,7 @@ yet the RRC Lite Controller continued to malfunction. Eventually, we
 decided to design our own motor driver board to ensure stable
 operation.
 
-<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <th colspan="2">Motor driver board</th>
   </tr>
@@ -639,7 +639,7 @@ operation.
 
 #### 3.9.7 Circuit Schemes
 
-<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <th colspan="1">Circuit Schemes</th>
   </tr>
@@ -671,7 +671,7 @@ operation.
 >[!NOTE]
 > If you want to order PCB(Printed Circuit Board), download these `GERBER` files and follow the steps in the video.
 
-<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <th colspan="4">PCB Files</th>
   </tr>
