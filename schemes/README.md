@@ -142,13 +142,13 @@ control actuators, and manage overall system operations.
 
 **3.1.2 Connections and Pin Configuration**
 
->[!NOTE]
->Refer to the Raspberry Pi 5 pinout for accurate connections. If you want to see connection diagram, you need to go to 3.7.9. Scheme 2.
-
 <div>
   <img src="raspberry_pinout.png" height="500" alt="Raspberry Pi Pinout" />
   <p style="margin-top:0;"><i>Figure 1.2: Raspberry Pi Pinout</i></p>
 </div>
+
+>[!NOTE]
+>Refer to the Raspberry Pi 5 pinout for accurate connections. If you want to see connection diagram, you need to go to 3.7.9. Scheme 2.
 
 **3.2 Raspberry Pi Pico 2W Control Board**
 
@@ -193,14 +193,55 @@ applications. It features a dual-core ARM Cortex-M0+ processor,
 integrated Wi-Fi connectivity, and flexible GPIO pins supporting
 multiple communication and control interfaces.
 
-**3.2.2 Motor and Servo Connections**
+**3.2.2 Connections and Pin Configuration**
+
+<div>
+  <img src="pico_pinout.png" height="500" alt="Raspberry Pi Pico 2 Pinout" />
+  <p style="margin-top:0;"><i>Figure 2.2: Raspberry Pi Pico 2 Pinout</i></p>
+</div>
 
 >[!NOTE]
 >Refer to the Raspberry Pi Pico 2W pinout for accurate connections.  If you want to see connection diagram, you need to go to 3.7.9. Scheme 2.
 
+**3.3 TB6612FNG Control Board**
+
+**3.3.1 Description and Features**
+
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <th colspan="3">TB6612FNG</th>
+  </tr>
+  <tr>
+    <td rowspan="3" style="width:400; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <div>
+      <img src="../media/tb6612fng.jpeg" alt="TB6612FNG" />
+      <p style="margin-top:0;" align="left"><i>Figure 3.1: TB6612FNG</i></p>
+    </div>
+    </td>
+    <td>Operating voltage</td>
+    <td>2.5V – 13.5V</td>
+  </tr>
+  <tr>
+    <td>Continuous output current</td>
+    <td>1.2A per channel (peak up to 3.2A)</td>
+  </tr>
+  <tr>
+    <td>Logic voltage</td>
+    <td>2.7V – 5.5V</td>
+  </tr>
+  <tr>
+    <td colspan="3">Dual H-Bridge motor driver (can control 2 DC motors)</td>
+  </tr>
+  <tr>
+    <td colspan="3">PWM control supported (up to 100 kHz)</td>
+  </tr>
+</table>
+
+**3.3.2 Connections and Pin Configuration**
+
 <div>
-  <img src="pico_pinout.png" height="500" alt="Raspberry Pi Pinout" />
-  <p style="margin-top:0;"><i>Figure 2.2: Raspberry Pi Pinout</i></p>
+  <img src="tb6612fng-pinout.png" height="500" alt="TB6612FNG Pinout" />
+  <p style="margin-top:0;"><i>Figure 3.2: TB6612FNG Pinout</i></p>
 </div>
 
 ## **3.3 Motors and Servo Motor**
