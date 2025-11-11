@@ -162,7 +162,7 @@ control actuators, and manage overall system operations.
     <td rowspan="3" style="width:400; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/ppico.jpg" alt="Raspberry Pi Pico" />
-      <p style="margin-top:0;" align="left"><i>Figure 1.3: Raspberry Pi Pico 2 W</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 2.1: Raspberry Pi Pico 2 W</i></p>
     </div>
     </td>
     <td>Wireless Connectivity</td>
@@ -200,27 +200,8 @@ multiple communication and control interfaces.
 
 <div>
   <img src="pico_pinout.png" height="500" alt="Raspberry Pi Pinout" />
-  <p style="margin-top:0;"><i>Figure 1.4: Raspberry Pi Pinout</i></p>
+  <p style="margin-top:0;"><i>Figure 2.2: Raspberry Pi Pinout</i></p>
 </div>
-
-Note: 
-
-**3.2.3 Power Requirement**
-
-• Accepts power from USB (5 V) or VSYS (1.8 -- 5.5 V).  
-• Provides regulated 3.3 V logic output for sensors and communication
-modules.  
-• External power source (5 V 2 A recommended) required for motors and
-servos.  
-• On-board protection includes resettable fuse and ESD protection.
-
-**3.2.4 Communication Interfaces**
-
-• **USB:** For programming and serial communication via Micro-USB.  
-• **UART / I²C / SPI:** Interfaces available through GPIO pins for
-sensors , and external motor drivers.  
-• **Wi-Fi:** Supports TCP/IP communication, OTA updates, and wireless
-control.
 
 ## **3.3 Motors and Servo Motor**
 
