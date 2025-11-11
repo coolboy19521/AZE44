@@ -393,7 +393,37 @@ Lidar is used for scanning along the robot's Z-axis. It gives us output in (angl
 
 ## 3.6 Camera
 
-### **3.5.1 Definition and Features**
+We are using a camera for detecting colors. There is no other usage of camera in our robot, as we are detecting the obstacle without it (as mentioned before we are using the lidar).
+
+### 3.6.1 Definition and Features
+
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <th colspan="3">Yahboom T-mini Plus LiDAR</th>
+  </tr>
+  <tr>
+    <td rowspan="4" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <div>
+      <img src="../media/camera.avif" height="370px" alt="Gear Motor" />
+      <p style="margin-top:0;" align="left"><i>Figure 6.1: Servo Motor</i></p>
+    </div>
+    </td>
+    <td>Measurement Range</td>
+    <td>0.1 – 12 m (reflectivity-dependent)</td>
+  </tr>
+  <tr>
+    <td>Scan Frequency</td>
+    <td>1 – 10 Hz adjustable</td>
+  </tr>
+  <tr>
+    <td>Sampling Rate</td>
+    <td>up to 5000 samples/s</td>
+  </tr>
+  <tr>
+    <td>Power requirements</td>
+    <td>5V 300mA</td>
+  </tr>
+</table>
 
 The Raspberry Pi Camera Module v3 is equipped with the **Sony IMX708
 image sensor**, offering **11.9 megapixel resolution** with **4608 ×
