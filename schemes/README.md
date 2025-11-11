@@ -569,7 +569,7 @@ On the PCB, power lines are routed with thick copper wires, while signal lines a
 - **Connectors:** JST and pin header connectors are used for both power
   and signal interfaces.
 
-**3.9.4 Hardware Issues and Troubleshooting Process**
+#### 3.9.4 Hardware Issues and Troubleshooting Process
 
 At the beginning, we were using the **Hiwonder RRC Lite Controller**. At first glance, it appeared to be an ideal solution for our needs --- a single board that could easily interface with the Raspberry Pi, included a buzzer, button, encoder motor driver, and servo
 ports, and seemed capable of handling all our system requirements.
@@ -603,66 +603,65 @@ operation.
   </tr>
 </table>
 
-### 3.7.7 PCB Layer Structure and Design Rules
+#### 3.9.5 PCB Layer Structure and Design Rules
 
 - The PCB design was implemented on a **two-layer FR4 board**,
   manufactured by **JLCPCB**.
-
 - The **top layer** carries most of the signal traces, while the
   **bottom layer** mainly serves as a **ground plane** to ensure stable
   reference potential and reduce noise.
-
 - **Thicker copper traces** were used for power distribution lines,
   while **thinner traces** were used for signal routing.
-
 - Design rules followed JLCPCB's recommended minimum clearance, trace
   width, and via size specifications.
-
 - The layout was optimized to **minimize electromagnetic interference
   (EMI)** between the IMU sensor and the power circuits.
-
 - A solid ground plane helps reduce sensor noise and improve overall
   system stability.
 
-### 3.7.8 Connectors and Component Placement
+#### 3.9.6 Connectors and Component Placement
 
 - **Connectors:** JST connectors and pin headers were used to allow easy
   connection of external modules such as the battery, button, and
   display.
-
 - **Placement:**
-
   - The **Raspberry Pi 5 GPIO header** is positioned near the center for
     organized wiring and balanced routing.
-
   - **LEDs, buzzer, and button** are placed at the edge of the board for
     easy user access.
-
   - **Power input, fuse, and switch** are grouped together in a
     dedicated **power section**.
-
   - The **IMU sensor** is placed close to the GPIO pins to keep I²C
     lines short and reduce signal distortion.
-
 - The two-layer layout also allows sensitive signal traces (such as I²C
   lines) to be routed over a continuous ground plane for improved noise
   shielding.
 
-### 3.7.9 Manufacturing and Assembly Notes
+#### 3.9.7 Circuit Schemes
+
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="1">Circuit Schemes</th>
+  </tr>
+  <tr>
+    <td align="center" style="margin:0; padding:0;"><img src="control_board.svg"><br><i>Figure 10.7: Control Board scheme</i></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="motor_board.svg"><br><i>Figure 10.8: Motor Driver scheme</i></td>
+  </tr>
+</table>
+
+### 3.9.7 Manufacturing and Assembly Notes
 
 - The PCB was fabricated by **JLCPCB** using **FR4 material (1.6 mm
   thickness, 1 oz copper)** with **green solder mask** and **white
   silkscreen**.
-
 - The inclusion of **solder mask** and **silkscreen layers** simplified
   soldering and improved assembly accuracy.
-
 - Assembly was performed manually, using **through-hole (THT)**
   components and a few **surface-mount (SMD)** parts.
-
 - **Thicker traces** were used for power paths, while **narrower ones**
   were used for signal lines.
-
 - Compared to the initial perfboard prototype, the final 2-layer PCB
   offers **greater durability, improved signal integrity, and a more
   professional appearance**.
