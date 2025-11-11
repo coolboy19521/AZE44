@@ -143,7 +143,7 @@ control actuators, and manage overall system operations.
 **3.1.2 Connections and Pin Configuration**
 
 >[!NOTE]
-> Refer to the Raspberry Pi 5 pinout for accurate connections.
+>Refer to the Raspberry Pi 5 pinout for accurate connections. If you want to see connection diagram, you need to go to 3.7.9. Scheme 2.
 
 <div>
   <img src="raspberry_pinout.png" height="500" alt="Raspberry Pi Pinout" />
@@ -193,38 +193,17 @@ applications. It features a dual-core ARM Cortex-M0+ processor,
 integrated Wi-Fi connectivity, and flexible GPIO pins supporting
 multiple communication and control interfaces.
 
-• **Main Control Chip:** RP2350 microcontroller, Dual-core ARM
-Cortex-M33 (up to 150 MHz)  
-• **Wireless Connectivity:** 2.4 GHz 802.11 b/g/n Wi-Fi (Infineon
-CYW43439 chip)  
-• **GPIO:** 26 multifunctional pins supporting UART, I²C, SPI, PWM, and
-ADC  
-• **PWM Control:** Hardware PWM on up to 16 channels for motor or servo
-control  
-• **ADC Inputs:** 3 × 12-bit analog inputs (up to 3.3 V)  
-• **Power Supply:** USB 5 V input, regulated 3.3 V output (maximum 300
-mA)  
-• **External Power Options:** VSYS pin accepts 1.8 -- 5.5 V input for
-battery or external supply  
-• **Communication Interfaces:** USB, UART, I²C, SPI, PWM, ADC  
-• **Memory:** 520 KB SRAM, 4 MB Flash  
-• **Operating Voltage:** 3.3 V logic level  
-• **Size:** 51 × 21 mm  
-• **Weight:** \~4 g
-
 **3.2.2 Motor and Servo Connections**
 
-• **PWM Control:** Use PWM-capable GPIO pins to drive motor drivers or
-servo controllers.  
-• **External Motor Driver:** Required for DC/encoder motors (e.g.,
-L298N, DRV8833, or TB6612FNG).  
-• **Servo Control:** Standard PWM servos can be driven directly (with
-external 5 V power).
+>[!NOTE]
+>Refer to the Raspberry Pi Pico 2W pinout for accurate connections.  If you want to see connection diagram, you need to go to 3.7.9. Scheme 2.
 
 <div>
   <img src="pico_pinout.png" height="500" alt="Raspberry Pi Pinout" />
   <p style="margin-top:0;"><i>Figure 1.4: Raspberry Pi Pinout</i></p>
 </div>
+
+Note: 
 
 **3.2.3 Power Requirement**
 
