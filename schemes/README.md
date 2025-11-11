@@ -140,7 +140,7 @@ control actuators, and manage overall system operations.
 - **Recommendation:** Refer to the Raspberry Pi 5 pinout for accurate
   connections
 
-<img src="raspberry_pinout.png" height="500px">
+<img src="raspberry_pinout.png" height="500">
 
 **3.1.3 Power Requirements**
 
