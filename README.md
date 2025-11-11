@@ -3,7 +3,7 @@
 [![WRO - Future Engineers](https://img.shields.io/badge/WRO-Future_Engineers-2e52af)](https://wro-association.org/wp-content/uploads/WRO-2024-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
 [![YouTube - Race & Installing Videos](https://img.shields.io/badge/YouTube-▶️%20Race_&_Installing_Videos-df3e3e?logo=youtube)](https://www.youtube.com/playlist?list=PLiso-udvas0o-0Et_wnVIpQN-5FDyN6-4)
 
-<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <th colspan="2">Team Photos</th>
   </tr>
