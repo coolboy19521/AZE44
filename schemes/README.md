@@ -290,7 +290,7 @@ This motor is very advantageous for us, because it also has a built in encoder s
 may reduce lifespan.
 
 <div>
-  <img src="motor_pinout.png" alt="TB6612FNG Pinout" />
+  <img src="motor_pinout.png" width="700" alt="TB6612FNG Pinout" />
   <p style="margin-top:0;"><i>Figure 4.2: TB6612FNG Pinout</i></p>
 </div>
 
