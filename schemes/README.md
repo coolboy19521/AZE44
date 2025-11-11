@@ -335,7 +335,7 @@ may reduce lifespan.
   </tr>
   <tr>
     <td>Operating Voltage</td>
-    <td>6.0–7.4V</td>
+    <td>4.8–8.4V</td>
   </tr>
   <tr>
     <td colspan="3">Digital control system, metal gearbox</td>
@@ -369,7 +369,7 @@ ambient light resistance, it performs well for our strategy.
     <td rowspan="4" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/lidar.jpg" height="370px" alt="Gear Motor" />
-      <p style="margin-top:0;" align="left"><i>Figure 6.1: Servo Motor</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 6.1: Yahboom T-mini Plus LiDAR</i></p>
     </div>
     </td>
     <td>Measurement Range</td>
@@ -405,7 +405,7 @@ We are using a camera for detecting colors. There is no other usage of camera in
     <td rowspan="3" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/camera.avif" height="370px" alt="Gear Motor" />
-      <p style="margin-top:0;" align="left"><i>Figure 6.1: Servo Motor</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 7.1: Camera Module </i></p>
     </div>
     </td>
     <td>Resolution</td>
@@ -423,7 +423,7 @@ We are using a camera for detecting colors. There is no other usage of camera in
     <td colspan="3">Connects via CSI-2 camera port</td>
   </tr>
   <tr>
-    <td colspan="3">Power is supplied directly from the **Raspberry Pi board** via CSI-2
+    <td colspan="3">Power is supplied directly from the Raspberry Pi board via CSI-2
   interface</td>
   </tr>
 </table>
@@ -442,7 +442,7 @@ The reason why we selected this camera is that it supports HDR mode, phase-detec
     <td rowspan="2" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/bno085.webp" height="370px" alt="Gear Motor" />
-      <p style="margin-top:0;" align="left"><i>Figure 7.1: BNO085</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 8.1: BNO085</i></p>
     </div>
     </td>
     <td>Orientation output</td>
@@ -455,6 +455,54 @@ The reason why we selected this camera is that it supports HDR mode, phase-detec
 </table>
 
 Our gyro has a built-in fusion algorithm, which means it can in theory fuse accelerometer, magnotemeter and gyroscope. Despite all the advantages in theory, our IMU has a great drift over time. To fix this issue we implemented some algorithms and they are referenced in [Programming documentation](/src/).
+
+### 3.8 Ultrasonic Sensor
+
+#### 3.7.1 Definition and Features
+
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <th colspan="3">HCSR04</th>
+  </tr>
+  <tr>
+    <td rowspan="4" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <div>
+      <img src="../media/hcsr04_eyb.webp" height="370px" alt="Gear Motor" />
+      <p style="margin-top:0;" align="left"><i>Figure 9.1: HCSR04</i></p>
+    </div>
+    </td>
+    <td>Operating Voltage & Current</td>
+    <td>5V DC, 15 mA</td>
+  </tr>
+  <tr>
+    <td>Ranging Distance</td>
+    <td>2 cm to 400 cm</td>
+  </tr>
+  <tr>
+    <td>Ranging Distance</td>
+    <td>2 cm to 400 cm</td>
+  </tr>
+  <tr>
+    <td>Accuracy</td>
+    <td>~3mm</td>
+  </tr>
+  <tr>
+    <td colspan="3">Measuring Angle,<15∘ cone;</td>
+  </tr>
+  <tr>
+    <td colspan="3">A whopping frequency of 40kHz</td>
+  </tr>
+</table>
+
+Altough this sensor support `2cm-400cm` range in theory, in reality with Raspberry Pi the best we could achive is a `10cm-70cm` range. Despite the difference this range is enough for us.
+
+As we anticipated, the main technical challenge with our ultrasonic sensor is the voltage mismatch: the HC-SR04 sensor outputs its signal at 5 Volt (5V) logic, but the Raspberry Pi's GPIO pins are strictly limited to 3.3V. Connecting them directly would risk damaging the Pi's processor.
+
+To solve this issue we developed a solution: By using specific resistors (i.e 1kΩ and 2kΩ) on the sensor's ECHO output line, we have successfully stepped down the voltage from 5V to a safe level of approximately 3.3V. This setup guarantees that the Raspberry Pi is protected from overvoltage damage while still receiving an accurate, readable digital signal.
+
+To know which resistors should be used, we took advantage of level-shifting formula:
+
+$$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2} \implies 5\text{V} \times \frac{2\text{k}\Omega}{1\text{k}\Omega + 2\text{k}\Omega} \approx 3.33\text{V}$$
 
 **3.7. Custom PCB Design**
 
