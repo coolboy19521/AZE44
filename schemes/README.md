@@ -272,11 +272,18 @@ the main controller of the robot. Its purpose in our robot is:
     <td>Encoder Voltage</td>
     <td>3.3–5V DC/td>
   </tr>
+  <tr>
+    <td colspan="3">Cylindrical brushed DC gear motors, available in 5 variants (two 6V, three 12V) with wide gear ratios.</td>
+  </tr>
+  <tr>
+    <td colspan="3">No-load Current: 200 mA, Rated Current: 300 mA, Stall Current: 800 mA</td>
+  </tr>
 </table>
 
-- Cylindrical brushed DC gear motors, available in 5 variants (two 6V, three 12V) with wide gear ratios.
-
-- No-load Current: 200 mA, Rated Current: 300 mA, Stall Current: 800 mA
+This motor is very advantageous for us, because it also has a built in encoder sensor. We use this encoder sensor to move certain amount of distance. It comes especially handy when going a distance according to lidar decisions. For example:
+- Let's say we need to move until robot's front distance is less than some amount (say `40 cm`).
+- If we write a conditional and move until some lidar value is achieved we can overshoot. That is because of low lidar frequency (which is `~5-7 hz`, this means robot can move forwards without considering lidar for `~142-200 ms`).
+- But if we use encoder values and let's say start with `70 cm` distance from the wall, we can command the robot to go `30 cm`. This conditional is not bound to frequency of any electronical component ans is upto `~15-20 hz`. Which means robot can miss only for `~50-66 ms` (which is less than half).
 
 >[!IMPORTANT]
 >Motors can operate above or below nominal voltage; high voltages
