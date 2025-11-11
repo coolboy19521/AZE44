@@ -165,31 +165,25 @@ control actuators, and manage overall system operations.
       <p style="margin-top:0;" align="left"><i>Figure 1.3: Raspberry Pi Pico 2 W</i></p>
     </div>
     </td>
-    <td>USB</td>
-    <td>Raspberry Pi Pico 2W and T-MINI-PLUS Lidar sensor</td>
+    <td>Wireless Connectivity</td>
+    <td>2.4 GHz Wi-Fi</td>
   </tr>
   <tr>
-    <td>CSI Camera Port</td>
-    <td>Connects to Camera Module 3</td>
+    <td>Communication Interfaces</td>
+    <td>USB, UART, I²C, SPI, PWM, ADC</td>
   </tr>
   <tr>
     <td>GPIO Pins</td>
-    <td>Start button, imu, ultrasonic, leds and buzzer</td>
+    <td>26 multifunctional pins</td>
   </tr>
   <tr>
-    <td colspan="3">Quad-core CPU, 64-bit @ 2.4 GHz, 8 GB RAM</td>
+    <td colspan="3">RP2350 microcontroller, Dual-core ARM (up to 150 MHz)</td>
   </tr>
   <tr>
-    <td colspan="3">2 × USB 3.0, 2 × USB 2.0 ports</td>
+    <td colspan="3">USB 5 V input, regulated 3.3 V output (maximum 300 mA)</td>
   </tr>
   <tr>
-    <td colspan="3">40-pin GPIO header</td>
-  </tr>
-  <tr>
-    <td colspan="3">USB-C power input 5V/5A</td>
-  </tr>
-  <tr>
-    <td colspan="3">Powered by Li-Po 3S 1300 mAh battery</td>
+    <td colspan="3">520 KB SRAM, 4 MB Flash</td>
   </tr>
 </table>
 
