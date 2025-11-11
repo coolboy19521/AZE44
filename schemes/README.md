@@ -244,26 +244,42 @@ multiple communication and control interfaces.
   <p style="margin-top:0;"><i>Figure 3.2: TB6612FNG Pinout</i></p>
 </div>
 
-## **3.3 Motors and Servo Motor**
+## 3.4 Motors and Servo Motor
 
-### **3.3.1 Motor Types and Technical Specifications**
+### 3.4.1 Motor Types and Technical Specifications
 
-**DC Gear Motors:**
+#### DC Gear Motors
 
-- Cylindrical brushed DC gear motors, available in 5 variants (two 6V,
-  three 12V) with wide gear ratios.
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <th colspan="3">Gear Motor</th>
+  </tr>
+  <tr>
+    <td rowspan="3" style="height:300px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <div>
+      <img src="../media/motor.png" height="300px" alt="Gear Motor" />
+      <p style="margin-top:0;" align="left"><i>Figure 4.1: Gear Motor</i></p>
+    </div>
+    </td>
+    <td>Operating voltage</td>
+    <td>5–12V DC</td>
+  </tr>
+  <tr>
+    <td>Rotation Speed</td>
+    <td>450 RPM @ 12V</td>
+  </tr>
+  <tr>
+    <td>Encoder Voltage</td>
+    <td>3.3–5V DC/td>
+  </tr>
+</table>
 
-- Housing Diameter: 25 mm, Shaft: 4 mm D-shaped.
-
-- Operating Voltage: 5--12V DC, Encoder Voltage: 3.3--5V DC
+- Cylindrical brushed DC gear motors, available in 5 variants (two 6V, three 12V) with wide gear ratios.
 
 - No-load Current: 200 mA, Rated Current: 300 mA, Stall Current: 800 mA
 
-- Rotation Speed: 1000 RPM @ 12V
-
-- Motor Size: 25 × 71 mm, Weight: 95 g
-
-Note: Motors can operate above or below nominal voltage; high voltages
+> [!IMPORTANT]
+> Motors can operate above or below nominal voltage; high voltages
 may reduce lifespan.
 
 ### Servo Motor (TD8120MG):
