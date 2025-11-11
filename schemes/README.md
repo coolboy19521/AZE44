@@ -115,8 +115,14 @@ via the motor controller.
   </tr>
   <tr>
     <td colspan="3">Quad-core CPU, 64-bit @ 2.4 GHz, 8 GB RAM</td>
+  </tr>
+  <tr>
     <td colspan="3">2 × USB 3.0, 2 × USB 2.0 ports</td>
+  </tr>
+  <tr>
     <td colspan="3">40-pin GPIO header</td>
+  </tr>
+  <tr>
     <td colspan="3">USB-C power input 5V/5A</td>
   </tr>
 </table>
