@@ -103,7 +103,10 @@ via the motor controller.
   </tr>
   <tr>
     <td rowspan="3" style="width:400; text-align:center; vertical-align:middle; padding:0; margin:0;">
-      <img src="../media/raspb_up.png" style="display:block; margin:0 auto; border:0;">
+    <div>
+      <img src="../media/raspb_up.png" alt="Raspberry Pi" />
+      <p style="margin-top:0;" align="left"><i>Figure 1.1: Raspberry Pi 5</i></p>
+    </div>
     </td>
     <td>USB</td>
     <td>Raspberry Pi Pico 2W and T-MINI-PLUS Lidar sensor</td>
@@ -134,46 +137,15 @@ The Raspberry Pi 5 is a high-performance single-board computer used as
 the main controller of the robot. It runs ROS to process sensor data,
 control actuators, and manage overall system operations.
 
-**General Features:**
-
-- Quad-core Broadcom BCM2712 Cortex-A76 (ARM v8) CPU, 64-bit @ 2.4 GHz
-
-- 8 GB LPDDR4X SDRAM
-
-- Dual-band 802.11ac Wi-Fi, Bluetooth 5.0 BLE
-
-- Gigabit Ethernet with PoE+ support (requires separate HAT)
-
-- VideoCore VII GPU, 2 × Micro HDMI (4K@60Hz)
-
-- 2 × 4-lane MIPI DSI/CSI for camera/display
-
-- 2 × USB 3.0, 2 × USB 2.0 ports
-
-- 40-pin GPIO header
-
-- USB-C power input 5V/5A
-
-**In Our Robot:**
-
-- Processes data from **T-MINI-PLUS Lidar** and **Camera Module 3**
-
-- Controls motors via **Raspberry Pi Pico 2W**
-
-- GPIO pins used for **start button** and **power switch**
-
 **3.1.2 Connections and Pin Configuration**
 
-- **USB:** Raspberry Pi Pico and LiDAR sensor
+>[!NOTE]
+> Refer to the Raspberry Pi 5 pinout for accurate connections.
 
-- **CSI Camera Port:** Connects to Camera Module 3
-
-- **GPIO Pins:** Start button, power switch, encoder or sensor signals
-
-- **Recommendation:** Refer to the Raspberry Pi 5 pinout for accurate
-  connections
-
-<img src="raspberry_pinout.png" height="500">
+<div>
+  <img src="raspberry_pinout.png" height="500" alt="Raspberry Pi Pinout" />
+  <p style="margin-top:0;"><i>Figure 1.2: Raspberry Pi Pinout</i></p>
+</div>
 
 **3.1.3 Power Requirements**
 
