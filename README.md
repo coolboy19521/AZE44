@@ -98,6 +98,6 @@ Our robot is called “miav”. Miav is a ROS2-based four-wheeled mobile robot d
 <p align="center">
   <picture>
   <source media="(prefers-color-scheme: dark)" srcset="media/my_image.png">
-  <img height="400" alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="media/my_image_light.png">
+  <img height="400" alt="logo" src="media/my_image_light.png">
   </picture>
 </p>

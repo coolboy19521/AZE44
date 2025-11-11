@@ -513,5 +513,8 @@ Thankfully, we switched to our current approach and did not think much to fix th
 <hr>
 
 <p align="center">
-  <img src="../media/my_image.png" alt="Sublime's custom image" height="400"/>
+  <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../media/my_image.png">
+  <img height="400" alt="logo" src="../media/my_image_light.png">
+  </picture>
 </p>
