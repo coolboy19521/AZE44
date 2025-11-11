@@ -502,7 +502,7 @@ To solve this issue we developed a solution: By using specific resistors (i.e 1k
 
 To know which resistors should be used, we took advantage of level-shifting formula:
 
-$$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2} \implies 5\text{V} \times \frac{2\text{k}\Omega}{1\text{k}\Omega + 2\text{k}\Omega} \approx 3.33\text{V}$$
+### $$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2} \implies 5\text{V} \times \frac{2\text{k}\Omega}{1\text{k}\Omega + 2\text{k}\Omega} \approx 3.33\text{V}$$
 
 **3.7. Custom PCB Design**
 
