@@ -391,11 +391,6 @@ ambient light resistance, it performs well for our strategy.
 
 Lidar is used for scanning along the robot's Z-axis. It gives us output in (angle in radians, distance in meters) format. We convert it into (angle in degrees, distance in centimeters) format to make it easier for us to use the values and visualize it. In our robot lidar is used for: detecting the obstacles and finding the tilt of robot according to its surroundings. You can find more info about its usage in [Programming documentation](/src/).
 
-#### 3.5.2 Power Requirements
-
-- Power Supply: 5V DC (via USB or external 5V pin)  
-- Typical Current Consumption: \< 300 mA  
-
 ## 3.6 Camera
 
 ### **3.5.1 Definition and Features**
