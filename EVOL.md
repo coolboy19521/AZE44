@@ -3,7 +3,7 @@
     <th colspan="3">Evolution Table</th>
   </tr>
   <tr>
-    <td></td>
+    <td><h3><b>Specifications</b></h3></td>
     <td align="center" style="margin:0; padding:0;"><img src="media/mcqueen.jpg" height="270"></td>
     <td align="center"><img src="media/official.jpg" height="270"></td>
   </tr>
