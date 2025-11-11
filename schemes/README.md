@@ -671,10 +671,35 @@ operation.
 >[!NOTE]
 > If you want to order PCB(Printed Circuit Board), download these `GERBER` files and follow the steps in the video.
 
-| Raspberry Pi Distributon Board 1 |   [dis1.zip](dist1.zip)  |
-|----------------------------------|-----|
-| Raspberry Pi Distributon Board 2 |   [dis2.zip](dist2.zip)  |
-| Motor Driver                     |   [dis3.zip](dist3.zip)  |
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="4">PCB Files</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>GERBER</th>
+    <th>BOM</th>
+    <th>Pick & Place</th>
+  </tr>
+  <tr>
+    <td>Raspberry Pi Distributon Board 1</td>
+    <td><a href="dist1.zip">dist1.zip</a></td>
+    <td><a href="bom1.csv">bom1.csv</a></td>
+    <td><a href="pnp1.csv">pnp1.csv</a></td>
+  </tr>
+  <tr>
+    <td>Raspberry Pi Distributon Board 2</td>
+    <td><a href="dist2.zip">dist1.zip</a></td>
+    <td><a href="bom2.csv">bom1.csv</a></td>
+    <td><a href="pnp2.csv">pnp1.csv</a></td>
+  </tr>
+  <tr>
+    <td>Motor Driver</td>
+    <td><a href="dist3.zip">dist1.zip</a></td>
+    <td><a href="bom3.csv">bom1.csv</a></td>
+    <td><a href="pnp3.csv">pnp1.csv</a></td>
+  </tr>
+</table>
 
 > [!NOTE]
 > If you don\'t know how to order a PCB, click the link and watch this [video](https://www.youtube.com/watch?v=SGsfiHOE9Fk&t=466s).
