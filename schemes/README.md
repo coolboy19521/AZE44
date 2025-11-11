@@ -1,4 +1,4 @@
-**1. Bill of Materials**
+**1. BOM (Bill of Materials)**
 
 <table>
   <tr>
