@@ -504,6 +504,16 @@ To know which resistors should be used, we took advantage of level-shifting form
 
 $$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2} \implies 5\text{V} \times \frac{2\text{k}\Omega}{1\text{k}\Omega + 2\text{k}\Omega} \approx 3.33\text{V}$$
 
+<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="2">Level Shifting</th>
+  </tr>
+  <tr>
+    <td align="center" style="margin:0; padding:0;"><img src="shift_1.png" height="300"><br><i>Figure 9.2: Diagram to show how voltage is remapped</i></td>
+    <td align="center"><img src="shift_2.png" height="300"><br><i>Figure 9.3: To show the electric circuit</i></td>
+  </tr>
+</table>
+
 **3.7. Custom PCB Design**
 
 #### **3.7.1. Function and Purpose**
