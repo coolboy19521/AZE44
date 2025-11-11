@@ -137,8 +137,10 @@ via the motor controller.
 </table>
 
 The Raspberry Pi 5 is a high-performance single-board computer used as
-the main controller of the robot. It runs ROS to process sensor data,
-control actuators, and manage overall system operations.
+the main controller of the robot. Its purpose in our robot is:
+- Gather lidar, camera, gyro, and encoder data. All of our sensors are connected to Raspberry Pi.
+- Proccess the data gathered and make decisions. It could be some kind of a brain, if sensors could be considered as the sense organs.
+- Send the decisions made to Raspberry Pi Pico. Raspberry Pi is connected to Raspberry Pi Pico via USB. More information about these kind of connections could be found in 3.7.9. Scheme 2.
 
 #### 3.1.2 Connections and Pin Configuration
 
@@ -278,8 +280,8 @@ multiple communication and control interfaces.
 
 - No-load Current: 200 mA, Rated Current: 300 mA, Stall Current: 800 mA
 
-> [!IMPORTANT]
-> Motors can operate above or below nominal voltage; high voltages
+>[!IMPORTANT]
+>Motors can operate above or below nominal voltage; high voltages
 may reduce lifespan.
 
 ### Servo Motor (TD8120MG):
