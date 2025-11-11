@@ -246,9 +246,7 @@ the main controller of the robot. Its purpose in our robot is:
 
 ## 3.4 Motors and Servo Motor
 
-### 3.4.1 Motor Types and Technical Specifications
-
-#### DC Gear Motors
+### 3.4.1  DC Gear Motors
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
@@ -303,7 +301,7 @@ may reduce lifespan.
   <tr>
     <td rowspan="3" style="height:350px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
-      <img src="../media/motor.png" height="350px" alt="Gear Motor" />
+      <img src="../media/servo.webp" height="350px" alt="Gear Motor" />
       <p style="margin-top:0;" align="left"><i>Figure 5.1: Servo Motor</i></p>
     </div>
     </td>
