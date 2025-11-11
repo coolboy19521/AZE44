@@ -131,6 +131,9 @@ via the motor controller.
   <tr>
     <td colspan="3">USB-C power input 5V/5A</td>
   </tr>
+  <tr>
+    <td colspan="3">Powered by Li-Po 3S 1300 mAh battery</td>
+  </tr>
 </table>
 
 The Raspberry Pi 5 is a high-performance single-board computer used as
@@ -146,14 +149,6 @@ control actuators, and manage overall system operations.
   <img src="raspberry_pinout.png" height="500" alt="Raspberry Pi Pinout" />
   <p style="margin-top:0;"><i>Figure 1.2: Raspberry Pi Pinout</i></p>
 </div>
-
-**3.1.3 Power Requirements**
-
-- Operating voltage: 5V DC 5A
-
-- Powered by **Li-Po 3S 1300 mAh battery** via a voltage regulator
-
-- Ensures stable operation for all peripherals (motors, sensors, camera)
 
 **3.2 Raspberry Pi Pico 2W Control Board**
 
