@@ -188,6 +188,11 @@ L298N, DRV8833, or TB6612FNG).
 • **Servo Control:** Standard PWM servos can be driven directly (with
 external 5 V power).
 
+<div>
+  <img src="pico_pinout.png" height="500" alt="Raspberry Pi Pinout" />
+  <p style="margin-top:0;"><i>Figure 1.4: Raspberry Pi Pinout</i></p>
+</div>
+
 **3.2.3 Power Requirement**
 
 • Accepts power from USB (5 V) or VSYS (1.8 -- 5.5 V).  
