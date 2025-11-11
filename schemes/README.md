@@ -193,6 +193,8 @@ external 5 V power).
   <p style="margin-top:0;"><i>Figure 1.4: Raspberry Pi Pinout</i></p>
 </div>
 
+<img src="scheme_1.svg" height="800">
+
 **3.2.3 Power Requirement**
 
 • Accepts power from USB (5 V) or VSYS (1.8 -- 5.5 V).  
