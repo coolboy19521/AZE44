@@ -97,6 +97,28 @@ via the motor controller.
 
 **3.1.1 Description and Features**
 
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <td rowspan="4" style="width:400; text-align:center; vertical-align:middle; padding:0; margin:0;">
+      <img src="../media/raspb_up.png" style="display:block; margin:0 auto; border:0;">
+    </td>
+    <td>USB</td>
+    <td>LiDAR sensoru və əlavə cihazların birləşdirilməsi</td>
+  </tr>
+  <tr>
+    <td>CSI Kamera Poru:</td>
+    <td>Kamera Modulu 3 üçün qoşulma</td>
+  </tr>
+  <tr>
+    <td>GPIO sancaqları</td>
+    <td>Başlat düyməsi, güc açarı, kodlayıcı və digər sensor siqnalları</td>
+  </tr>
+  <tr>
+    <td>İş gərginliyi</td>
+    <td>5V DC, minimum 3A</td>
+  </tr>
+</table>
+
 The Raspberry Pi 5 is a high-performance single-board computer used as
 the main controller of the robot. It runs ROS to process sensor data,
 control actuators, and manage overall system operations.
