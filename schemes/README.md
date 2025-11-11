@@ -651,7 +651,7 @@ operation.
   </tr>
 </table>
 
-### 3.9.7 Manufacturing and Assembly Notes
+### 3.9.8 Manufacturing and Assembly Notes
 
 - The PCB was fabricated by **JLCPCB** using **FR4 material (1.6 mm
   thickness, 1 oz copper)** with **green solder mask** and **white
@@ -666,20 +666,18 @@ operation.
   offers **greater durability, improved signal integrity, and a more
   professional appearance**.
 
-> **3.7.10 GERBER Files**
->
-> If you want to order PCB(Printed Circuit Board), download these
-> **GERBER** files and follow the steps in the video.
+**3.9.9 GERBER Files**
 
-| Raspberry Pi Distributon Board 1 |     |
+>[!NOTE]
+> If you want to order PCB(Printed Circuit Board), download these `GERBER` files and follow the steps in the video.
+
+| Raspberry Pi Distributon Board 1 |   [dis1.zip](dist1.zip)  |
 |----------------------------------|-----|
-| Raspberry Pi Distributon Board 2 |     |
-| Motor Driver                     |     |
+| Raspberry Pi Distributon Board 2 |   [dis2.zip](dist2.zip)  |
+| Motor Driver                     |   [dis3.zip](dist3.zip)  |
 
-> **Note:** If you don\'t know how to order a PCB, click the link and
-> watch the video.
->
-> [video](https://www.youtube.com/watch?v=SGsfiHOE9Fk&t=466s)
+> [!NOTE]
+> If you don\'t know how to order a PCB, click the link and watch this [video](https://www.youtube.com/watch?v=SGsfiHOE9Fk&t=466s).
 
 ## **3.8 Power Supply (3S Li-Po Battery)**
 
