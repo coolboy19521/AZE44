@@ -246,7 +246,20 @@ the main controller of the robot. Its purpose in our robot is:
 
 ## 3.4 Motors and Servo Motor
 
-### 3.4.1  DC Gear Motors
+### 3.4.1 Powering and Controlling
+
+**DC Motor:**
+- Connected to Raspberry Pi Pico 2W via encoder motor ports.
+- Encoder feedback allows precise speed and position control.
+- Controlled using PWM signals.
+
+**Servo Motor:**
+- Controlled via PWM from Raspberry Pi Pico 2W 
+
+
+### 3.4.2 DC Gear Motors
+
+#### 3.4.2.1 Description and Features
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
@@ -287,12 +300,16 @@ This motor is very advantageous for us, because it also has a built in encoder s
 >Motors can operate above or below nominal voltage; high voltages
 may reduce lifespan.
 
+#### 3.4.2.2 Connections and Pin Configuration
+
 <div>
-  <img src="motor_pinout.png" width="700" alt="TB6612FNG Pinout" />
+  <img src="motor_pinout.png" width="700" alt="Motor Pinout" />
   <p style="margin-top:0;"><i>Figure 4.2: Gear Motor Pinout</i></p>
 </div>
 
-### Servo Motor (TD8120MG):
+### 3.4.3 Servo Motor (TD8120MG):
+
+#### 3.4.3.1 Description and Features
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
@@ -325,21 +342,16 @@ may reduce lifespan.
   </tr>
 </table>
 
-### **3.3.3 Power Requirements**
+#### 3.4.3.2 Connections and Pin Configuration
 
-**DC Motors:** 5--12V DC, regulated by **Raspberry Pi Pico 2W**.  
-**Servo Motor:** 4.8--6V DC, powered via regulated supply.
+<div>
+  <img src="servo_pinout.png" width="700" alt="Servo Pinout" />
+  <p style="margin-top:0;"><i>Figure 5.2: Servo Pinout</i></p>
+</div>
 
-### **3.3.4 Control Signals**
+**3.5 LiDAR Sensor**
 
-**DC Motors:** PWM signals for speed, encoder feedback for rotation
-monitoring.  
-**Servo Motor:** PWM signals determine angular position, controlled in
-real time by ROS or microcontroller.
-
-**3.4 LiDAR Sensor**
-
-**3.4.1 Definition and Model Features**
+**3.5.1 Definition and Model Features**
 
 The **Yahboom T-mini Plus LiDAR** is a compact, cost-effective
 **single-line 2D laser ranging sensor** designed for mapping,
@@ -361,14 +373,6 @@ outdoor environments.
 • **Suitable for SLAM, robot navigation, obstacle detection, and
 localization**
 
-**3.4.2 Connections**
-
-• **Connected to Raspberry Pi 5** (or Pico 2W) **via USB or UART
-interface**  
-• **Plug-and-play compatible** with Yahboom ROS systems and Python SDK  
-• **Motor/scan speed adjustable** via software configuration or PWM
-control
-
 **3.4.3 Power Requirements**
 
 • **Power Supply:** 5V DC (via USB or external 5V pin)  
@@ -379,7 +383,7 @@ control
 
 • **UART / USB serial communication**  
 • Provides **real-time distance and angle data**  
-• Fully supported by **Yahboom ROS packages** for SLAM mapping, obstacle
+• Fully supported by **Yahboom ROS packages** obstacle
 avoidance, and path planning
 
 ## **3.5 Camera**
