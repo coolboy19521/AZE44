@@ -399,137 +399,62 @@ We are using a camera for detecting colors. There is no other usage of camera in
 
 <table style="width:80%; border-collapse:collapse;">
   <tr>
-    <th colspan="3">Yahboom T-mini Plus LiDAR</th>
+    <th colspan="3">Camera Module 3</th>
   </tr>
   <tr>
-    <td rowspan="4" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <td rowspan="3" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/camera.avif" height="370px" alt="Gear Motor" />
       <p style="margin-top:0;" align="left"><i>Figure 6.1: Servo Motor</i></p>
     </div>
     </td>
-    <td>Measurement Range</td>
-    <td>0.1 – 12 m (reflectivity-dependent)</td>
+    <td>Resolution</td>
+    <td>11.9 MP (4608 × 2592)</td>
   </tr>
   <tr>
-    <td>Scan Frequency</td>
-    <td>1 – 10 Hz adjustable</td>
+    <td>Pixel Size</td>
+    <td>1.4 μm × 1.4 μm</td>
   </tr>
   <tr>
-    <td>Sampling Rate</td>
-    <td>up to 5000 samples/s</td>
+    <td>Video Modes</td>
+    <td>1080p50 / 720p100 / 480p120</td>
   </tr>
   <tr>
-    <td>Power requirements</td>
-    <td>5V 300mA</td>
+    <td colspan="3">Connects via CSI-2 camera port</td>
+  </tr>
+  <tr>
+    <td colspan="3">Power is supplied directly from the **Raspberry Pi board** via CSI-2
+  interface</td>
   </tr>
 </table>
 
-The Raspberry Pi Camera Module v3 is equipped with the **Sony IMX708
-image sensor**, offering **11.9 megapixel resolution** with **4608 ×
-2592 pixels**. It supports **HDR mode**, **phase-detection autofocus
-(PDAF)** for fast focusing, and an **integrated IR cut filter**. Thanks
-to its **high signal-to-noise ratio (SNR)** and **dynamic defective
-pixel correction (DPC)**, it ensures clear and stable image quality.
+The reason why we selected this camera is that it supports HDR mode, phase-detection autofocus (PDAF) for fast focusing. This is the main take-point for us, as the resolution of the camera is not really different between similar models. We already use it in `1586 x 864` mode for lower system usage and faster proccess time.
 
-**Key Specifications:**
+### 3.7 Gyroscope Sensor
 
-- Resolution: 11.9 MP (4608 × 2592)
+#### 3.7.1 Definition and Features
 
-- Pixel Size: 1.4 μm × 1.4 μm
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <th colspan="3">BNO085</th>
+  </tr>
+  <tr>
+    <td rowspan="2" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <div>
+      <img src="../media/bno085.webp" height="370px" alt="Gear Motor" />
+      <p style="margin-top:0;" align="left"><i>Figure 7.1: BNO085</i></p>
+    </div>
+    </td>
+    <td>Orientation output</td>
+    <td>Euler vector, up to 200 Hz</td>
+  </tr>
+  <tr>
+    <td>Operating voltage</td>
+    <td>3.3V typical 3.5mA</td>
+  </tr>
+</table>
 
-- Sensor Size: 7.4 mm
-
-- Video Modes: 1080p50 / 720p100 / 480p120
-
-- Output Format: RAW10
-
-- Size: 25 × 24 × 11.5 mm
-
-- Weight: Lightweight module for robotics applications
-
-### **3.5.2 Connections**
-
-- Interface: **15-pin 1 mm pitch FPC connector**
-
-- Ribbon Cable: **150 mm** included
-
-- Compatible with **all Raspberry Pi boards (except Raspberry Pi 5)**
-
-- Connects via **CSI-2 camera port**
-
-### **3.5.3 Power Requirements**
-
-- Power is supplied directly from the **Raspberry Pi board** via CSI-2
-  interface
-
-- Low power consumption, optimized for embedded vision applications
-
-### **3.5.4 Data Transmission Interface**
-
-- **CSI-2 serial data output** for image and video streaming
-
-- **2-wire serial communication** for control signals
-
-- **2-wire autofocus control** for lens mechanism
-
-- Supports high-bandwidth transfer for real-time video processing
-
-## 
-
-## **3.6 Gyroscope (IMU) Sensor**
-
-**3.6.1 Definition and Features**
-
-The **Adafruit BNO085 9-DOF IMU Sensor** is an advanced **smart sensor
-module** developed by Bosch and Hillcrest Labs. It integrates a **3-axis
-accelerometer**, **3-axis gyroscope**, and **3-axis magnetometer** with
-an **onboard 32-bit sensor fusion processor**, delivering accurate,
-drift-compensated orientation data without requiring complex external
-calculations.  
-Compared to the BNO055, the BNO085 offers **higher precision, improved
-sensor fusion algorithms (SH-2), lower latency**, and **enhanced
-performance for robotics and AR/VR applications**.
-
-**Key Features:**  
-• **Absolute orientation output** (Euler vector, up to 200 Hz)  
-• **Quaternion output** (4-point data, up to 200 Hz)  
-• **Angular velocity vector** (gyroscope, rad/s, up to 400 Hz)  
-• **Acceleration vector** (gravity + linear, m/s², up to 400 Hz)  
-• **Linear acceleration** (motion only, m/s²)  
-• **Gravity vector output** (m/s²)  
-• **Magnetic field vector** (µT)  
-• **Integrated Hillcrest SH-2 sensor fusion algorithm** for real-time
-orientation and motion tracking  
-• **High stability and low drift**, ideal for robotics, drones, and
-AR/VR applications  
-• **Compact size:** 20 × 27 × 4 mm, **Weight:** 3 g
-
-**3.6.2 Connections**
-
-• **Communication Interface:** I²C (default address 0x4A, alternative
-0x4B)  
-• **Optional Interfaces:** UART or SPI for high-speed data
-transmission  
-• **Pins:** SDA, SCL, INT, PS0/PS1 (interface select), RST  
-• **Mounting holes:** 20 mm × 12 mm spacing for easy installation
-
-**3.6.3 Power Requirements**
-
-• **Operating Voltage:** 3.3 V typical (5 V tolerant I²C/SPI pins via
-onboard regulator)  
-• **Current Consumption:** \~3.5 mA (typical during active fusion)  
-• **Low-power design**, optimized for mobile and embedded robotic
-systems
-
-**3.6.4 Communication Protocol**
-
-• **I²C, SPI, and UART supported** (SPI recommended for high-speed
-operation)  
-• **Output Data:** Euler angles, quaternions, linear acceleration,
-angular velocity, magnetic field, and gravity vectors  
-• **Sensor Fusion Firmware:** Hillcrest SH-2, enabling accurate and
-stable 9-DOF orientation output
+Our gyro has a built-in fusion algorithm, which means it can in theory fuse accelerometer, magnotemeter and gyroscope. Despite all the advantages in theory, our IMU has a great drift over time. To fix this issue we implemented some algorithms and they are referenced in [Programming documentation](/src/).
 
 **3.7. Custom PCB Design**
 
