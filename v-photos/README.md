@@ -1,5 +1,8 @@
 <table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
+    <th colspan="4">Robot Photos</th>
+  </tr>
+  <tr>
     <td align="center" colspan="2">
       <img src="right.jpg" height="300"><br>
       <b>Right</b>
