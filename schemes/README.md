@@ -354,44 +354,49 @@ We are using this digital servo for our steering (using an Ackermann controller)
   <p style="margin-top:0;"><i>Figure 5.2: Servo Pinout</i></p>
 </div>
 
-**3.5 LiDAR Sensor**
+### 3.5 LiDAR Sensor
 
-**3.5.1 Definition and Model Features**
+#### 3.5.1 Definition and Model Features
 
-The **Yahboom T-mini Plus LiDAR** is a compact, cost-effective
-**single-line 2D laser ranging sensor** designed for mapping,
-navigation, and obstacle detection in mobile robots. It utilizes
-**Time-of-Flight (ToF)** measurement technology to deliver fast and
-accurate distance data. With high sampling frequency and excellent
-ambient light resistance, it performs reliably in both indoor and
-outdoor environments.
+Yahboom T-mini Plus LiDAR is a 2D lidar used for simple obstacle detection. Its main advantage is that it utilizes Time-of-Flight (ToF) measurement technology to deliver fast and accurate distance data. With high sampling frequency and good-enough
+ambient light resistance, it performs well for our strategy.
 
-**Key Features:**  
-• **Measurement Range:** 0.1 -- 12 m (reflectivity-dependent)  
-• **Accuracy:** ±3 cm  
-• **Scan Frequency:** 1 -- 10 Hz adjustable  
-• **Sampling Rate:** up to 5000 samples/s  
-• **Light Source:** 850 nm infrared laser, Class 1 eye-safe  
-• **Interface:** UART / USB (plug-and-play supported)  
-• **Compact and lightweight:** 42 × 15 × 16 mm, 13 g  
-• **Stable output and low power consumption**  
-• **Suitable for SLAM, robot navigation, obstacle detection, and
-localization**
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <th colspan="3">Yahboom T-mini Plus LiDAR</th>
+  </tr>
+  <tr>
+    <td rowspan="4" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <div>
+      <img src="../media/lidar.jpg" height="370px" alt="Gear Motor" />
+      <p style="margin-top:0;" align="left"><i>Figure 6.1: Servo Motor</i></p>
+    </div>
+    </td>
+    <td>Measurement Range</td>
+    <td>0.1 – 12 m (reflectivity-dependent)</td>
+  </tr>
+  <tr>
+    <td>Scan Frequency</td>
+    <td>1 – 10 Hz adjustable</td>
+  </tr>
+  <tr>
+    <td>Sampling Rate</td>
+    <td>up to 5000 samples/s</td>
+  </tr>
+  <tr>
+    <td>Power requirements</td>
+    <td>5V 300mA</td>
+  </tr>
+</table>
 
-**3.4.3 Power Requirements**
+Lidar is used for scanning along the robot's Z-axis. It gives us output in (angle in radians, distance in meters) format. We convert it into (angle in degrees, distance in centimeters) format to make it easier for us to use the values and visualize it. In our robot lidar is used for: detecting the obstacles and finding the tilt of robot according to its surroundings. You can find more info about its usage in [Programming documentation](/src/).
 
-• **Power Supply:** 5V DC (via USB or external 5V pin)  
-• **Typical Current Consumption:** \< 300 mA  
-• **Low power design**, optimized for mobile robot applications
+#### 3.5.2 Power Requirements
 
-**3.4.4 Communication Protocol**
+- Power Supply: 5V DC (via USB or external 5V pin)  
+- Typical Current Consumption: \< 300 mA  
 
-• **UART / USB serial communication**  
-• Provides **real-time distance and angle data**  
-• Fully supported by **Yahboom ROS packages** obstacle
-avoidance, and path planning
-
-## **3.5 Camera**
+## 3.6 Camera
 
 ### **3.5.1 Definition and Features**
 
