@@ -98,8 +98,8 @@ via the motor controller.
 **3.1.1 Description and Features**
 
 <table style="width:80%; border-collapse:collapse;">
-  <tr colspan="3">
-    <th>Raspberry Pi 5</th>
+  <tr>
+    <th colspan="3">Raspberry Pi 5</th>
   </tr>
   <tr>
     <td rowspan="3" style="width:400; text-align:center; vertical-align:middle; padding:0; margin:0;">
