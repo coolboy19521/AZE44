@@ -270,7 +270,7 @@ the main controller of the robot. Its purpose in our robot is:
   </tr>
   <tr>
     <td>Encoder Voltage</td>
-    <td>3.3–5V DC/td>
+    <td>3.3–5V DC</td>
   </tr>
   <tr>
     <td colspan="3">Cylindrical brushed DC gear motors, available in 5 variants (two 6V, three 12V) with wide gear ratios.</td>
@@ -296,32 +296,36 @@ may reduce lifespan.
 
 ### Servo Motor (TD8120MG):
 
-• **High-torque digital servo** designed for precise and powerful motion
-control.  
-• **Rotation Angle:** 0°--180°  
-• **Speed:** 0.13 s / 60° @ 6.0V  
-• **Torque:** 20 kg·cm @ 6.0V, 23 kg·cm @ 7.4V  
-• **Digital control system** for stable and accurate positioning  
-• **Metal gearbox** ensuring strength and long service life  
-• **Operating Voltage:** 6.0--7.4V  
-• **Dimensions:** 40.5 × 20 × 38 mm  
-• **Weight:** 60 g
-
-### **3.3.2 Connections and Driver Integration**
-
-**DC Motors:**
-
-- Connected to **Raspberry Pi Pico 2W** via encoder motor ports.
-
-- Encoder feedback allows precise speed and position control.
-
-- Controlled using PWM signals.
-
-**Servo Motor:**
-
-- Controlled via PWM from **Raspberry Pi Pico 2W** or microcontroller.
-
-- Provides precise angular movement for turning or positioning.
+<table style="width:80%; border-collapse:collapse;">
+  <tr>
+    <th colspan="3">Servo Motor</th>
+  </tr>
+  <tr>
+    <td rowspan="3" style="height:350px; text-align:center; vertical-align:middle; padding:0; margin:0;">
+    <div>
+      <img src="../media/motor.png" height="350px" alt="Gear Motor" />
+      <p style="margin-top:0;" align="left"><i>Figure 5.1: Servo Motor</i></p>
+    </div>
+    </td>
+    <td>Rotation Angle</td>
+    <td>0°–180°</td>
+  </tr>
+  <tr>
+    <td>Speed</td>
+    <td>0.13 s / 60° @ 6.0V</td>
+  </tr>
+  <tr>
+    <td>Torque</td>
+    <td>20 kg·cm @ 6.0V, 23 kg·cm @ 7.4V</td>
+  </tr>
+  <tr>
+    <td>Operating Voltage</td>
+    <td>6.0–7.4V</td>
+  </tr>
+  <tr>
+    <td colspan="3">Digital control system, metal gearbox</td>
+  </tr>
+</table>
 
 ### **3.3.3 Power Requirements**
 
