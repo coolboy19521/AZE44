@@ -94,7 +94,7 @@ Our robot is called “miav”. Miav is a ROS2-based four-wheeled mobile robot d
 ### [Philosophy and habits](/PHIL.md)
 ### [Electronics documentation](/schemes/README.md)
 ### [Mechanics documentation](/src/README.md)
-### [Programming documentation](/src/)
+### [Software documentation](/src/)
 ### [Patty configuration tools](/other/README.md)
 ### [Videos](/videos/video.md)
 ### [Team photos](/t-photos/)
