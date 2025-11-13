@@ -1,4 +1,4 @@
-### Software Structure and Principles 
+# 1. Software Structure and Principles 
 
 In this section of the documentation software solution of our strategy is discussed. Before starting to explain how our code works we would like to present our principles while creating the software:
 
