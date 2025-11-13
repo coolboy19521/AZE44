@@ -74,7 +74,75 @@ Commands are stored in 2 bytes. The first byte is for steering value and the sec
 
 $${\color{while}Command: \space \color{blue}0010 \space \color{blue}0000 \space \color{lightgreen}0000 \space \color{lightgreen}1101}$$
 
-We are securing the commands using checksums. When the checksums don't match we know there has been a byte lost. Despite we have this algorithm we have almost never observed a checksum mismatch.
+Here $${\color{blue}0010 \space \color{blue}0000}$$ is the first byte and also the steering value. The binary value of `0010 0000` corresponds to `32`. This means that the steering command our robot has sent is `32°` in range of `0° - 180°`. This translates to `-68°` if we consider the robot's initial steering as `0°`. This value is later sent to the servo in this code snippet:
+
+```python
+def set_angle(head): # Head is decoded steering value from the received command.
+    head = max(min(head, 180), 0) # Normalize the steering angle.
+    us = MIN_US + (MAX_US - MIN_US) * head / 180 # Convert it into PWM values.
+    duty = int(us * 65535 / (1_000_000 / SERVO_FREQUENCY)) # Convert it into duty cycle.
+    pwm_c.duty_cycle = duty # Set the duty cycle parameter to what we calculated.
+```
+
+In electronics, duty cycle's wave length determines the angle of the servo. In this code snippet we calculate the duty cycle according to the steering value we calculated.
+
+Now $${\color{lightgreen}0000 \space \color{lightgreen}1101}$$ is the motor value. This binary value translates to `21` in decimal. As it is less than `128` we do not need to do any proccessing over this value and send this command directly to the motors:
+
+```python
+def move_motor(speed):
+    if not -100 <= speed <= 100: # If the received speed is not in the allowed range.
+        pwm_a.duty_cycle = MAX_PWM # Setting max_pwm do both duty_cycles
+        pwm_b.duty_cycle = MAX_PWM # makes the motors hard brake.
+    else:
+        # Calculate the pwm value in range from MIN_PWM to MAX_PWM.
+        pwm_value = int((MAX_PWM - MIN_PWM) * abs(speed) / 100) + MIN_PWM
+
+        if speed > 0: # If it is positive we move forward.
+            # To move forward
+            pwm_a.duty_cycle = pwm_value # We set gate a to a certain value
+            pwm_b.duty_cycle = 0 # and zero out gate b.
+        elif speed < 0: # If it is negative we move backward.
+            pwm_a.duty_cycle = 0 # We zero out gate a
+            pwm_b.duty_cycle = pwm_value # and set gate b to a certain value
+        else: # If the value is zero directly
+            pwm_a.duty_cycle = 0 # We set both gates to zero.
+            pwm_b.duty_cycle = 0 # This makes the robot soft brake.
+```
+
+Motors are also controller via duty cycles. You may have noticed some kind of a gate logic in the code. Most motor drivers have this logic. If you let a flow from gate a and zero out gate b motor moves in a certain direction, and if you do the opposite motor moves in the opposite direction. Refer to the table below for more understanding:
+
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="4">Motor Driver</th>
+  </tr>
+  <tr>
+    <th>Gate A</th>
+    <th>Gate B</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>Certain PWM</td>
+    <td>0</td>
+    <td>Move forward according to the input PWM</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>Certain PWM</td>
+    <td>Move backward according to the input PWM</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>Soft brake</td>
+  </tr>
+  <tr>
+    <td>Max. PWM</td>
+    <td>Max. PWM</td>
+    <td>Hard brake</td>
+  </tr>
+</table>
+
+You may have also noticed the checksum logic in our code. We are securing the commands using checksums. When the checksums don't match we know there has been a byte lost. Despite we have this algorithm we have almost never observed a checksum mismatch. Checksum security is a very easy security algorithm using the sum of the bytes with a `0xFF` mask. If the received bytes' sum filtered with the mask does not match the sent checksum, we can comfortably flag this package as unsafe.
 
 ```python
 def send_command(value):
@@ -85,6 +153,8 @@ def send_command(value):
 ```
 
 Cruicial part about this function is limiting how much data is sent at any moment. We don't allow a queue of size more than `64 bytes`. This way usb does not get flooded. We actually did not have this logic at some point and we were losing connection between our motor driver.
+
+We also send the checksum here. As discussed earlier it is for security reasons.
 
 ```python
 while True:
