@@ -181,7 +181,52 @@ There is also another API inside of the Raspberry Pi to communicate with Raspber
 
 ### 2.2 Maintaining the direction
 
-We would like to talk a little bit about how the robot goes straight. Gyro sensor is not reliable enough, and drifts very often. To fix this we have developed such a strategy: using lidar we get closest point on our left. Geometrically this point is always perpendicular to the robot if the robot is straight. Otherwise the angle between us and the point gives how tilted the robot is. You can inspect the illustration to see what is going on:
+We would like to talk a little bit about how the robot goes straight. Gyro sensor is not reliable enough, and drifts very often. In theory, the gyro sensor we are using should drift only `1°` in `1 minute`. But unfortunately that is not the case. Reasons for this undeniable drift are the sharp turns; unpreventable electromagnetic waves coming from the lidar, motors and the battery; and an uneven center of mass.
+
+We had two main ideas to fix this issue. If listed in chronological order they are:
+- **Hit the wall**: After moving between sections we are making a `90°` turn. Our idea was to back up the robot to hit the wall, and after hitting the wall measure the gyro angle. This angle would give us the drift in the sensor. Although this method guarantees straightness both in theory and in practice (yes, we actually tried this method), issues with this solution are time and the risk of moving the walls. Hitting the wall with high speed is very risky as it might shatter the balance of the robot, so it should be down slowly, which is a disadvantage for time. Also moving the walls is against the rules, which is a risk not worth taking.
+- **Add a numeric value to gyro**: We observed that the main drift in gyro accurs after making large turns. So we decided to add some constant angle to the gyro reading as we made those turns. For example after making the first turn into the second section we would add `+1` to whatever we read from the gyro. This method actually worked surprisingly well at first glance, but it also had problems. The constant value that we were adding to the gyro reading was not constant at all. We had to tune it every time, so this was another not working idea.
+
+After having this unsuccessful ideas we realized that we could fix gyro drift using the lidar sensor. With a little bit geometry and drawing we observed this: if we take the closest point on the axis parallel to our robot, this point is always perpendicular to our robot. This information is valuable, becuase if a point is perpendicular to us, then it should be read as `90°` degrees in lidar values. But if it is not, then this means there is a drift in gyro because we are adjusting the lidar values with gyro. So it would reflect the error. This is the code for lidar reading and finding the gyro drift using lidar:
+
+```python
+def find_wall_tilt(self, scan):
+    clos, perp = None, None
+    for deg, dis in scan:
+        var = (self.dir == 90 and deg <= -70) or (self.dir == -90 and \
+                deg >= 70) # If a point is on the parallel axis.
+        if var and (clos is None or dis <= clos): # If the point is closer than the previous one.
+            clos, perp = dis, deg
+    if perp is not None:
+        if self.dir == 90:
+            """
+            Return the difference between the perpendicular angle and the
+            angle we found the closest point in.
+            """
+            return -84.7 - perp
+        elif self.dir == -90:
+            return 90 - perp
+    return None
+
+def scan_callback(self, msg):
+    gyro_angle = robot_car.read_gyro() # Read the gyro angle.
+    all_scan, scan, rad = [], [], msg.angle_min
+    for dis in msg.ranges:
+        deg = gyro_angle - math.degrees(rad) # Adjust the lidar angle based on gyro angle.
+        if math.isfinite(dis): # If the value is valid.
+            if -95 <= deg <= 95:
+                all_scan.append((deg, dis * 100))
+            if -90 <= deg <= 90:
+                scan.append((deg, dis * 100))
+        rad += msg.angle_increment
+
+    self.wall_tilt = self.find_wall_tilt(all_scan) # Find the wall tilt.
+```
+
+As you might have noticed we are using `-84.7°` for perpendicular angle instead of `-90°`. This is because of the offset in our lidar sensor. In a perfect lidar, this value would have been `-90°`. After finding the wall tilt we are subtracting the tilt from the gyro readings onward and this way we achive a straight-going robot.
+
+>[!CAUTION]
+>We are not constantly calculating the wall tilt and adding it to gyro error. This wall tilt is only calculated when going between sections. The reson for this being that the axis paralel to the robot is clean at the intersection points of sections. If we tried to calculate the wall tilt mid-section, we could have mistakened a pillar to be the closest point and it would affect the gyro worse.
 
 <div>
   <img src="../media/RobotWithArcMask.gif" alt="Straighten Strategy" height="600px" />
