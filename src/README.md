@@ -228,6 +228,8 @@ As you might have noticed we are using `-84.7°` for perpendicular angle instead
 >[!CAUTION]
 >We are not constantly calculating the wall tilt and adding it to gyro error. This wall tilt is only calculated when going between sections. The reson for this being that the axis paralel to the robot is clean at the intersection points of sections. If we tried to calculate the wall tilt mid-section, we could have mistakened a pillar to be the closest point and it would affect the gyro worse.
 
+You can refer to the illustration below to get a better understanding of how this algorithm works. The while line is the perpendicular line connecting the point and the center of the robot. The arrow shows robot's initial heading, or what it refers to as `0°`. The green arc is showing how much the drift, or the error is. Although the arc in this illustration is very large, in real life the drift is in the range of `-4° to 4°`.
+
 <div>
   <img src="../media/RobotWithArcMask.gif" alt="Straighten Strategy" height="600px" />
   <p style="margin-top:0;"><i>Figure 1.5: Straighten Strategy</i></p>
