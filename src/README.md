@@ -72,7 +72,7 @@ def read_command():
 
 Commands are stored in 2 bytes. The first byte is for steering value and the second one is for motor speed. The byte for motor speed is unsigned, which means it can only take positive values from `0 to 511`. To transform this byte into a signed one, we subtract `256` if the value is greater than `128`. This is how [two's complement](https://en.wikipedia.org/wiki/Two%27s_complement) works. If explained with simple words, the first bit of the byte is for showing if the number is positive or negative and the other bytes add up to the value. As we might need to go back (which requires a negative speed for the motors) we need to support signed bytes. But we don't need a signed byte for steering angle, as it is a value in range `0° - 180°`. Let's take a look at an example command as two bytes:
 
-<code style="color : cyan">0010 0000</code> <code style="color : cyan">0000 1101</code>
+$${\color{blue}0010 \space 0000}$$ $${\color{lightgreen}0000 \space 1101}$$
 
 We are securing the commands using checksums. When the checksums don't match we know there has been a byte lost. Despite we have this algorithm we have almost never observed a checksum mismatch.
 
