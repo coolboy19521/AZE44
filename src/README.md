@@ -109,7 +109,7 @@ def move_motor(speed):
             pwm_b.duty_cycle = 0 # This makes the robot soft brake.
 ```
 
-Motors are also controller via duty cycles. You may have noticed some kind of a gate logic in the code. Most motor drivers have this logic. If you let a flow from gate a and zero out gate b motor moves in a certain direction, and if you do the opposite motor moves in the opposite direction. Refer to the table below for more understanding:
+Motors are also controlled via duty cycles. You may have noticed some kind of a gate logic in the code. Most motor drivers have this logic. If you let a flow from gate a and zero out gate b motor moves in a certain direction, and if you do the opposite motor moves in the opposite direction. Refer to the table below for more understanding:
 
 <table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
