@@ -58,7 +58,14 @@ $$\large X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i} 
 
 
 *(CENTER OF GRAVITY DIAGRAM HERE)*
-*(CENTER OF MASS DIAGRAM HERE)*
+<div>
+  <img src="../media/mass_3d.jpg" alt="Mass Diagram 3D" />
+  <p style="margin-top:0;"><i>Figure 1.1: Mass Diagram 3D</i></p>
+</div>
+<div>
+  <img src="../media/mass_2d.jpg" alt="Mass Diagram 2D" />
+  <p style="margin-top:0;"><i>Figure 1.2: Mass Diagram 2D</i></p>
+</div>
 *(PLACE THE MASS OF THE COMPONENTS HERE)*
 
 - Battery = 
@@ -99,7 +106,7 @@ We showed the assembly of all the parts through an exploded view of a full Solid
 
 <div>
   <img src="../media/exp.gif" alt="Exploded View" />
-  <p style="margin-top:0;"><i>Figure 1.1: Exploded View</i></p>
+  <p style="margin-top:0;"><i>Figure 1.3: Exploded View</i></p>
 </div>
 
 <hr>
