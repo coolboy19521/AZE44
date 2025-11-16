@@ -29,8 +29,12 @@ R is the turning radius, D is the distance between the left and right wheels, an
 
 The distance between the left and right wheels of the robot is `(eyup soyleyecek) cm`, and the wheel base is `(eyup soyleyecek) cm`. Furthermore, there are aluminum linkage arms in the Ackermann system, which are attached to PLA 3D-printed steering knuckles and a PLA servo mount. We attached the linkages with aluminum rods that are `3 mm` thick, and the pivots are all fitted with 693ZZ bearings. The servo controls one of the arms, which is then basically translated into the movement of the inner wheel turning more than the outer wheel through the Ackermann steering system so that the robot turns with the right angle, arc we could say. We chose aliminum because it is light and stiff, and we chose PLA because it provides low-weight pivots.
 
-*(PUT A PICTURE OF ACKERMANN SIMULATION HERE)*
+<div>
+  <img src="../media/ack.jpg" alt="Ackermann System" height="800px" />
+  <p style="margin-top:0;"><i>Figure 1.1: Ackermann System</i></p>
+</div>
 
+*(PUT A PICTURE OF ACKERMANN SIMULATION HERE)*
 
 # 4. Servo System
 We used a TD8120MG metal gear servo. It gives a torque of `9.24 kg·cm` at a voltage of 4.8V, a torque of `10.63 kg·cm` at a voltage of 6V, and takes a time of around `0.9 seconds` to make a complete turn of `360°`. The gear turns the linkage arm that further moves the two wheels through the Ackermann linkage system.
@@ -49,6 +53,11 @@ The DC motor has a clockwise turning motion to make the wheels go forward and a 
 *(PLACE SIMULATION ARROW DIAGRAM HERE)*
 *(PLACE THE WHEELS HERE)*
 
+<div>
+  <img src="../media/dc.jpg" alt="DC System" height="800px" />
+  <p style="margin-top:0;"><i>Figure 1.2: DC System</i></p>
+</div>
+
 # 6. Center of Gravity and Weight Distribution
 We also placed the electronical and mechanical components in a way to keep the center of gravity balanced. At the front, a LIDAR sensor is also placed close to the middle of the robot for better scanning of the surroundings. Above this, we placed the camera in a 75°-angled 3D printed bracket to give a better look at the obstacles an to also cover more ground ahead of the robot and we have an ultrasonic sensor to sense objects behind the robot, which is useful for the robot to navigate itself without colliding with any object in front of it. The battery is at the middle of the body to keep it balanced.
 
@@ -60,11 +69,11 @@ $$\large X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i} 
 *(CENTER OF GRAVITY DIAGRAM HERE)*
 <div>
   <img src="../media/mass_3d.jpg" alt="Mass Diagram 3D" height="800px" />
-  <p style="margin-top:0;"><i>Figure 1.1: Mass Diagram 3D</i></p>
+  <p style="margin-top:0;"><i>Figure 1.3: Mass Diagram 3D</i></p>
 </div>
 <div>
   <img src="../media/mass_2d.jpg" alt="Mass Diagram 2D" height="800px" />
-  <p style="margin-top:0;"><i>Figure 1.2: Mass Diagram 2D</i></p>
+  <p style="margin-top:0;"><i>Figure 1.4: Mass Diagram 2D</i></p>
 </div>
 *(PLACE THE MASS OF THE COMPONENTS HERE)*
 
@@ -106,7 +115,7 @@ We showed the assembly of all the parts through an exploded view of a full Solid
 
 <div>
   <img src="../media/exp.gif" alt="Exploded View" />
-  <p style="margin-top:0;"><i>Figure 1.3: Exploded View</i></p>
+  <p style="margin-top:0;"><i>Figure 1.5: Exploded View</i></p>
 </div>
 
 <hr>
