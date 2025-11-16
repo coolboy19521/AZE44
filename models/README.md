@@ -99,4 +99,6 @@ We showed the assembly of all the parts through an exploded view of a full Solid
 
 ![Video](as1.gif)
 
+https://github.com/coolboy19521/TEST_MARKDAWN/main/models/as1.mp4
+
 *Exploded View Photo Here.*
