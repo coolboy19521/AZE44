@@ -356,8 +356,7 @@ In this formula $$Heading_{\text{skew}}$$ is the output of the formula, which is
 
 But when passing pillars it is at least as important to calculate how much distance should be skewed. To calculate this distance, we take the robot's distance to the pillar we are trying to skew to. And when surpassing a pillar, we try to surpass in a safe distance. We calculate that this according to these formulas:
 
-$$\large Distance_{\color{green}green} = -\frac{Pillar_{\text{pos}}}{2}$$
-$$\large Distance_{\color{red}red} = \frac{100 - Pillar_{\text{pos}}}{2}$$
+$$\large Distance_{\color{green}green} = -\frac{Pillar_{\text{pos}}}{2} \qquad \large Distance_{\color{red}red} = \frac{100 - Pillar_{\text{pos}}}{2}$$
 
 Here, $$Pillar_{\text{pos}}$$ indicates the pillar's distance from the outer wall. Among these formulas we use the one according to the pillar's color. This formulas only work for clockwise direction. For counterclockwise they are like this:
 
