@@ -363,6 +363,8 @@ Here, $$Pillar_{\text{pos}}$$ indicates the pillar's distance from the outer wal
 $$Distance_{\color{green}green} = \frac{Pillar_{\text{pos}}}{2}$$
 $$Distance_{\color{red}red} = -\frac{100 - Pillar_{\text{pos}}}{2}$$
 
+$$\large Distance_{\color{green}green} = \frac{Pillar_{\text{pos}}}{2} \quad \large ; \quad \large Distance_{\color{red}red} = -\frac{100 - Pillar_{\text{pos}}}{2}$$
+
 As you can see the formulas become the inverse.
 
 *(Animation)*
