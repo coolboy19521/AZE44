@@ -309,7 +309,7 @@ The main objective for a skew mechanic is when a pillars' color is identified an
 
 We first assumed that the relation was linear, but we very soon realized it was incorrect. Robot was moving very on-point for close distances, but when they got larger, robot started to either overshoot or undershoot. Then we realized that the relation was radical and involving the square root. The formula we designed to fit the angle is:
 
-$$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2} \implies 5\text{V} \times \frac{2\text{k}\Omega}{1\text{k}\Omega + 2\text{k}\Omega} \approx 3.33\text{V}$$
+$$Heading_{\text{skew}} = K{\text{skew}} \times \sqrt{X}$$
 
 #### 2.4.2 Main Strategy
 
