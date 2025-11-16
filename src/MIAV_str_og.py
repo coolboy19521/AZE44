@@ -103,7 +103,7 @@ class miav(rclpy.node.Node):
         return adj, opp
 
     def find_park(self, scan):
-        ly1, ly2, lx1, lx2 = None, None, None, None
+        ly1, lx1, lx2 = None, None, None
         for p in scan:
             if p[0] < -85 or p[0] > 30:
                 continue
@@ -112,9 +112,9 @@ class miav(rclpy.node.Node):
             if ly1 is None or abs(y_dis - ly1) > 3:
                 if lx2 is not None and abs(lx2 - lx1) > 5:
                     return (lx2, ly1)
-                ly1, ly2, lx1, lx2 = y_dis, y_dis, x_dis, x_dis
+                ly1, lx1, lx2 = y_dis, x_dis, x_dis
             else:
-                ly2, lx2 = y_dis, x_dis
+                lx2 = x_dis
         return None
 
     def find_wall_tilt(self, scan):

@@ -235,7 +235,48 @@ You can refer to the illustration below to get a better understanding of how thi
   <p style="margin-top:0;"><i>Figure 1.5: Straighten Strategy</i></p>
 </div>
 
-### 2.3 Open Challange
+### 2.3 State Machines
+
+A very important part of software is the state machine. The state machine is responsible for switching between the tasks our robot is executing. The tasks we generalized are:
+
+```python
+START = 0
+KUBIK_UC = 1
+KUBIK_TC = 2
+BASE_WALL = 3
+FOR_WALL = 4
+NARROW = 5
+FINAL = 6
+```
+
+These tasks are explained better in following sections, so they will not be explained here.
+
+To maintain the structure we have two main variables `exec` and `waitin`. The variable `exec` means that whatever `exec` is set to should be executed immediately. And `waitin` means that a tick could be skipped before executing the task. They both have different use cases. For example:
+
+```python
+for_dis = robot_car.find(max, scan, -2.5, 2.5) # Front distance of the robot
+if for_dis is not None and for_dis <= 30: # If it is very close and the robot needs to turn
+    print('FOR_WALL prog')
+    self.exec = FOR_WALL # Execute the task immediately
+```
+
+When a task is set to `exec`, robot does not react to any lidar data. Because it has a task to do and after finishing the task robot continues to read lidar data and switch between the tasks. But when it is set to `waitin`:
+
+```python
+# code will be here
+```
+
+As you can see in the tick we are skipping, we are actually reading lidar data and making calculations on it. This becomes especially handy when approaching the parking barriers. Robot needs to calculate their positions mid task, that's why the section for approaching them should run after the calculations. That's why:
+
+```python
+# code will be here
+```
+
+As you can see task is set to `waitin` and is only set to `exec` after calculating the parking spot.
+
+The state machine stated here is the backbone of all the algorithms and solutions for below software.
+
+### 2.4 Open Challange
 
 Now let's continue with Open Challange overall logic. We have a very simple strategy for Open Challange: all we do is to go straight as much as we can, and when we get to close we make a turn. Let's take a look at some cruicial parts:
 
@@ -295,9 +336,9 @@ This is a pretty basic terminal code which end the opmode when it is the last se
   <p style="margin-top:0;"><i>Figure 1.6: Open Challange Strategy</i></p>
 </div>
 
-### 2.4 Obstacle Challange
+### 2.5 Obstacle Challange
 
-#### 2.4.1 Skews
+#### 2.5.1 Skews
 
 Before starting to talk about how we are solving the obstacle challange it is important to talk about the skew. Our robot always maintains an orientation paralel to the outer walls, so when surpassing a pillar we need some special technique. After making some research and observations on real cars, we stumbled upon what we call "skew".
 
@@ -327,7 +368,7 @@ As you can see the formulas become the inverse.
 
 *(Animation)*
 
-#### 2.4.2 Main Strategy
+#### 2.5.2 Main Strategy
 
 Now let's talk about the famous Obstacle Challange! *Everyone is so excited!* We break the obstacle challenge into wro subchallanges:
 
@@ -426,6 +467,58 @@ We have designed this algorithm after many unsuccessful iterations. But this one
 Cluster the points according their distance with each other. If there is a group with a diameter of at most `~8 cm` (`√5²+5²`) it is a pillar. This method worked poorly, because clustering the points according their distance took `O(N²)` complexity as we looked at each pair of them. To optimize this method we used an algorithm so called DSU (Disjoing Set Union). Using this technique it is possible to cluster `N` points with almost linear time complexity (with an inverse ackermann coefficient). Even after optimizing this method, we discovered that our lidar does not give precise enough data to use this method.
 
 Thankfully, we switched to our current approach and did not think much to fix the previous one.
+
+#### 2.5.3 Parallel Parking
+
+Parallel parking is a tricky challange considering its need for high-precision. With all the algorithms explained above we were able to achieve this precision. Now the main challange was the robot's dimensions. Our robot had a width of whopping `17cm`. This means we only had a margin of error of only `3cm`. Actually, hitting the wall while parking was also a risk so the margin of error should be calculated from both ends which means the error of margin was just `1.5cm` from both sides. To achieve a better performance, in our new robot we reduced the width of the robot to `15cm`. Which added a centimeter to our margin of error, which is actually a decent difference.
+
+Our method for parallel parking is like this:
+- If there isn't a pillar at the final section we just execute the method for green pillar scenario.
+- If the last pillar is green, we skew close to the parking lot, then robot moves to reach the furthest parking barrier. Afterwards robot does an inverse left turn. Then we fix the steering to right and move in.
+- If the last pillar is red, we surpass the red pillar, make an inverse left turn and then back up while the parking lot is far. After we reach some distance, we do a right turn. This is for increasing the turning arc for inverse right turn. After doing this we make the inverse right turn and finish the parallel parking.
+
+*(Green Pillar Animation)*
+*(Red Pillar Animation)*
+
+We have a special algorithm to find where the parking barriers are.
+
+```python
+def find_park(self, scan):
+    """
+    These variables are for:
+        - ly1: The last y coordinate for a parking barrier candidate.
+        - lx1: First x coordinate for a parking barrier candidate.
+        - lx2: Last x coordinate for a parking barrier candidate.
+    """
+    ly1, lx1, lx2 = None, None, None
+    for p in scan:
+        if p[0] < -85 or p[0] > 30: # Parking appears only in certain angles
+            continue
+        """
+        Here we convert the polar pairs to cartesian coordinates.
+        """
+        y_dis = abs(p[1] * math.sin(math.radians(90 + p[0])))
+        x_dis = abs(p[1] * math.cos(math.radians(90 + p[0])))
+        """
+        Algorithm is such:
+            - If the difference between y distances is greater than 3 (the parking barriers' have a width of 2) we know we either have the parking lot inside of the range or not.
+            - If the difference between the first and last x coordinates in this windows is greater than 5 (parking barriers' length is 20) we know it is a parking barrier.
+            - Otherwise we continue to look for a parking barrier.
+        """
+        if ly1 is None or abs(y_dis - ly1) > 3:
+            if lx2 is not None and abs(lx2 - lx1) > 5:
+                return (lx2, ly1)
+            ly1, lx1, lx2 = y_dis, x_dis, x_dis
+        else:
+            lx2 = x_dis
+    return None # If no parking barrier is found we return None.
+```
+
+This algorithm returns the closest parking barrier. This information is very handy, because we always need approaching to parking barriers. To approach the parking barriers:
+
+```python
+# code will be added
+```
 
 # 3. Development Environment
 
