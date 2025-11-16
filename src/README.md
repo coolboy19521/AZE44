@@ -325,6 +325,8 @@ $$Distance_{\color{red}red} = -\frac{100 - Pillar_{\text{pos}}}{2}$$
 
 As you can see the formulas become the inverse.
 
+*(Animation)*
+
 #### 2.4.2 Main Strategy
 
 Now let's talk about the famous Obstacle Challange! *Everyone is so excited!* We break the obstacle challenge into wro subchallanges:
