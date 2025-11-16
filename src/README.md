@@ -350,9 +350,7 @@ The main objective for a skew mechanic is when a pillars' color is identified an
 
 We first assumed that the relation was linear, but we very soon realized it was incorrect. Robot was moving very on-point for close distances, but when they got larger, robot started to either overshoot or undershoot. Then we realized that the relation was radical and involving the square root. The formula we designed to fit the angle is:
 
-<span style="font-size: 180%;">
 $$Heading_{\text{skew}} = K_{\text{skew}} \times \sqrt{X_{\text{dis}}} + B_{\text{skew}}$$
-</span>
 
 In this formula $$Heading_{\text{skew}}$$ is the output of the formula, which is how much heading the robot needs to achive before trying to fix itself to be parallel. $$K_{\text{skew}}$$ and $$B_{\text{skew}}$$ are the constants. We need those, as square root is only indicating the relation. To fit this relation to our robot and real world environment we need to justify the output. $$X_{\text{dis}}$$ is how much distance robot wants to achive in x-axis. Using this method we can make the robot move a certain x-axis distance.
 
