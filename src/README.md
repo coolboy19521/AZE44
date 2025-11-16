@@ -464,7 +464,7 @@ def find_kubik(self, data, wall_dis):
 
 We have designed this algorithm after many unsuccessful iterations. But this one was pretty efficient. It has a time complexity of `O(N)` with a pretty low constant coefficient. We would like to share a previous idea we had:
 
-Cluster the points according their distance with each other. If there is a group with a diameter of at most `~8 cm` (`√5²+5²`) it is a pillar. This method worked poorly, because clustering the points according their distance took `O(N²)` complexity as we looked at each pair of them. To optimize this method we used an algorithm so called DSU (Disjoing Set Union). Using this technique it is possible to cluster `N` points with almost linear time complexity (with an inverse ackermann coefficient). Even after optimizing this method, we discovered that our lidar does not give precise enough data to use this method.
+Cluster the points according their distance with each other. If there is a group with a diameter of at most `~8 cm` (`√(5²+5²)`) it is a pillar. This method worked poorly, because clustering the points according their distance took `O(N²)` complexity as we looked at each pair of them. To optimize this method we used an algorithm so called DSU (Disjoing Set Union). Using this technique it is possible to cluster `N` points with almost linear time complexity (with an inverse ackermann coefficient). Even after optimizing this method, we discovered that our lidar does not give precise enough data to use this method.
 
 Thankfully, we switched to our current approach and did not think much to fix the previous one.
 
