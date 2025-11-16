@@ -358,9 +358,8 @@ But when passing pillars it is at least as important to calculate how much dista
 
 $$
 \Large Distance_{\color{green}green} = -\frac{Pillar_{\text{pos}}}{2}
+\Large Distance_{\color{red}red} = \frac{100 - Pillar_{\text{pos}}}{2}
 $$
-
-$$\Large Distance_{\color{red}red} = \frac{100 - Pillar_{\text{pos}}}{2}$$
 
 Here, $$Pillar_{\text{pos}}$$ indicates the pillar's distance from the outer wall. Among these formulas we use the one according to the pillar's color. This formulas only work for clockwise direction. For counterclockwise they are like this:
 
