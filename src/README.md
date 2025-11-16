@@ -311,6 +311,20 @@ We first assumed that the relation was linear, but we very soon realized it was 
 
 $$Heading_{\text{skew}} = K_{\text{skew}} \times \sqrt{X_{\text{dis}}} + B_{\text{skew}}$$
 
+In this formula $$Heading_{\text{skew}}$$ is the output of the formula, which is how much heading the robot needs to achive before trying to fix itself to be parallel. $$K_{\text{skew}}$$ and $$B_{\text{skew}}$$ are the constants. We need those, as square root is only indicating the relation. To fit this relation to our robot and real world environment we need to justify the output. $$X_{\text{dis}}$$ is how much distance robot wants to achive in x-axis. Using this method we can make the robot move a certain x-axis distance.
+
+But when passing pillars it is at least as important to calculate how much distance should be skewed. To calculate this distance, we take the robot's distance to the pillar we are trying to skew to. And when surpassing a pillar, we try to surpass in a safe distance. We calculate that this according to these formulas:
+
+$$Distance_{\color{green}green} = -\frac{Pillar_{\text{pos}}}{2}$$
+$$Distance_{\color{red}red} = \frac{100 - Pillar_{\text{pos}}}{2}$$
+
+Here, $$Pillar_{\text{pos}}$$ indicates the pillar's distance from the outer wall. Among these formulas we use the one according to the pillar's color. This formulas only work for clockwise direction. For counterclockwise they are like this:
+
+$$Distance_{\color{green}green} = \frac{Pillar_{\text{pos}}}{2}$$
+$$Distance_{\color{red}red} = -\frac{100 - Pillar_{\text{pos}}}{2}$$
+
+As you can see the formulas become the inverse.
+
 #### 2.4.2 Main Strategy
 
 Now let's talk about the famous Obstacle Challange! *Everyone is so excited!* We break the obstacle challenge into wro subchallanges:
