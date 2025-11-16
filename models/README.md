@@ -97,7 +97,7 @@ All of the printed parts were printed with a Sidewinder X2 3D printer. We used P
 
 We showed the assembly of all the parts through an exploded view of a full SolidWorks model. The exploded view has the two layers of the chassis, the Ackermann steering component, the servo mounting component, the gearbox, the wheels, the electrical and sensor components.
 
-![Video](as1.gif)
+![Video](exp.gif)
 
 
 *Exploded View Photo Here.*
