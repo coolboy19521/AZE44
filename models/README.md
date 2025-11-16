@@ -59,11 +59,11 @@ $$\large X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i} 
 
 *(CENTER OF GRAVITY DIAGRAM HERE)*
 <div>
-  <img src="../media/mass_3d.jpg" alt="Mass Diagram 3D" />
+  <img src="../media/mass_3d.jpg" alt="Mass Diagram 3D" height="800px" />
   <p style="margin-top:0;"><i>Figure 1.1: Mass Diagram 3D</i></p>
 </div>
 <div>
-  <img src="../media/mass_2d.jpg" alt="Mass Diagram 2D" />
+  <img src="../media/mass_2d.jpg" alt="Mass Diagram 2D" height="800px" />
   <p style="margin-top:0;"><i>Figure 1.2: Mass Diagram 2D</i></p>
 </div>
 *(PLACE THE MASS OF THE COMPONENTS HERE)*
