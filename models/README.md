@@ -23,7 +23,8 @@ $$\frac{\tan(\theta_\text{inner})}{\tan(\theta_\text{outer})} = \frac{L}{L + T}$
 
 Where L is the wheelbase and T is the track width. A more accurate formula using the turning radius:
 
-1 / tan(theta_inner) = (1 / R) - (D / (2 * H)) 1 / tan(theta_outer) = 1/R + (D / (2 * H))
+$$\frac{1}{\tan(\theta_\text{inner})} = \frac{1}{R} - \frac{D}{2H}$$
+$$\frac{1}{\tan(\theta_\text{outer})} = \frac{1}{R} + \frac{D}{2H}$$
 
 R is the turning radius, D is the distance between the left and right wheels, and H is the wheel base. 
 
