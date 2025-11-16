@@ -84,7 +84,7 @@ We used aliminum for linkage arms, shafts, and joints because of its strength an
 *[PLACE BEARING PHOTO HERE]*
 
 # 9. Sensor and Component placement 
-We placed The LIDAR sensor  near the center and towards the front using an inverted mount. The camera is placed at the top with a PLA angle bracket of 75° for forward visibility. The ultrasonic sensor at the back of the robot for the robot the detect the measurements behind it for ease the movement on the map and to make it precise. (Check if you said that correctly). The Raspberry Pi is placed upon the central deck, the motor driver upon the upper deck, and the battery within the center of the lower platform. The servo motor is attached to the left-side linkage. 
+We placed The LIDAR sensor  near the center and towards the front using an inverted mount. The camera is placed at the top with a PLA angle bracket of `75°` for forward visibility. The ultrasonic sensor at the back of the robot for the robot the detect the measurements behind it for ease the movement on the map and to make it precise. (Check if you said that correctly). The Raspberry Pi is placed upon the central deck, the motor driver upon the upper deck, and the battery within the center of the lower platform. The servo motor is attached to the left-side linkage. 
 
 *PLACE COMPONENT LAYOUT PHOTO HERE*
 
