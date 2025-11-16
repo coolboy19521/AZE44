@@ -54,7 +54,7 @@ We also placed the electronical and mechanical components in a way to keep the c
 
 The cables are also tied back to prevent any movement of the robot’s center of mass. The center of gravity formula:
 
-$$X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i}$$
+$$X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i} \qquad Y_\text{cm} = \frac{\sum_{i=1}^{n} y_i \times m_i}{\sum_{i=1}^{n} m_i} \qquad Z_\text{cm} = \frac{\sum_{i=1}^{n} z_i \times m_i}{\sum_{i=1}^{n} m_i}$$
 
 X_cm = (sum(mi * xi)) / sum(mi) Y_cm = (sum(mi * yi)) / sum(mi) Z_cm = (sum(mi * zi)) / sum(mi) *
 
