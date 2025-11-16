@@ -61,13 +61,13 @@ $$X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i} \qquad 
 *(CENTER OF MASS DIAGRAM HERE)*
 *(PLACE THE MASS OF THE COMPONENTS HERE)*
 
-Battery = 
-Lidar =
-Chassis = 
-Chassis 2 =
-Camera =
-Ultrasonic  =
-Battery Holder =
+- Battery = 
+- Lidar =
+- Chassis = 
+- Chassis 2 =
+- Camera =
+- Ultrasonic  =
+- Battery Holder =
 *(Calculate later with Eyup)*
 
 
