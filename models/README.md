@@ -27,47 +27,36 @@ $$\frac{1}{\tan(\theta_\text{inner})} = \frac{1}{R} - \frac{D}{2H} \qquad \frac{
 
 R is the turning radius, D is the distance between the left and right wheels, and H is the wheel base. 
 
-The distance between the left and right wheels of the robot is (eyup soyleyecek) cm, and the wheel base is (eyup soyleyecek) cm. Furthermore, there are aluminum linkage arms in the Ackermann system, which are attached to PLA 3D-printed steering knuckles and a PLA servo mount. We attached the linkages with aluminum rods that are 3 mm thick, and the pivots are all fitted with 693ZZ bearings. The servo controls one of the arms, which is then basically translated into the movement of the inner wheel turning more than the outer wheel through the Ackermann steering system so that the robot turns with the right angle, arc we could say. We chose aliminum because it is light and stiff, and we chose PLA because it provides low-weight pivots.
+The distance between the left and right wheels of the robot is `(eyup soyleyecek) cm`, and the wheel base is `(eyup soyleyecek) cm`. Furthermore, there are aluminum linkage arms in the Ackermann system, which are attached to PLA 3D-printed steering knuckles and a PLA servo mount. We attached the linkages with aluminum rods that are `3 mm` thick, and the pivots are all fitted with 693ZZ bearings. The servo controls one of the arms, which is then basically translated into the movement of the inner wheel turning more than the outer wheel through the Ackermann steering system so that the robot turns with the right angle, arc we could say. We chose aliminum because it is light and stiff, and we chose PLA because it provides low-weight pivots.
 
-PUT A PICTURE OF ACKERMANN SIMULATION HERE 
-
-
+*(PUT A PICTURE OF ACKERMANN SIMULATION HERE)*
 
 
+# 4. Servo System
+We used a TD8120MG metal gear servo. It gives a torque of `9.24 kg·cm` at a voltage of 4.8V, a torque of `10.63 kg·cm` at a voltage of 6V, and takes a time of around `0.9 seconds` to make a complete turn of `360°`. The gear turns the linkage arm that further moves the two wheels through the Ackermann linkage system.
 
- Servo System
- We used a TD8120MG metal gear servo. It gives a torque of 9.24 kg·cm at a voltage of 4.8V, a torque of 10.63 kg·cm at a voltage of 6V, and takes a time of around 0.9 seconds to make a complete turn of 360°. The gear turns the linkage arm that further moves the two wheels through the Ackermann linkage system.
+*(PLACE SERVO SIMULATION HERE)*
+*(Also place the oklu photo describing the places of the components here.)*
 
- PLACE SERVO SIMULATION HERE 
-
-Also place the oklu photo describing the places of the components here.
 And here is the exact placement of the components in our robot.
-Buraya malzemelerin fusiondaki assemblylerini koy 1. Olanlarin githubindaki gibi
 
+*(Buraya malzemelerin fusiondaki assemblylerini koy)*
 
-
-
-
-
-
-
-
-Wheel Movement 
+# 5. Wheel Movement 
 The DC motor has a clockwise turning motion to make the wheels go forward and a counter-clockwise turning motion to make the wheels go backwards. The gear box’s mechanicsm is basically this: if a wheel stops turning, the other wheel continues turning since the torque of the gear wheels turns independently. 
 
-(Tell Ahmet to put an arrow simulation diagram for turning motion to the wheels. )
+*(Tell Ahmet to put an arrow simulation diagram for turning motion to the wheels. )*
+*(PLACE SIMULATION ARROW DIAGRAM HERE)*
+*(PLACE THE WHEELS HERE)*
 
-PLACE SIMULATION ARROW DIAGRAM HERE
-
-PLACE THE WHEELS HERE
-
-Center of Gravity and Weight Distribution
+# 6. Center of Gravity and Weight Distribution
 We also placed the electronical and mechanical components in a way to keep the center of gravity balanced. At the front, a LIDAR sensor is also placed close to the middle of the robot for better scanning of the surroundings. Above this, we placed the camera in a 75°-angled 3D printed bracket to give a better look at the obstacles an to also cover more ground ahead of the robot and we have an ultrasonic sensor to sense objects behind the robot, which is useful for the robot to navigate itself without colliding with any object in front of it. The battery is at the middle of the body to keep it balanced.
-
 
 The cables are also tied back to prevent any movement of the robot’s center of mass. The center of gravity formula:
 
- X_cm = (sum(mi * xi)) / sum(mi) Y_cm = (sum(mi * yi)) / sum(mi) Z_cm = (sum(mi * zi)) / sum(mi) *
+$$X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i}$$
+
+X_cm = (sum(mi * xi)) / sum(mi) Y_cm = (sum(mi * yi)) / sum(mi) Z_cm = (sum(mi * zi)) / sum(mi) *
 
  CENTER OF GRAVITY DIAGRAM HERE
 CENTER OF MASS DIAGRAM HERE
