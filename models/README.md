@@ -9,7 +9,7 @@ We used a 12V DC motor and a 3D printed gear box for the drive system. The motor
 
 The torque enhancement formula:
 
-$$T_{\text{output}} = T_{\text{motor}} \times \frac{3}{2}$$
+$$\large T_{\text{output}} = T_{\text{motor}} \times \frac{3}{2}$$
 
 Power from the motor is transmitted to the central gear of the gearbox, and then both of the wheels turn. The gearbox structure that we used provides us the feature of allowing one wheel to turn even if the other wheel is blocked, similar to a differential. This gives a smooth movement of the robot along the surface when wheels experience a loss of traction. The gears and casing of the gearbox are PLA, while the shafts and connection parts are aluminum. We also used the 693ZZ metal ball bearings is applied in the shafts of the gearbox and the axes of the rear wheels to ensure that the system experiences less friction and vibration. We used the bearing in the steering pivots of the wheels as well to ensure that the Ackermann linkage system rotates smoothly. 
 
@@ -19,11 +19,11 @@ Power from the motor is transmitted to the central gear of the gearbox, and then
 # 3. Ackermann Steering System 
 We used the Ackermann steering system for the front wheels of the robot, meaning the inner wheel turns first when the robot turns, thus preventing the robot from slipping and making sure that the robot turns along a natural path. The Ackermann formula is:
 
-$$\frac{\tan(\theta_\text{inner})}{\tan(\theta_\text{outer})} = \frac{L}{L + T}$$
+$$\large \frac{\tan(\theta_\text{inner})}{\tan(\theta_\text{outer})} = \frac{L}{L + T}$$
 
 Where L is the wheelbase and T is the track width. A more accurate formula using the turning radius:
 
-$$\frac{1}{\tan(\theta_\text{inner})} = \frac{1}{R} - \frac{D}{2H} \qquad \frac{1}{\tan(\theta_\text{outer})} = \frac{1}{R} + \frac{D}{2H}$$
+$$\large \frac{1}{\tan(\theta_\text{inner})} = \frac{1}{R} - \frac{D}{2H} \quad \large ; \quad \large \frac{1}{\tan(\theta_\text{outer})} = \frac{1}{R} + \frac{D}{2H}$$
 
 R is the turning radius, D is the distance between the left and right wheels, and H is the wheel base. 
 
@@ -54,7 +54,7 @@ We also placed the electronical and mechanical components in a way to keep the c
 
 The cables are also tied back to prevent any movement of the robot’s center of mass. The center of gravity formula:
 
-$$X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i} \qquad Y_\text{cm} = \frac{\sum_{i=1}^{n} y_i \times m_i}{\sum_{i=1}^{n} m_i} \qquad Z_\text{cm} = \frac{\sum_{i=1}^{n} z_i \times m_i}{\sum_{i=1}^{n} m_i}$$
+$$\large X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i} \quad \large ; \quad Y_\text{cm} = \frac{\sum_{i=1}^{n} y_i \times m_i}{\sum_{i=1}^{n} m_i} \quad \large ; \quad Z_\text{cm} = \frac{\sum_{i=1}^{n} z_i \times m_i}{\sum_{i=1}^{n} m_i}$$
 
 
 *(CENTER OF GRAVITY DIAGRAM HERE)*
