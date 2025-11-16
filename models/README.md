@@ -100,7 +100,7 @@ We showed the assembly of all the parts through an exploded view of a full Solid
 ![Video](as1.gif)
 
 <video width="600" controls>
-  <source src="https://github.com/coolboy19521/TEST_MARKDAWN/main/models/as1.mp4" type="video/mp4">
+  <source src="as1.mp4" type="video/mp4">
 </video>
 
 
