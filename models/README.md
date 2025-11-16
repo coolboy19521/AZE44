@@ -56,11 +56,11 @@ The cables are also tied back to prevent any movement of the robot’s center of
 
 $$X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i} \qquad Y_\text{cm} = \frac{\sum_{i=1}^{n} y_i \times m_i}{\sum_{i=1}^{n} m_i} \qquad Z_\text{cm} = \frac{\sum_{i=1}^{n} z_i \times m_i}{\sum_{i=1}^{n} m_i}$$
 
-X_cm = (sum(mi * xi)) / sum(mi) Y_cm = (sum(mi * yi)) / sum(mi) Z_cm = (sum(mi * zi)) / sum(mi) *
 
- CENTER OF GRAVITY DIAGRAM HERE
-CENTER OF MASS DIAGRAM HERE
-PLACE THE MASS OF THE COMPONENTS HERE
+*(CENTER OF GRAVITY DIAGRAM HERE)*
+*(CENTER OF MASS DIAGRAM HERE)*
+*(PLACE THE MASS OF THE COMPONENTS HERE)*
+
 Battery = 
 Lidar =
 Chassis = 
@@ -68,47 +68,33 @@ Chassis 2 =
 Camera =
 Ultrasonic  =
 Battery Holder =
-(Calculate later with Eyup)
+*(Calculate later with Eyup)*
 
 
-
-
-
-
-
-Cable Manage 
+# 7. Cable Manage 
 All wires are organized and secured using PLA holders. We didn’t mix the power, data, and servo cables to make sure that there are no interference issues. (Add something here about the  type of cables that you used after eyup tells them, you can write them as bullet points.)
 
-(PLACE CABLE PHOTO HERE) 
+*(PLACE CABLE PHOTO HERE)*
 
 
-
-
-
-
-
-Mechanical Materials and Bearings 
+# 8. Mechanical Materials and Bearings 
 
 We used aliminum for linkage arms, shafts, and joints because of its strength and lightness. PLA is used for the 3D printed parts like the gear box housing, steering knuckles, servo mount, camera bracket, and the LIDAR mount. The metal bearings are the 693ZZ bearings and they are fitted into the axes of the rear wheels, the gear boxes, and the pivots of the front steering wheels. (Expand this part and add arrow etc.)
 
- [PLACE BEARING PHOTO HERE] 
+*[PLACE BEARING PHOTO HERE]*
 
-
-Sensor and Component placement 
+# 9. Sensor and Component placement 
 We placed The LIDAR sensor  near the center and towards the front using an inverted mount. The camera is placed at the top with a PLA angle bracket of 75° for forward visibility. The ultrasonic sensor at the back of the robot for the robot the detect the measurements behind it for ease the movement on the map and to make it precise. (Check if you said that correctly). The Raspberry Pi is placed upon the central deck, the motor driver upon the upper deck, and the battery within the center of the lower platform. The servo motor is attached to the left-side linkage. 
 
-PLACE COMPONENT LAYOUT PHOTO HERE
+*PLACE COMPONENT LAYOUT PHOTO HERE*
 
-
-
-Specifications of 3D Printing 
+# 10. Specifications of 3D Printing 
 All of the printed parts were printed with a Sidewinder X2 3D printer. We used PLA because of its durability, printing accuracy, and dimensional stability. The hot end temperature and the hot bed temperature were set to 210°C and 60°C. You can see the time lapse videos of the printing process below and you can also take a look at the specifications of the 3D  printer used in the proccess. 
 
-Time-lapse Video and Specification of the 3D Printer Photos Here
+*Time-lapse Video and Specification of the 3D Printer Photos Here*
 
-
-Exploded View 
+# 11. Exploded View 
 
 We showed the assembly of all the parts through an exploded view of a full SolidWorks model. The exploded view has the two layers of the chassis, the Ackermann steering component, the servo mounting component, the gearbox, the wheels, the electrical and sensor components.
 
-Exploded View Photo Here.
+*Exploded View Photo Here.*
