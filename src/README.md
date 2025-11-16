@@ -297,7 +297,23 @@ This is a pretty basic terminal code which end the opmode when it is the last se
 
 ### 2.4 Obstacle Challange
 
-Now let's talk about the famous Obstacle Challange! *Everyone is so excited!* Core idea of our obstacle challange is very simple. We break the obstacle challenge into wro subchallanges:
+#### 2.4.1 Skews
+
+Before starting to talk about how we are solving the obstacle challange it is important to talk about the skew. Our robot always maintains an orientation paralel to the outer walls, so when surpassing a pillar we need some special technique. After making some research and observations on real cars, we stumbled upon what we call "skew".
+
+The main objective for a skew mechanic is when a pillars' color is identified and we know which side we should pass from, we first drive in that direction for certain amount. After reaching that amount, we steer the opposing direction and try to get the robot parallel to the outer walls again.
+
+*(Animation)*
+
+"The certain amount robot steers in correct direction" is achieved using the gyroscope sensor. This means that robot steers in the direction while some angle is not achieved. Calculating this angle is tricky, but when you know the relation between the distance you want to skew and the heading angle to achive, it is more approachable to estimate this value.
+
+We first assumed that the relation was linear, but we very soon realized it was incorrect. Robot was moving very on-point for close distances, but when they got larger, robot started to either overshoot or undershoot. Then we realized that the relation was radical and involving the square root. The formula we designed to fit the angle is:
+
+$$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2} \implies 5\text{V} \times \frac{2\text{k}\Omega}{1\text{k}\Omega + 2\text{k}\Omega} \approx 3.33\text{V}$$
+
+#### 2.4.2 Main Strategy
+
+Now let's talk about the famous Obstacle Challange! *Everyone is so excited!* We break the obstacle challenge into wro subchallanges:
 
 <ol>
   <li><b>UC</b> (Untraced Cubes): In this section, we assume (and we actually do) that we don't know colors of any pillars. Because of this reason we first approach to each pillar and try to identify its color. Only after identifying its color we either surpass it on the right or the left. We also save the color of the pillar for later.</li>
