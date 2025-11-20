@@ -345,7 +345,7 @@ Before starting to talk about how we are solving the obstacle challange it is im
 The main objective for a skew mechanic is when a pillars' color is identified and we know which side we should pass from, we first drive in that direction for certain amount. After reaching that amount, we steer the opposing direction and try to get the robot parallel to the outer walls again.
 
 <div>
-  <img src="../media/Skew.gif" alt="Skew" />
+  <img src="../media/Skeww.gif" alt="Skew" />
   <p style="margin-top:0;"><i>Figure 1.7: Skew</i></p>
 </div>
 
