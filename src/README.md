@@ -344,7 +344,10 @@ Before starting to talk about how we are solving the obstacle challange it is im
 
 The main objective for a skew mechanic is when a pillars' color is identified and we know which side we should pass from, we first drive in that direction for certain amount. After reaching that amount, we steer the opposing direction and try to get the robot parallel to the outer walls again.
 
-*(Animation)*
+<div>
+  <img src="../media/Skew.gif" alt="Skew" />
+  <p style="margin-top:0;"><i>Figure 1.7: Skew</i></p>
+</div>
 
 "The certain amount robot steers in correct direction" is achieved using the gyroscope sensor. This means that robot steers in the direction while some angle is not achieved. Calculating this angle is tricky, but when you know the relation between the distance you want to skew and the heading angle to achive, it is more approachable to estimate this value.
 
@@ -363,8 +366,6 @@ Here, $$Pillar_{\text{pos}}$$ indicates the pillar's distance from the outer wal
 $$\large Distance_{\color{green}green} = \frac{Pillar_{\text{pos}}}{2} \quad \large ; \quad \large Distance_{\color{red}red} = -\frac{100 - Pillar_{\text{pos}}}{2}$$
 
 As you can see the formulas become the inverse.
-
-*(Animation)*
 
 #### 2.5.2 Main Strategy
 
