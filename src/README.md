@@ -263,18 +263,31 @@ if for_dis is not None and for_dis <= 30: # If it is very close and the robot ne
 When a task is set to `exec`, robot does not react to any lidar data. Because it has a task to do and after finishing the task robot continues to read lidar data and switch between the tasks. But when it is set to `waitin`:
 
 ```python
-# code will be here
+"""
+Some lidar calculations
+"""
+gyro_angle = robot_car.read_gyro()
+scan, rad = [], msg.angle_min
+for dis in msg.ranges:
+    deg = math.degrees(rad) + 90
+    if deg >= 180: deg -= 360
+    deg = gyro_angle + deg
+    dis *= 100
+    if dis != 0 and math.isfinite(dis) and -130 <= deg <= 130 and dis >= 13:
+        scan.append((deg, dis))
+    rad += msg.angle_increment
+scan.sort()
+
+self.left_dis = robot_car.find(min, scan, -95, -85)
+self.right_dis = robot_car.find(min, scan, 85, 95)
+self.front_dis = robot_car.find(min, scan, -2.5, 2.5)
+
+if self.waitin is not None: # If there is a task in the queue
+    self.exec = self.waitin # Set it to be executed
+    self.waitin = None # And reset the queue
 ```
 
-As you can see in the tick we are skipping, we are actually reading lidar data and making calculations on it. This becomes especially handy when approaching the parking barriers. Robot needs to calculate their positions mid task, that's why the section for approaching them should run after the calculations. That's why:
-
-```python
-# code will be here
-```
-
-As you can see task is set to `waitin` and is only set to `exec` after calculating the parking spot.
-
-The state machine stated here is the backbone of all the algorithms and solutions for below software.
+As you can see in the tick we are skipping, we are actually reading lidar data and making calculations on it. This becomes especially handy when approaching the parking barriers. Robot needs to calculate their positions mid task, that's why the section for approaching them should run after the calculations.
 
 ### 2.4 Open Challange
 
