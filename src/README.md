@@ -516,8 +516,22 @@ def find_park(self, scan):
 This algorithm returns the closest parking barrier. This information is very handy, because we always need approaching to parking barriers. To approach the parking barriers:
 
 ```python
-# code will be added
+if self.dis_till is None: # If parking barrier's location is yet to be calculated
+    park = self.find_park(scan) # Find the location
+    self.dis_till = park # And set it to the variable
+if self.dis_till is not None: # If parking barrier's location has been calculated
+    if self.start_pos is None and robot_car.pos is not None: # If start position of encoder is not retrieved
+        self.start_pos = robot_car.pos # Give the appropriate value
+    if robot_car.pos is None or robot_car.rot_to_cm(robot_car.pos - self.start_pos) < self.dis_till[1] + \
+            dis_arr[self.mov_park]: # Move until calculated distance is not achieved by the robot
+        err = -robot_car.read_gyro()
+        robot_car.move(err * 5, 17) # Move by constant speed using P steering
+    else:
+        robot_car.hard_brake() # Finish
 ```
+
+>[!NOTE]
+>This is not the full code snippet. Some parts have been cut off because they have no direct relation with approaching the barrier algorithm.
 
 # 3. Development Environment
 
