@@ -58,29 +58,29 @@ Before the national qualification our work schedule was very full, we were worki
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="media/right.jpg" height="300"><br>
+      <img src="media/RIGHT.jpg" height="300"><br>
       <b>Right</b>
     </td>
     <td align="center" colspan="2">
-      <img src="media/left.jpg" height="300"><br>
+      <img src="media/LEFT.jpg" height="300"><br>
       <b>Left</b>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="media/up.jpg" height="300"><br>
+      <img src="media/TOP.jpg" height="300"><br>
       <b>Top</b>
     </td>
     <td align="center">
-      <img src="media/front.jpg" height="300"><br>
+      <img src="media/FRONT.jpg" height="300"><br>
       <b>Front</b>
     </td>
     <td align="center">
-      <img src="media/back.jpg" height="300"><br>
+      <img src="media/BACK.jpg" height="300"><br>
       <b>Back</b>
     </td>
     <td align="center">
-      <img src="media/down.jpg" height="300"><br>
+      <img src="media/BOTTOM.jpg" height="300"><br>
       <b>Bottom</b>
     </td>
   </tr>
