@@ -232,7 +232,7 @@ You can refer to the illustration below to get a better understanding of how thi
 
 <div>
   <img src="../media/RobotWithArcMask.gif" alt="Straighten Strategy" height="600px" />
-  <p style="margin-top:0;"><i>Figure 1.5: Straighten Strategy</i></p>
+  <p style="margin-top:0;"><i>Figure 1.2: Straighten Strategy</i></p>
 </div>
 
 ### 2.3 State Machines
@@ -346,7 +346,7 @@ This is a pretty basic terminal code which end the opmode when it is the last se
 
 <div>
   <img src="../media/WROMapScene.gif" alt="Straighten Strategy" />
-  <p style="margin-top:0;"><i>Figure 1.6: Open Challange Strategy</i></p>
+  <p style="margin-top:0;"><i>Figure 1.3: Open Challange Strategy</i></p>
 </div>
 
 ### 2.5 Obstacle Challange
@@ -359,7 +359,7 @@ The main objective for a skew mechanic is when a pillars' color is identified an
 
 <div>
   <img src="../media/Skeww.gif" alt="Skew" />
-  <p style="margin-top:0;"><i>Figure 1.7: Skew</i></p>
+  <p style="margin-top:0;"><i>Figure 1.4: Skew</i></p>
 </div>
 
 "The certain amount robot steers in correct direction" is achieved using the gyroscope sensor. This means that robot steers in the direction while some angle is not achieved. Calculating this angle is tricky, but when you know the relation between the distance you want to skew and the heading angle to achive, it is more approachable to estimate this value.
@@ -558,7 +558,7 @@ This is our Raspberry Pi image. If you flash this file into your Raspberry, you 
 
 <div>
   <img src="../media/rufus.webp" alt="Rufus" />
-  <p style="margin-top:0;"><i>Figure 1.2: Rufus flashing tool</i></p>
+  <p style="margin-top:0;"><i>Figure 1.5: Rufus flashing tool</i></p>
 </div>
 
 But if you want to customize installation you should flush the Raspberry Pi from the official Raspberry Pi Imager. If not, just skip to the `Code and Strategy` section.
@@ -570,14 +570,14 @@ We are using `Ubuntu Server 24.04.3 LTS (64-bit)` for our Raspberry Pi. You can 
 
 <div>
   <img src="../media/Imager.PNG" alt="Raspberry Pi Imager" />
-  <p style="margin-top:0;"><i>Figure 1.3: Raspberry Pi Imager</i></p>
+  <p style="margin-top:0;"><i>Figure 1.6: Raspberry Pi Imager</i></p>
 </div>
 
 After selection your Raspberry Pi model press "Choose OS". Afterwards select the `Other general-purpose OS` > `Ubuntu` > `Ubuntu Server 24.04.3 LTS (64-bit)` operating system.
 
 <div>
   <img src="../media/OS.PNG" alt="Ubuntu Server 24.04.3 LTS (64-bit)" />
-  <p style="margin-top:0;"><i>Figure 1.4: Ubuntu Server 24.04.3 LTS (64-bit)</i></p>
+  <p style="margin-top:0;"><i>Figure 1.7: Ubuntu Server 24.04.3 LTS (64-bit)</i></p>
 </div>
 
 > [!NOTE]
