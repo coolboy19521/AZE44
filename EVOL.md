@@ -50,6 +50,6 @@
     <tr>
     <td>Motor Drive Controller</td>
     <td>Raspberry Pi Pico 2</td>
-    <td>Raspberry Pi Pico 2 W (Wireless code)</td>
+    <td>Raspberry Pi Pico W</td>
   </tr>
 </table>
