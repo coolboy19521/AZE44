@@ -1,4 +1,4 @@
-<table cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <th colspan="4">Robot Photos</th>
   </tr>
