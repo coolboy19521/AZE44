@@ -4,29 +4,29 @@
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="media/RIGHT.jpg" height="300"><br>
+      <img src="RIGHT.jpg" height="300"><br>
       <b>Right</b>
     </td>
     <td align="center" colspan="2">
-      <img src="media/LEFT.jpg" height="300"><br>
+      <img src="LEFT.jpg" height="300"><br>
       <b>Left</b>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="media/TOP.jpg" height="300"><br>
+      <img src="TOP.jpg" height="300"><br>
       <b>Top</b>
     </td>
     <td align="center">
-      <img src="media/FRONT.jpg" height="300"><br>
+      <img src="FRONT.jpg" height="300"><br>
       <b>Front</b>
     </td>
     <td align="center">
-      <img src="media/BACK.jpg" height="300"><br>
+      <img src="BACK.jpg" height="300"><br>
       <b>Back</b>
     </td>
     <td align="center">
-      <img src="media/BOTTOM.jpg" height="300"><br>
+      <img src="BOTTOM.jpg" height="300"><br>
       <b>Bottom</b>
     </td>
   </tr>
