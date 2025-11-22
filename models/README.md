@@ -59,9 +59,7 @@ The formula for the relationship between steering angle is:
 
 $$\large \frac{\tan(\theta_\text{inner})}{\tan(\theta_\text{outer})} = \frac{L}{L + T}$$
 
-L is wheelbase and T is track width.
-
-The correct formula using turning radius is:
+L is wheelbase and T is track width. The correct formula using turning radius is:
 
 $$\large \frac{1}{\tan(\theta_\text{inner})} = \frac{1}{R} - \frac{D}{2H} \quad \large ; \quad \large \frac{1}{\tan(\theta_\text{outer})} = \frac{1}{R} + \frac{D}{2H}$$
 
