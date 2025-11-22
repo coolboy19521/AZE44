@@ -7,3 +7,19 @@ The initial design for our chassis was very narrow with angled corners. Although
 We printed the 3D parts with PLA and the Sidewinder X2, along with a nozzle temperature of `210°C` and a heated bed temperature of `60°C`. Where we felt we needed additional strength, for example, in our shafts and our link rods, we chose to work with aluminum. Additionally, the robot weighs `1400g`.
 
 The earlier versions of robots did not support complex steering or mounting points for sensors and other factors, but with the new design, it has become more modular, and ready for the Ackermann steering mechanism.
+
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="4">Chassis Mechanical Drawings</th>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="TOP_CHASSE.jpg" height="300"><br>
+      <b>Top Chassis</b>
+    </td>
+    <td align="center" colspan="2">
+      <img src="BOTTOM_CHASSE.jpg" height="300"><br>
+      <b>Bottom Chassis</b>
+    </td>
+  </tr>
+</table>
