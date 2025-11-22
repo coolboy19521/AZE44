@@ -790,6 +790,48 @@ To use the packages after installing them you should source `~/ros2_jazzy/instal
 $ echo "source ~/ros2_jazzy/install/setup.bash">>~/.bashrc
 ```
 
+# 4. Downloading our source code
+
+Downloading the source code is very straight forward. There are two options:
+1. Download the source code as a zip from our GitHub repository and then move the file into Raspberry Pi using `scp` command line tool (WinSCP if you prefer GUI instead).
+2. Download directly inside the Raspberry Pi using `git` (the installation proccess of git is shown in the above step).
+
+We will focus on the second step as it is more trivial. To download the source code connect to your Raspberry Pi and type in this command:
+
+```bash
+git clone https://github.com/coolboy19521/AZE44.git
+```
+
+Now you have installed the source code and the schemes, models etc. If you just want to install the code, instead of the command above use these commands:
+
+```bash
+git clone --no-checkout https://github.com/coolboy19521/AZE44.git cd AZE44
+git sparse-checkout init --cone
+git sparse-checkout set src
+git checkout main
+```
+
+This way you only install the `src` directory. After installing the source code to navigate to it use:
+
+```bash
+cd ~/AZE44/src
+ls
+```
+
+After writing these commands you should see an output like this:
+
+```bash
+calibrate_skew.py obstacle.py open.py pico.py README.md robot_car.py
+```
+
+These files include the implementations of functionalities described above in the documentation. The rough description for each of them is like this:
+- `calibrate_skew.py`: This file is for calibrating the skew mechanic. Program inputs you for a number and depending on the constants performs a skew. To change the constants you can edit the file via your favorite text editor (i.e. `vim` or `nano`). The constants you should change are `A` and `B`. For best calibration it is adviced to fit these variables for `10cm` skews and then for `30cm` skews.
+- `obstacle.py`: This file includes our solution for Obstacle Challange.
+- `open.py`: Similarly, this file includes our solution for Open Challange.
+- `pico.py`: This is our motor driver code. If you decide to use different motor drivers or servos with different working principles, you can just modify the `move_motor` and `set_angle` functions inside this code. All the other stuff should work for any hardware (if you are still using a Pico).
+- `README.md`: This file is the software documentation. You can delete it if you don't need, but keeping it might guide you on our software.
+- `robot_car.py`: This file contains our API for interfacing the Raspberry Pico motor driver. You don't need to modify this code at all, because it is just sending commands unrelated to the hardware being used.
+
 <hr>
 
 <p align="center">
