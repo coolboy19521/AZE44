@@ -66,7 +66,7 @@
   </tr>
 
   <tr>
-    <td>HCSR-04 x 1</td><td><img src="../media/hcsr04.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>HC-SR04 x 1</td><td><img src="../media/hcsr04.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
   </tr>
 </table>
 
@@ -462,13 +462,13 @@ Our gyro has a built-in fusion algorithm, which means it can in theory fuse acce
 
 <table align="center" style="width:80%; border-collapse:collapse;">
   <tr>
-    <th colspan="3">HCSR04</th>
+    <th colspan="3">HC-SR04</th>
   </tr>
   <tr>
     <td rowspan="4" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/hcsr04_eyb.webp" height="370px" alt="Gear Motor" />
-      <p style="margin-top:0;" align="left"><i>Figure 9.1: HCSR04</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 9.1: HC-SR04</i></p>
     </div>
     </td>
     <td>Operating Voltage & Current</td>
