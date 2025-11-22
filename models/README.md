@@ -1,4 +1,4 @@
-1. The  Chassis and General Design
+# 1. The  Chassis and General Design
 
 We have a 2-platform design in our robot, which we preferred to be able to modify or repair the robot easily during our test and potentially the competition. It only takes our robot a few seconds to remove its top platform, and we can access the circuitry, sensors, and other internal mechanics so that we can work on them immediately. This saved us so much time when we working on our robot.
 
