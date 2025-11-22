@@ -68,3 +68,8 @@ Our front wheel distance is 13 cm, and our wheelbase (distance between our front
 In our steering system we used aluminum link arms that are mounted to 3D-printed steering knuckles and a PLA servo mount. We coupled the link arms with 3-mm aluminum rods, and all pivot points are equipped with 693ZZ bearings to ensure uniform movement. The steering power comes from a TD8120MG metal-gear servo. The servo acts on one link arm, and its action is transmitted through the Ackermann design to turn the wheels by the right amount. This way we make sure that our robot has a smooth turning action.
 
 It is also important to notice and emphazie that the Ackermann steering is implemented in actual vehicles as well, to reduce wear on tires, enhance turning precision, and provide better control at both high and low velocities. For us, its implementation in our robot allowed our vehicle to act similarly to actual vehicles and enhance the turning precision in our navigation significantly.
+
+<div>
+  <img src="../media/ack.jpg" alt="Ackermann System" height="800px" />
+  <p style="margin-top:0;"><i>Figure 1.1: Ackermann System</i></p>
+</div>
