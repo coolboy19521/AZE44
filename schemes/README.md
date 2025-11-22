@@ -109,7 +109,7 @@ via the motor controller.
     </div>
     </td>
     <td>USB</td>
-    <td>Raspberry Pi Pico 2W and T-MINI-PLUS Lidar sensor</td>
+    <td>Raspberry Pi Pico W and T-MINI-PLUS Lidar sensor</td>
   </tr>
   <tr>
     <td>CSI Camera Port</td>
@@ -152,7 +152,7 @@ the main controller of the robot. Its purpose in our robot is:
 >[!NOTE]
 >Refer to the Raspberry Pi 5 pinout for accurate connections. If you want to see connection diagram, you need to go to [`3.9.7 Scheme 1`](#control-board).
 
-### 3.2 Raspberry Pi Pico 2W Control Board
+### 3.2 Raspberry Pi Pico W Control Board
 
 #### 3.2.1 Description and Features
 
@@ -189,7 +189,7 @@ the main controller of the robot. Its purpose in our robot is:
   </tr>
 </table>
 
-**Raspberry Pi Pico 2W** is a compact and efficient microcontroller board designed for real-time embedded control, IoT, and robotic applications. It features a dual-core ARM Cortex-M0+ processor, integrated Wi-Fi connectivity, and flexible GPIO pins supporting multiple communication and control interfaces. Its purpose in our robot is:
+**Raspberry Pi Pico W** is a compact and efficient microcontroller board designed for real-time embedded control, IoT, and robotic applications. It features a dual-core ARM Cortex-M0+ processor, integrated Wi-Fi connectivity, and flexible GPIO pins supporting multiple communication and control interfaces. Its purpose in our robot is:
 - Read encoder sensor and send them to Raspberry Pi. Encoder sensors are connected to Raspberry Pi Pico. More information on this could be found in [`3.9.7 Scheme 1`](#control-board).
 - Read motor command values from Raspberry Pi and send them to motor driver. Motor drivers are connected to Raspberry Pi Pico but the decisions are made in Raspberry Pi. That's why Raspberry Pi Pico should read the decisions from the Raspberry Pi.
 
@@ -201,7 +201,7 @@ the main controller of the robot. Its purpose in our robot is:
 </div>
 
 >[!NOTE]
->Refer to the Raspberry Pi Pico 2W pinout for accurate connections.  If you want to see connection diagram, you need to go to [`3.9.7 Scheme 2`](#motor-driver).
+>Refer to the Raspberry Pi Pico W pinout for accurate connections.  If you want to see connection diagram, you need to go to [`3.9.7 Scheme 2`](#motor-driver).
 
 ### 3.3 TB6612FNG Control Board
 
@@ -249,12 +249,12 @@ the main controller of the robot. Its purpose in our robot is:
 ### 3.4.1 Powering and Controlling
 
 **DC Motor:**
-- Connected to Raspberry Pi Pico 2W via encoder motor ports.
+- Connected to Raspberry Pi Pico W via encoder motor ports.
 - Encoder feedback allows precise speed and position control.
 - Controlled using PWM signals.
 
 **Servo Motor:**
-- Controlled via PWM from Raspberry Pi Pico 2W 
+- Controlled via PWM from Raspberry Pi Pico W 
 
 
 ### 3.4.2 DC Gear Motors
