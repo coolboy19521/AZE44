@@ -34,6 +34,8 @@ The power generated from the motor is transmitted to the central gear and then t
 
 We printed the gears themselves and the gearbox with the PLA material, with aluminum shafts on which the gears are mounted. We also placed metal ball bearings on every rotating shaft, including rear wheels and gearbox connections, for our robot to work smoothly, instead of causing excessive wear to our gears to decrease friction. The metal ball bearings are 693ZZ.
 
+![](../media/gearbox_gif.gif)
+
 <table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <th colspan="4">Gearbox Mechanical Drawings</th>
