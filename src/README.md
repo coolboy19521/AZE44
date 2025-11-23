@@ -489,9 +489,6 @@ Our method for parallel parking is like this:
 - If the last pillar is green, we skew close to the parking lot, then robot moves to reach the furthest parking barrier. Afterwards robot does an inverse left turn. Then we fix the steering to right and move in.
 - If the last pillar is red, we surpass the red pillar, make an inverse left turn and then back up while the parking lot is far. After we reach some distance, we do a right turn. This is for increasing the turning arc for inverse right turn. After doing this we make the inverse right turn and finish the parallel parking.
 
-*(Green Pillar Animation)*
-*(Red Pillar Animation)*
-
 We have a special algorithm to find where the parking barriers are.
 
 ```python
