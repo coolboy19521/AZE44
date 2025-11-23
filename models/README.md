@@ -70,9 +70,12 @@ In our steering system we used aluminum link arms that are mounted to 3D-printed
 It is also important to notice and emphazie that the Ackermann steering is implemented in actual vehicles as well, to reduce wear on tires, enhance turning precision, and provide better control at both high and low velocities. For us, its implementation in our robot allowed our vehicle to act similarly to actual vehicles and enhance the turning precision in our navigation significantly.
 
 <div>
-  <img src="../media/Ackermann_fix.png" alt="Ackermann System" height="800px" />
+  <img src="../media/Ackermann_fix.png" alt="Ackermann System" height="650px" />
   <p style="margin-top:0;"><i>Figure 1.1: Ackermann System</i></p>
 </div>
+
+>[!NOTE]
+>The dotted lines here represent the imaginary projection of a straight line aligned perfectly with the tire holders. The intersection point of these lines should align to the center of the track perfectly for a functional ackermann system. In our previous robot we had miscalculated it a little bit, and the intersection point was a little bit away from the track. That's why this time we focused on fixing the problem. An accurate ackermann system provides us better steering possibilities.
 
 # 4. Servo System
 
@@ -81,7 +84,7 @@ The servo that controls the steering mechanism is TD8120MG metal gear servo. It 
 We placed the servo on top of a bracket created using PLA, and we specifically designed this bracket to make sure that it aligns well with the Ackermann linkage mechanism. As the servo rotates, it acts on the main steering arm, which in turn acts on both front wheels using the Ackermann rods.
 
 <div>
-  <img src="BATTERY_HOLD.jpg" alt="Ackermann System" height="800px" />
+  <img src="BATTERY_HOLD.jpg" alt="Ackermann System" height="650px" />
   <p style="margin-top:0;"><i>Figure 1.2: Servo Holder</i></p>
 </div>
 
@@ -100,11 +103,39 @@ $$\large X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i} 
 
 This helped us create a well-rounded robot that moves in a predictable manner and doesn't tip.
 
-<div>
-  <img src="../media/mass_3d.jpg" alt="Mass Diagram 3D" height="800px" />
-  <p style="margin-top:0;"><i>Figure 1.3: Mass Diagram 3D</i></p>
-</div>
-<div>
-  <img src="../media/mass_2d.jpg" alt="Mass Diagram 2D" height="800px" />
-  <p style="margin-top:0;"><i>Figure 1.4: Mass Diagram 2D</i></p>
-</div>
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="4">Chassis Mechanical Drawings</th>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="../media/mass_3d.jpg" height="500"><br>
+      <b>Mass Diagram 3D</b>
+    </td>
+    <td align="center" colspan="2">
+      <img src="BOTTOM_CHASSE.jpg" height="500"><br>
+      <b>Mass Diagram 2D</b>
+    </td>
+  </tr>
+</table>
+
+# 7. Cable Management
+
+We organized every cable on our robot,  using PLA holders. We used them solely for this function, ensuring that we segregate the power cables, data cables, and servo cables so they are free from any interaction with electromagnetic interference, which can potentially lead to erratic behaviors or data from our sensor or servo. You can also see in our design that our cables are secured to prevent them from shifting whenever our robot moves.
+
+# 8. Mechanical Materials and Bearings
+
+We preferred to work with PLA for 3D parts because it is light and has easy printing properties. In parts that needed higher strength such as shafts, rods, or arms in linkages, we chose to work with aluminum because it resists deformation under stress but still is light.
+
+For all turning joints, we used 693ZZ metal ball bearings. Metal ball bearings serve to reduce friction and vibration within the drivetrain, turning pivots, and wheel axles. We mounted bearings on the gearbox and front steering pivots to provide smooth motion and enhance mechanical robustness.
+
+# 9. Sensor and Component Placement
+
+We placed the LIDAR is placed at the front for it to scan freely from its environment. Coming to the front-mounted camera, we positioned it upwards for better visibility. The ultrasonic sensor in the back gives data on the distance behind it, which is really helpful for us during sharp movements and reversing functions in initial tests. On top are the Raspberry Pi 5 and motor driver, as connectivity is kind of easier there, on the top platform. We placed the battery to make sure that the center of the mass still remains as we intended it to be. The servo stays on the left side and is directly joined with the main steering arm so it can effectively steer the Ackerman linkages.
+
+# 10. Specifications for 3D Printing 
+We used the 3D printer Sidewinder X2 for both replicas and original parts. Because we use PLA, prints are a lot more accurate, with very low warpage. The nozzle temperature is at `210°C` and the hot plate temperature is at `60°C` which provides better bonding. Furhtermore, we created time-lapse videos to basically show how each part is being created so that we would be able to evaluate and, if needed, enhance the mechanical aspects of the robot.
+
+# 11. Exploded View and SolidWorks Assembly
+
+We created an exploded view assembly diagram using SolidWorks to detail and better show the development of our robot. We also have an exploded view diagram to show how parts relate to each other in an assembly. We really focused on creating the exploded view to develop the assemblies and the overall robot structure to be certain that the designed mechanism is really going to work in real life. This way, we made sure that every element of our robotic design was correctly integrated before 3D printing, making us avoid prototype failures.  Moreover, we thoroughly discussed on which 3D modelling tool to use and concluded that, in comparison to other 3D modeling software, SolidWorks provides better capabilities for working with mechanical assemblies, like interference detection and assembly simulations. As you can see, we showed how each part, layers for the chassis, Ackermann steering, gears, sensors, and electronics, combines into a full assembly. 
