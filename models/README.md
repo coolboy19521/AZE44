@@ -95,10 +95,7 @@ In the middle of the bottom platform, we put the battery that helps balance out 
 
 The formula of the center of mass is:
 
-X_cm = Σ(x_i × m_i) / Σ(m_i
+$$\large X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i} \quad \large ; \quad Y_\text{cm} = \frac{\sum_{i=1}^{n} y_i \times m_i}{\sum_{i=1}^{n} m_i} \quad \large ; \quad Z_\text{cm} = \frac{\sum_{i=1}^{n} z_i \times m_i}{\sum_{i=1}^{n} m_i}$$
 
-Y_cm = ∑(y_i × m_i) / ∑(m_i
-
-Z_cm = Σ(z_i × m_i) / Σ(m_i
 
 This helped us create a well-rounded robot that moves in a predictable manner and doesn't tip.
