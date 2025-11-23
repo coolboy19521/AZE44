@@ -204,7 +204,7 @@ This helped us create a well-rounded robot that moves in a predictable manner an
 
 <table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
-    <th colspan="4">Chassis Mechanical Drawings</th>
+    <th colspan="4">Mass Diagrams</th>
   </tr>
   <tr>
     <td align="center" colspan="2">
