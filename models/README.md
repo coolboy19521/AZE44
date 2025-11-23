@@ -69,6 +69,38 @@ In our steering system we used aluminum link arms that are mounted to 3D-printed
 
 It is also important to notice and emphazie that the Ackermann steering is implemented in actual vehicles as well, to reduce wear on tires, enhance turning precision, and provide better control at both high and low velocities. For us, its implementation in our robot allowed our vehicle to act similarly to actual vehicles and enhance the turning precision in our navigation significantly.
 
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="4">Servo Holder Mechanical Design</th>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="../media/servo_holder.gif" height="500"><br>
+      <b>Printing Proccess</b>
+    </td>
+    <td align="center" colspan="2">
+      <img src="SERVO_HOLDER.jpg" height="500"><br>
+      <b>Servo Holder</b>
+    </td>
+  </tr>
+</table>
+
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="4">Ackermann Wheel Holder Mechanical Design</th>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="../media/ACKK.gif" height="500"><br>
+      <b>Printing Proccess</b>
+    </td>
+    <td align="center" colspan="2">
+      <img src="ACKERMANN_WHEEL_HOLDER.jpg" height="500"><br>
+      <b>Servo Holder</b>
+    </td>
+  </tr>
+</table>
+
 <div>
   <img src="../media/Ackermann_fix.png" alt="Ackermann System" height="650px" />
   <p style="margin-top:0;"><i>Figure 1.1: Ackermann System</i></p>
