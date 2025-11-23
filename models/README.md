@@ -117,11 +117,11 @@ It is also important to notice and emphazie that the Ackermann steering is imple
   </tr>
   <tr>
     <td align="center">
-      <img src="ACKERMANN_WHEEL_HOLDER.jpg"><br>
+      <img src="ACKERMANN_WHEEL_HOLDER.jpg" height="550"><br>
       <b>Ackermann Wheel Holder</b>
     </td>
     <td align="center">
-      <img src="../media/ACKK_rsz.gif"><br>
+      <img src="../media/ACKK_rsz.gif" height="550"><br>
       <b>Printing Proccess</b>
     </td>
   </tr>
