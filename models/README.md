@@ -180,19 +180,20 @@ So applying this formula to our robot:
 
 - Total mass $$\large \text{M}$$ = 1400 g.
 - Coordinate system: (0,0) = front-left corner. 𝑥to the right (0–15 cm), 𝑦to the rear (0–19 cm).
-- Component positions (𝑥, 𝑦)in cm and masses 𝑚in g:
-1.	Battery: $$\large \text{m}$$ = 300, (𝑥, 𝑦) = (4,1)
-2.	Raspberry Pi: $$\large \text{m}$$ = 45, (𝑥, 𝑦) = (4,1)
-3.	Lidar: $$\large \text{m}$$ = 18, (𝑥, 𝑦) = (7.5,2)
-4.	Servo: $$\large \text{m}$$ = 55, (𝑥, 𝑦) = (7.5,6)
-5.	Encoder motor: $$\large \text{m}$$ = 120,	(𝑥, 𝑦) = (2,16)
-6.	Motor driver: $$\large \text{m}$$ = 40, (𝑥, 𝑦) = (7.5,9)
-7.	Camera: $$\large \text{m}$$ = 10,	(𝑥, 𝑦) = (7.5,0.5)
-8.	BNO085: $$\large \text{m}$$ = 8,	(𝑥, 𝑦) = (6,10)
-9.	Ultrasonic : $$\large \text{m}$$ = 15,	(𝑥, 𝑦) = (7.5,19)
-10.	Amper monitor: $$\large \text{m}$$ = 30,	(𝑥, 𝑦) = (10,12)
-11.	Misc (connectors, resistors, fuse, SD, etc.): $$\large \text{m}$$ = 20, (𝑥, 𝑦) = (7.5,9)
-12. Chassis + mechanical + wheels: $$\large \text{m}$$ = 739, (𝑥, 𝑦) = (7.5,9.5)
+- Component positions $$\text{(x, y)}$$ in cm and masses 𝑚in g:
+1.	Battery: $$\large \text{m}$$ = 300, $$\text{(x, y)}$$ = (4,1)
+2.	Raspberry Pi: $$\large \text{m}$$ = 45, $$\text{(x, y)}$$ = (4,1)
+3.	Lidar: $$\large \text{m}$$ = 18, $$\text{(x, y)}$$ = (7.5,2)
+4.	Servo: $$\large \text{m}$$ = 55, $$\text{(x, y)}$$ = (7.5,6)
+5.	Encoder motor: $$\large \text{m}$$ = 120,	$$\text{(x, y)}$$ = (2,16)
+6.	Motor driver: $$\large \text{m}$$ = 40, $$\text{(x, y)}$$ = (7.5,9)
+7.	Camera: $$\large \text{m}$$ = 10,	$$\text{(x, y)}$$ = (7.5,0.5)
+8.	BNO085: $$\large \text{m}$$ = 8,	$$\text{(x, y)}$$ = (6,10)
+9.	Ultrasonic : $$\large \text{m}$$ = 15,	$$\text{(x, y)}$$ = (7.5,19)
+10.	Amper monitor: $$\large \text{m}$$ = 30,	$$\text{(x, y)}$$ = (10,12)
+11.	Misc (connectors, resistors, fuse, SD, etc.): $$\large \text{m}$$ = 20, $$\text{(x, y)}$$ = (7.5,9)
+12. Chassis + mechanical + wheels: $$\large \text{m}$$ = 739, $$\text{(x, y)}$$ = (7.5,9.5)
+
 $$\sum_{i=1}m_i$$ = 300 + 45 + 18 + 55 + 120 + 40 + 10 + 8 + 15 + 30 + 20 + 739 = 1400 g.
 
 
