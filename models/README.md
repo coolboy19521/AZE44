@@ -73,7 +73,7 @@ We printed the gears themselves and the gearbox with the PLA material, with alum
       <b>Gearbox</b>
     </td>
     <td align="center" colspan="2">
-      <img src="../media/gearbox_gif.gif" height="700"><br>
+      <img src="../media/gearbox_gif_rsz.gif" height="700"><br>
       <b>Printing Proccess</b>
     </td>
   </tr>
@@ -121,7 +121,7 @@ It is also important to notice and emphazie that the Ackermann steering is imple
       <b>Servo Holder</b>
     </td>
     <td align="center" colspan="2">
-      <img src="../media/ACKK.gif" height="700"><br>
+      <img src="../media/ACKK_rsz.gif" height="700"><br>
       <b>Printing Proccess</b>
     </td>
   </tr>
@@ -149,12 +149,12 @@ We placed the servo on top of a bracket created using PLA, and we specifically d
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/servo_holder.gif" height="700"><br>
-      <b>Printing Proccess</b>
-    </td>
-    <td align="center" colspan="2">
       <img src="SERVO_HOLDER.jpg" height="700"><br>
       <b>Servo Holder</b>
+    </td>
+    <td align="center" colspan="2">
+      <img src="../media/servo_holder_rsz.gif" height="700"><br>
+      <b>Printing Proccess</b>
     </td>
   </tr>
 </table>
