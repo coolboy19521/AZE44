@@ -209,13 +209,9 @@ This helped us create a well-rounded robot that moves in a predictable manner an
 
 <table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
-    <th colspan="4">Mass Diagrams</th>
+    <th colspan="1">Mass Diagrams</th>
   </tr>
   <tr>
-    <td align="center" colspan="2">
-      <img src="../media/mass_3d.jpg" height="700"><br>
-      <b>Mass Diagram 3D</b>
-    </td>
     <td align="center" colspan="2">
       <img src="../media/mass_2d.jpg" height="700"><br>
       <b>Mass Diagram 2D</b>
