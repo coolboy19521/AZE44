@@ -130,6 +130,11 @@ We placed the servo on top of a bracket created using PLA, and we specifically d
 # 5. Wheel Movement
 We control the movement of the wheels on our robot with the rear DC motor. As the rear wheels rotate clockwise, they propel the robot forward, while the rotation of the motor in an anticlockwise direction makes the robot go backward. With the gearbox on the robot we are able to ensure that if one wheel faces a rotation problem or a mechanical barrier in general, the other wheel continues to rotate.
 
+<div>
+  <img src="../media/dc.jpg" alt="DC System" height="650px" />
+  <p style="margin-top:0;"><i>Figure 1.2: DC System</i></p>
+</div>
+
 # 6. Center of Gravity and Weight Distribution
 We also positioned every element on our robot to ensure its center of mass remains near the center. Liked this, we increase the robot’s balance and make sure it doesn't develop nose or tail lift during acceleration or braking. We placed The LIDAR near to the front but slightly above the center because we wanted to provide our robot with a full scan range. The camera sensor is placed on its 75-degree width-wise PLA bracket to allow it to scan most of its environment and identify objects-the colors-effectively. Lastly, at the back, we mounted the ultrasonic sensor to assist our robot in detecting objects while reversing or turning through its track on the map.
 
