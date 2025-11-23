@@ -194,10 +194,15 @@ So applying this formula to our robot:
 11.	Misc (connectors, resistors, fuse, SD, etc.): $$\large \text{m}$$ = 20, $$\text{(x, y)}$$ = (7.5,9)
 12. Chassis + mechanical + wheels: $$\large \text{m}$$ = 739, $$\text{(x, y)}$$ = (7.5,9.5)
 
-$$\large \sum_{i=1}m_i$$ = 300 + 45 + 18 + 55 + 120 + 40 + 10 + 8 + 15 + 30 + 20 + 739 = 1400 g.
-$$\large \sum_{i=1}m_i \times x_i$$ = 1200 + 180 + 135 + 412.5 + 240 + 300 + 75 + 48 + 112.5 + 300 + 150 + 5542.5 = 8695.5.
+$$\large \sum_{i=1}m_i$$ = 300 + 45 + 18 + 55 + 120 + 40 + 10 + 8 + 15 + 30 + 20 + 739 = 1400 g
+
+$$\large \sum_{i=1}m_i \times x_i$$ = 1200 + 180 + 135 + 412.5 + 240 + 300 + 75 + 48 + 112.5 + 300 + 150 + 5542.5 = 8695.5
 
 $$\large X_\text{cm} = \frac{\text{8695.5}}{\text{1400}} = \text{6.21 cm}$$
+
+$$\large \sum_{i=1}m_i \times y_i$$ = 300 + 45 + 36 + 330 + 1920 + 360 + 5 + 80 + 285 + 360 + 180 + 7020.5 = 10921.5
+
+$$\large Y_\text{cm} = \frac{\text{10921.5}}{\text{1400}} = \text{7.8 cm}$$
 
 
 This helped us create a well-rounded robot that moves in a predictable manner and doesn't tip.
