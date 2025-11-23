@@ -246,6 +246,11 @@ We organized every cable on our robot,  using PLA holders. We used them solely f
 -	The nozzle temperature is at `210°C` and the hot plate temperature is at `60°C` which provides better bonding. 
 -	We created time-lapse videos to basically show how each part is being created so that we would be able to evaluate and, if needed, enhance the mechanical aspects of the robot.
 
+<div>
+  <img src="../media/printer.jpg" alt="Exploded View" height="500" />
+  <p style="margin-top:0;"><i>Figure 3.1: Our printer</i></p>
+</div>
+
 # 11. Exploded View and SolidWorks Assembly
 
 We created an exploded view assembly diagram using SolidWorks to detail and better show the development of our robot.
@@ -292,7 +297,7 @@ We created an exploded view assembly diagram using SolidWorks to detail and bett
 
 <div>
   <img src="../media/EXPL.gif" alt="Exploded View" />
-  <p style="margin-top:0;"><i>Figure 3.1: Exploded View</i></p>
+  <p style="margin-top:0;"><i>Figure 4.1: Exploded View</i></p>
 </div>
 
 As you can see, we showed how each part, layers for the chassis, Ackermann steering, gears, sensors, and electronics, combines into a full assembly. 
