@@ -118,7 +118,7 @@ It is also important to notice and emphazie that the Ackermann steering is imple
   <tr>
     <td align="center" colspan="2">
       <img src="ACKERMANN_WHEEL_HOLDER.jpg"><br>
-      <b>Servo Holder</b>
+      <b>Ackermann Wheel Holder</b>
     </td>
     <td align="center" colspan="2">
       <img src="../media/ACKK_rsz.gif"><br>
