@@ -34,11 +34,11 @@ The earlier versions of robots did not support complex steering or mounting poin
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="BOTTOM_CHASSE.jpg" height="700"><br>
+      <img src="BOTTOM_CHASSE.jpg"><br>
       <b>Bottom Chassis</b>
     </td>
     <td align="center" colspan="2">
-      <img src="../media/bottom_chassis_rsz.gif" height="700"><br>
+      <img src="../media/bottom_chassis_rsz.gif"><br>
       <b>Bottom Chassis Printing Proccess</b>
     </td>
   </tr>
@@ -69,11 +69,11 @@ We printed the gears themselves and the gearbox with the PLA material, with alum
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="GEARBOX_HOLD.jpg" height="700"><br>
+      <img src="GEARBOX_HOLD.jpg"><br>
       <b>Gearbox</b>
     </td>
     <td align="center" colspan="2">
-      <img src="../media/gearbox_gif_rsz.gif" height="700"><br>
+      <img src="../media/gearbox_gif_rsz.gif"><br>
       <b>Printing Proccess</b>
     </td>
   </tr>
@@ -117,11 +117,11 @@ It is also important to notice and emphazie that the Ackermann steering is imple
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="ACKERMANN_WHEEL_HOLDER.jpg" height="700"><br>
+      <img src="ACKERMANN_WHEEL_HOLDER.jpg"><br>
       <b>Servo Holder</b>
     </td>
     <td align="center" colspan="2">
-      <img src="../media/ACKK_rsz.gif" height="700"><br>
+      <img src="../media/ACKK_rsz.gif"><br>
       <b>Printing Proccess</b>
     </td>
   </tr>
@@ -149,11 +149,11 @@ We placed the servo on top of a bracket created using PLA, and we specifically d
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="SERVO_HOLDER.jpg" height="700"><br>
+      <img src="SERVO_HOLDER.jpg"><br>
       <b>Servo Holder</b>
     </td>
     <td align="center" colspan="2">
-      <img src="../media/servo_holder_rsz.gif" height="700"><br>
+      <img src="../media/servo_holder_rsz.gif"><br>
       <b>Printing Proccess</b>
     </td>
   </tr>
