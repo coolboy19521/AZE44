@@ -14,14 +14,14 @@ The earlier versions of robots did not support complex steering or mounting poin
 
 <table align="center">
   <tr>
-    <th colspan="4">Top Chassis Mechanical Drawings</th>
+    <th colspan="2">Top Chassis Mechanical Drawings</th>
   </tr>
   <tr>
-    <td align="center" colspan="2">
+    <td align="center">
       <img src="TOP_CHASSE.jpg" height="700"><br>
       <b>Top Chassis</b>
     </td>
-    <td align="center" colspan="2">
+    <td align="center">
       <img src="../media/top_chassis.gif" height="700"><br>
       <b>Printing Proccess</b>
     </td>
