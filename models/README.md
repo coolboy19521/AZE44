@@ -275,15 +275,15 @@ We organized every cable on our robot,  using PLA holders. We used them solely f
 
 <table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
-    <th colspan="4">Robot Exploded View Photos</th>
+    <th colspan="4">Sensor Placement</th>
   </tr>
   <tr>
     <td align="center">
-      <img src="../media/TOP.jpg" height="300"><br>
+      <img src="../media/TOP.jpg" height="600"><br>
       <b>Camera, Gyro and Lidar from top view</b>
     </td>
     <td align="center">
-      <img src="../media/BACK.jpg" height="300"><br>
+      <img src="../media/BACK.jpg" height="600"><br>
       <b>The ultrasonic sensor from back view</b>
     </td>
   </tr>
