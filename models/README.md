@@ -230,37 +230,6 @@ We organized every cable on our robot,  using PLA holders. We used them solely f
 -	For all turning joints, we used 693ZZ metal ball bearings. Metal ball bearings serve to reduce friction and vibration within the drivetrain, turning pivots, and wheel axles.
 -	We mounted bearings on the gearbox and front steering pivots to provide smooth motion and enhance mechanical robustness.
 
-# 9. Sensor and Component Placement
-
--	As mentioned before, we placed the LIDAR is placed at the front for it to scan freely from its environment. 
--	Coming to the front-mounted camera, we positioned it upwards for better visibility. 
--	The ultrasonic sensor in the back gives data on the distance behind it, which is really helpful for us during sharp movements and reversing functions in initial tests. 
--	On top are the Raspberry Pi 5 and motor driver, as connectivity is kind of easier there, on the top platform. 
--	We placed the battery to make sure that the center of the mass remains as we intended it to be. 
--	The servo stays on the left side and is directly joined with the main steering arm so it can effectively steer the Ackerman linkages.
-
-# 10. Specifications for 3D Printing 
-
--	We used the 3D printer Sidewinder X2 for both replicas and original parts. 
--	Because we use PLA, prints are a lot more accurate, with very low warpage. 
--	The nozzle temperature is at `210°C` and the hot plate temperature is at `60°C` which provides better bonding. 
--	We created time-lapse videos to basically show how each part is being created so that we would be able to evaluate and, if needed, enhance the mechanical aspects of the robot.
-
-<div>
-  <img src="../media/printer.jpg" alt="Exploded View" height="500" />
-  <p style="margin-top:0;"><i>Figure 3.1: Our printer</i></p>
-</div>
-
-# 11. Exploded View and SolidWorks Assembly
-
-We created an exploded view assembly diagram using SolidWorks to detail and better show the development of our robot.
-
--	We really focused on creating the exploded view to develop the assemblies and the overall robot structure to be certain that the designed mechanism is really going to work in real life. 
--	This way, we made sure that every element of our robotic design was correctly integrated before 3D printing, making us avoid prototype failures. 
-- When it comes to the assemblies, you can see the measurement of every mechanical component from every perspective.
--	Keeping the assemblies detailed made it easier for us to go forward with the printing process without any problems. 
--	We also thoroughly discussed which 3D modelling tool to use and concluded that, in comparison to other 3D modeling software, SolidWorks provides better capabilities for working with mechanical assemblies, like interference detection and assembly simulations. 
-
 <table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <th colspan="4">Robot Exploded View Photos</th>
@@ -294,6 +263,53 @@ We created an exploded view assembly diagram using SolidWorks to detail and bett
     </td>
   </tr>
 </table>
+
+# 9. Sensor and Component Placement
+
+-	As mentioned before, we placed the LIDAR is placed at the front for it to scan freely from its environment. 
+-	Coming to the front-mounted camera, we positioned it upwards for better visibility. 
+-	The ultrasonic sensor in the back gives data on the distance behind it, which is really helpful for us during sharp movements and reversing functions in initial tests. 
+-	On top are the Raspberry Pi 5 and motor driver, as connectivity is kind of easier there, on the top platform. 
+-	We placed the battery to make sure that the center of the mass remains as we intended it to be. 
+-	The servo stays on the left side and is directly joined with the main steering arm so it can effectively steer the Ackerman linkages.
+
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="4">Robot Exploded View Photos</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="../media/TOP.jpg" height="300"><br>
+      <b>Camera, Gyro and Lidar from top view</b>
+    </td>
+    <td align="center">
+      <img src="../media/BACK.jpg" height="300"><br>
+      <b>The ultrasonic sensor from back view</b>
+    </td>
+  </tr>
+</table>
+
+# 10. Specifications for 3D Printing 
+
+-	We used the 3D printer Sidewinder X2 for both replicas and original parts. 
+-	Because we use PLA, prints are a lot more accurate, with very low warpage. 
+-	The nozzle temperature is at `210°C` and the hot plate temperature is at `60°C` which provides better bonding. 
+-	We created time-lapse videos to basically show how each part is being created so that we would be able to evaluate and, if needed, enhance the mechanical aspects of the robot.
+
+<div>
+  <img src="../media/printer.jpg" alt="Exploded View" height="500" />
+  <p style="margin-top:0;"><i>Figure 3.1: Our printer</i></p>
+</div>
+
+# 11. Exploded View and SolidWorks Assembly
+
+We created an exploded view assembly diagram using SolidWorks to detail and better show the development of our robot.
+
+-	We really focused on creating the exploded view to develop the assemblies and the overall robot structure to be certain that the designed mechanism is really going to work in real life. 
+-	This way, we made sure that every element of our robotic design was correctly integrated before 3D printing, making us avoid prototype failures. 
+- When it comes to the assemblies, you can see the measurement of every mechanical component from every perspective.
+-	Keeping the assemblies detailed made it easier for us to go forward with the printing process without any problems. 
+-	We also thoroughly discussed which 3D modelling tool to use and concluded that, in comparison to other 3D modeling software, SolidWorks provides better capabilities for working with mechanical assemblies, like interference detection and assembly simulations. 
 
 <div>
   <img src="../media/EXPL.gif" alt="Exploded View" />
