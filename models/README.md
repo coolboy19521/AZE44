@@ -139,3 +139,17 @@ We used the 3D printer Sidewinder X2 for both replicas and original parts. Becau
 # 11. Exploded View and SolidWorks Assembly
 
 We created an exploded view assembly diagram using SolidWorks to detail and better show the development of our robot. We also have an exploded view diagram to show how parts relate to each other in an assembly. We really focused on creating the exploded view to develop the assemblies and the overall robot structure to be certain that the designed mechanism is really going to work in real life. This way, we made sure that every element of our robotic design was correctly integrated before 3D printing, making us avoid prototype failures.  Moreover, we thoroughly discussed on which 3D modelling tool to use and concluded that, in comparison to other 3D modeling software, SolidWorks provides better capabilities for working with mechanical assemblies, like interference detection and assembly simulations. As you can see, we showed how each part, layers for the chassis, Ackermann steering, gears, sensors, and electronics, combines into a full assembly. 
+
+<div>
+  <img src="../media/EXPL.gif" alt="Exploded View" />
+  <p style="margin-top:0;"><i>Figure 1.5: Exploded View</i></p>
+</div>
+
+<hr>
+
+<p align="center">
+  <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../media/my_image.png">
+  <img height="400" alt="logo" src="../media/my_image_light.png">
+  </picture>
+</p>
