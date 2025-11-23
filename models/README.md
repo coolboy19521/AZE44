@@ -14,21 +14,21 @@ The earlier versions of robots did not support complex steering or mounting poin
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="TOP_CHASSE.jpg" height="500px"><br>
+      <img src="TOP_CHASSE.jpg" height="500"><br>
       <b>Top Chassis</b>
     </td>
     <td align="center" colspan="2">
-      <img src="BOTTOM_CHASSE.jpg" height="500px"><br>
+      <img src="BOTTOM_CHASSE.jpg" height="500"><br>
       <b>Bottom Chassis</b>
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/top_chassis.gif" height="500px"><br>
+      <img src="../media/top_chassis.gif" height="500"><br>
       <b>Top Chassis Printing Proccess</b>
     </td>
     <td align="center" colspan="2">
-      <img src="BOTTOM_CHASSE.jpg" height="500px"><br>
+      <img src="BOTTOM_CHASSE.jpg" height="500"><br>
       <b>Bottom Chassis</b>
     </td>
   </tr>
@@ -50,11 +50,11 @@ We printed the gears themselves and the gearbox with the PLA material, with alum
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/gearbox_gif.gif" height="500px"><br>
+      <img src="../media/gearbox_gif.gif" height="500"><br>
       <b>Printing Proccess</b>
     </td>
     <td align="center" colspan="2">
-      <img src="GEARBOX_HOLD.jpg" height="500px"><br>
+      <img src="GEARBOX_HOLD.jpg" height="500"><br>
       <b>Gearbox</b>
     </td>
   </tr>
@@ -92,11 +92,11 @@ It is also important to notice and emphazie that the Ackermann steering is imple
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/ACKK.gif" height="500px"><br>
+      <img src="../media/ACKK.gif" height="500"><br>
       <b>Printing Proccess</b>
     </td>
     <td align="center" colspan="2">
-      <img src="ACKERMANN_WHEEL_HOLDER.jpg" height="500px"><br>
+      <img src="ACKERMANN_WHEEL_HOLDER.jpg" height="500"><br>
       <b>Servo Holder</b>
     </td>
   </tr>
@@ -124,11 +124,11 @@ We placed the servo on top of a bracket created using PLA, and we specifically d
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/servo_holder.gif" height="500px"><br>
+      <img src="../media/servo_holder.gif" height="500"><br>
       <b>Printing Proccess</b>
     </td>
     <td align="center" colspan="2">
-      <img src="SERVO_HOLDER.jpg" height="500px"><br>
+      <img src="SERVO_HOLDER.jpg" height="500"><br>
       <b>Servo Holder</b>
     </td>
   </tr>
@@ -155,11 +155,11 @@ This helped us create a well-rounded robot that moves in a predictable manner an
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/mass_3d.jpg" height="500px"><br>
+      <img src="../media/mass_3d.jpg" height="500"><br>
       <b>Mass Diagram 3D</b>
     </td>
     <td align="center" colspan="2">
-      <img src="../media/mass_2d.jpg" height="500px"><br>
+      <img src="../media/mass_2d.jpg" height="500"><br>
       <b>Mass Diagram 2D</b>
     </td>
   </tr>
