@@ -81,22 +81,6 @@ It is also important to notice and emphazie that the Ackermann steering is imple
 
 <table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
-    <th colspan="4">Servo Holder Mechanical Design</th>
-  </tr>
-  <tr>
-    <td align="center" colspan="2">
-      <img src="../media/servo_holder.gif" height="500"><br>
-      <b>Printing Proccess</b>
-    </td>
-    <td align="center" colspan="2">
-      <img src="SERVO_HOLDER.jpg" height="500"><br>
-      <b>Servo Holder</b>
-    </td>
-  </tr>
-</table>
-
-<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
-  <tr>
     <th colspan="4">Ackermann Wheel Holder Mechanical Design</th>
   </tr>
   <tr>
@@ -110,6 +94,8 @@ It is also important to notice and emphazie that the Ackermann steering is imple
     </td>
   </tr>
 </table>
+
+<br>
 
 <div>
   <img src="../media/Ackermann_fix.png" alt="Ackermann System" height="650px" />
@@ -125,10 +111,21 @@ The servo that controls the steering mechanism is TD8120MG metal gear servo. It 
 
 We placed the servo on top of a bracket created using PLA, and we specifically designed this bracket to make sure that it aligns well with the Ackermann linkage mechanism. As the servo rotates, it acts on the main steering arm, which in turn acts on both front wheels using the Ackermann rods.
 
-<div>
-  <img src="BATTERY_HOLD.jpg" alt="Ackermann System" height="650px" />
-  <p style="margin-top:0;"><i>Figure 1.2: Servo Holder</i></p>
-</div>
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="4">Servo Holder Mechanical Design</th>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="../media/servo_holder.gif" height="500"><br>
+      <b>Printing Proccess</b>
+    </td>
+    <td align="center" colspan="2">
+      <img src="SERVO_HOLDER.jpg" height="500"><br>
+      <b>Servo Holder</b>
+    </td>
+  </tr>
+</table>
 
 # 5. Wheel Movement
 We control the movement of the wheels on our robot with the rear DC motor. As the rear wheels rotate clockwise, they propel the robot forward, while the rotation of the motor in an anticlockwise direction makes the robot go backward. With the gearbox on the robot we are able to ensure that if one wheel faces a rotation problem or a mechanical barrier in general, the other wheel continues to rotate.
