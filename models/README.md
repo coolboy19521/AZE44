@@ -195,6 +195,9 @@ So applying this formula to our robot:
 12. Chassis + mechanical + wheels: $$\large \text{m}$$ = 739, $$\text{(x, y)}$$ = (7.5,9.5)
 
 $$\large \sum_{i=1}m_i$$ = 300 + 45 + 18 + 55 + 120 + 40 + 10 + 8 + 15 + 30 + 20 + 739 = 1400 g.
+$$\large \sum_{i=1}m_i \times x_i$$ = 1200 + 180 + 135 + 412.5 + 240 + 300 + 75 + 48 + 112.5 + 300 + 150 + 5542.5 = 8695.5.
+
+$$\large X_\text{cm} = \frac{\text{8695.5}}{\text{1400}} = \text{6.21 cm}$$
 
 
 This helped us create a well-rounded robot that moves in a predictable manner and doesn't tip.
