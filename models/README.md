@@ -12,7 +12,7 @@ The initial design for our chassis was very narrow with angled corners. Although
 
 The earlier versions of robots did not support complex steering or mounting points for sensors and other factors, but with the new design, it has become more modular, and ready for the Ackermann steering mechanism.
 
-<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+<table align="center">
   <tr>
     <th colspan="4">Top Chassis Mechanical Drawings</th>
   </tr>
