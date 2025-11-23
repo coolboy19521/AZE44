@@ -111,17 +111,17 @@ It is also important to notice and emphazie that the Ackermann steering is imple
 -	Enhance turning precision, and 
 -	Provide better control at both high and low velocities. For us, its implementation in our robot allowed our vehicle to act similarly to actual vehicles and enhance the turning precision in our navigation significantly.
 
-<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+<table align="center">
   <tr>
-    <th colspan="4">Ackermann Wheel Holder Mechanical Design</th>
+    <th colspan="2">Ackermann Wheel Holder Mechanical Design</th>
   </tr>
   <tr>
-    <td align="center" colspan="2">
-      <img src="ACKERMANN_WHEEL_HOLDER.jpg" width="561"><br>
+    <td align="center">
+      <img src="ACKERMANN_WHEEL_HOLDER.jpg" width="561px"><br>
       <b>Ackermann Wheel Holder</b>
     </td>
-    <td align="center" colspan="2">
-      <img src="../media/ACKK_rsz.gif" width="900"><br>
+    <td align="center">
+      <img src="../media/ACKK_rsz.gif" width="900px"><br>
       <b>Printing Proccess</b>
     </td>
   </tr>
