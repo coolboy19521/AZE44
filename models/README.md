@@ -239,7 +239,7 @@ We created an exploded view assembly diagram using SolidWorks to detail and bett
 
 <table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
-    <th colspan="4">Robot Photos</th>
+    <th colspan="4">Robot Exploded View Photos</th>
   </tr>
   <tr>
     <td align="center" colspan="2">
