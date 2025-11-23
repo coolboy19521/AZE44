@@ -215,11 +215,6 @@ We organized every cable on our robot,  using PLA holders. We used them solely f
 -	We placed the battery to make sure that the center of the mass remains as we intended it to be. 
 -	The servo stays on the left side and is directly joined with the main steering arm so it can effectively steer the Ackerman linkages.
 
-<div>
-  <img src="../media/side.jpg" alt="DC System" height="700px" />
-  <p style="margin-top:0;"><i>Figure 1.2: DC System</i></p>
-</div>
-
 # 10. Specifications for 3D Printing 
 
 -	We used the 3D printer Sidewinder X2 for both replicas and original parts. 
