@@ -83,7 +83,7 @@ We printed the gears themselves and the gearbox with the PLA material, with alum
 
 <div>
   <img src="../media/dc.jpg" alt="DC System" height="700px" />
-  <p style="margin-top:0;"><i>Figure 1.2: DC System</i></p>
+  <p style="margin-top:0;"><i>Figure 1.1: DC System</i></p>
 </div>
 
 # 3. Ackermann Steering System
@@ -131,7 +131,7 @@ It is also important to notice and emphazie that the Ackermann steering is imple
 
 <div>
   <img src="../media/Ackermann_fix.png" alt="Ackermann System" height="700px" />
-  <p style="margin-top:0;"><i>Figure 1.1: Ackermann System</i></p>
+  <p style="margin-top:0;"><i>Figure 2.1: Ackermann System</i></p>
 </div>
 
 >[!NOTE]
@@ -296,7 +296,7 @@ We created an exploded view assembly diagram using SolidWorks to detail and bett
 
 <div>
   <img src="../media/EXPL.gif" alt="Exploded View" />
-  <p style="margin-top:0;"><i>Figure 1.5: Exploded View</i></p>
+  <p style="margin-top:0;"><i>Figure 3.1: Exploded View</i></p>
 </div>
 
 As you can see, we showed how each part, layers for the chassis, Ackermann steering, gears, sensors, and electronics, combines into a full assembly. 
