@@ -101,3 +101,12 @@ $$\large X_\text{cm} = \frac{\sum_{i=1}^{n} x_i \times m_i}{\sum_{i=1}^{n} m_i} 
 
 
 This helped us create a well-rounded robot that moves in a predictable manner and doesn't tip.
+
+<div>
+  <img src="../media/mass_3d.jpg" alt="Mass Diagram 3D" height="800px" />
+  <p style="margin-top:0;"><i>Figure 1.3: Mass Diagram 3D</i></p>
+</div>
+<div>
+  <img src="../media/mass_2d.jpg" alt="Mass Diagram 2D" height="800px" />
+  <p style="margin-top:0;"><i>Figure 1.4: Mass Diagram 2D</i></p>
+</div>
