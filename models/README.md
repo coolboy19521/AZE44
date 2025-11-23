@@ -36,7 +36,7 @@ We printed the gears themselves and the gearbox with the PLA material, with alum
 
 ![](../media/gearbox_gif.gif)
 
-<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+<!-- <table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
     <th colspan="4">Gearbox Mechanical Drawings</th>
   </tr>
@@ -50,7 +50,7 @@ We printed the gears themselves and the gearbox with the PLA material, with alum
       <b>Gearbox</b>
     </td>
   </tr>
-</table>
+</table> -->
 
 # 3. Ackermann Steering System
 
