@@ -113,7 +113,7 @@ This helped us create a well-rounded robot that moves in a predictable manner an
       <b>Mass Diagram 3D</b>
     </td>
     <td align="center" colspan="2">
-      <img src="BOTTOM_CHASSE.jpg" height="500"><br>
+      <img src="../media/mass_2d.jpg" height="500"><br>
       <b>Mass Diagram 2D</b>
     </td>
   </tr>
