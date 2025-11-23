@@ -237,6 +237,40 @@ We created an exploded view assembly diagram using SolidWorks to detail and bett
 -	Keeping the assemblies detailed made it easier for us to go forward with the printing process without any problems. 
 -	We also thoroughly discussed which 3D modelling tool to use and concluded that, in comparison to other 3D modeling software, SolidWorks provides better capabilities for working with mechanical assemblies, like interference detection and assembly simulations. 
 
+<table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
+  <tr>
+    <th colspan="4">Robot Photos</th>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="RIGHT_COOL.jpg" height="300"><br>
+      <b>Right</b>
+    </td>
+    <td align="center" colspan="2">
+      <img src="LEFT_COOL.jpg" height="300"><br>
+      <b>Left</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="TOP_COOL.jpg" height="300"><br>
+      <b>Top</b>
+    </td>
+    <td align="center">
+      <img src="FRONT_COOL.jpg" height="300"><br>
+      <b>Front</b>
+    </td>
+    <td align="center">
+      <img src="BACK_COOL.jpg" height="300"><br>
+      <b>Back</b>
+    </td>
+    <td align="center">
+      <img src="BOTTOM_COOL.jpg" height="300"><br>
+      <b>Bottom</b>
+    </td>
+  </tr>
+</table>
+
 <div>
   <img src="../media/EXPL.gif" alt="Exploded View" />
   <p style="margin-top:0;"><i>Figure 1.5: Exploded View</i></p>
