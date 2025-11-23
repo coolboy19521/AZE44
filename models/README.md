@@ -14,22 +14,22 @@ The earlier versions of robots did not support complex steering or mounting poin
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/top_chassis.gif" height="500"><br>
-      <b>Top Chassis Printing Proccess</b>
+      <img src="TOP_CHASSE.jpg" height="700"><br>
+      <b>Top Chassis</b>
     </td>
     <td align="center" colspan="2">
-      <img src="TOP_CHASSE.jpg" height="500"><br>
-      <b>Top Chassis</b>
+      <img src="../media/top_chassis.gif" height="700"><br>
+      <b>Top Chassis Printing Proccess</b>
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/bottom_chassis.gif" height="500"><br>
-      <b>Bottom Chassis Printing Proccess</b>
+      <img src="BOTTOM_CHASSE.jpg" height="700"><br>
+      <b>Bottom Chassis</b>
     </td>
     <td align="center" colspan="2">
-      <img src="BOTTOM_CHASSE.jpg" height="500"><br>
-      <b>Bottom Chassis</b>
+      <img src="../media/bottom_chassis.gif" height="700"><br>
+      <b>Bottom Chassis Printing Proccess</b>
     </td>
   </tr>
 </table>
@@ -50,12 +50,12 @@ We printed the gears themselves and the gearbox with the PLA material, with alum
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/gearbox_gif.gif" height="500"><br>
-      <b>Printing Proccess</b>
+      <img src="GEARBOX_HOLD.jpg" height="700"><br>
+      <b>Gearbox</b>
     </td>
     <td align="center" colspan="2">
-      <img src="GEARBOX_HOLD.jpg" height="500"><br>
-      <b>Gearbox</b>
+      <img src="../media/gearbox_gif.gif" height="700"><br>
+      <b>Printing Proccess</b>
     </td>
   </tr>
 </table>
@@ -63,7 +63,7 @@ We printed the gears themselves and the gearbox with the PLA material, with alum
 <br>
 
 <div>
-  <img src="../media/dc.jpg" alt="DC System" height="650px" />
+  <img src="../media/dc.jpg" alt="DC System" height="700px" />
   <p style="margin-top:0;"><i>Figure 1.2: DC System</i></p>
 </div>
 
@@ -92,12 +92,12 @@ It is also important to notice and emphazie that the Ackermann steering is imple
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/ACKK.gif" height="500"><br>
-      <b>Printing Proccess</b>
+      <img src="ACKERMANN_WHEEL_HOLDER.jpg" height="700"><br>
+      <b>Servo Holder</b>
     </td>
     <td align="center" colspan="2">
-      <img src="ACKERMANN_WHEEL_HOLDER.jpg" height="500"><br>
-      <b>Servo Holder</b>
+      <img src="../media/ACKK.gif" height="700"><br>
+      <b>Printing Proccess</b>
     </td>
   </tr>
 </table>
@@ -105,7 +105,7 @@ It is also important to notice and emphazie that the Ackermann steering is imple
 <br>
 
 <div>
-  <img src="../media/Ackermann_fix.png" alt="Ackermann System" height="650px" />
+  <img src="../media/Ackermann_fix.png" alt="Ackermann System" height="700px" />
   <p style="margin-top:0;"><i>Figure 1.1: Ackermann System</i></p>
 </div>
 
@@ -124,11 +124,11 @@ We placed the servo on top of a bracket created using PLA, and we specifically d
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/servo_holder.gif" height="500"><br>
+      <img src="../media/servo_holder.gif" height="700"><br>
       <b>Printing Proccess</b>
     </td>
     <td align="center" colspan="2">
-      <img src="SERVO_HOLDER.jpg" height="500"><br>
+      <img src="SERVO_HOLDER.jpg" height="700"><br>
       <b>Servo Holder</b>
     </td>
   </tr>
@@ -155,11 +155,11 @@ This helped us create a well-rounded robot that moves in a predictable manner an
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="../media/mass_3d.jpg" height="500"><br>
+      <img src="../media/mass_3d.jpg" height="700"><br>
       <b>Mass Diagram 3D</b>
     </td>
     <td align="center" colspan="2">
-      <img src="../media/mass_2d.jpg" height="500"><br>
+      <img src="../media/mass_2d.jpg" height="700"><br>
       <b>Mass Diagram 2D</b>
     </td>
   </tr>
@@ -178,6 +178,11 @@ For all turning joints, we used 693ZZ metal ball bearings. Metal ball bearings s
 # 9. Sensor and Component Placement
 
 We placed the LIDAR is placed at the front for it to scan freely from its environment. Coming to the front-mounted camera, we positioned it upwards for better visibility. The ultrasonic sensor in the back gives data on the distance behind it, which is really helpful for us during sharp movements and reversing functions in initial tests. On top are the Raspberry Pi 5 and motor driver, as connectivity is kind of easier there, on the top platform. We placed the battery to make sure that the center of the mass still remains as we intended it to be. The servo stays on the left side and is directly joined with the main steering arm so it can effectively steer the Ackerman linkages.
+
+<div>
+  <img src="../media/side.jpg" alt="DC System" height="700px" />
+  <p style="margin-top:0;"><i>Figure 1.2: DC System</i></p>
+</div>
 
 # 10. Specifications for 3D Printing 
 We used the 3D printer Sidewinder X2 for both replicas and original parts. Because we use PLA, prints are a lot more accurate, with very low warpage. The nozzle temperature is at `210°C` and the hot plate temperature is at `60°C` which provides better bonding. Furhtermore, we created time-lapse videos to basically show how each part is being created so that we would be able to evaluate and, if needed, enhance the mechanical aspects of the robot.
