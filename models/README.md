@@ -38,7 +38,7 @@ The earlier versions of robots did not support complex steering or mounting poin
       <b>Bottom Chassis</b>
     </td>
     <td align="center" colspan="2">
-      <img src="../media/bottom_chassis.gif" height="700"><br>
+      <img src="../media/bottom_chassis_rsz.gif" height="700"><br>
       <b>Bottom Chassis Printing Proccess</b>
     </td>
   </tr>
