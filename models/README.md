@@ -40,8 +40,8 @@ We printed the gears themselves and the gearbox with the PLA material, with alum
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="TOP_CHASSE.jpg" height="500"><br>
-      <b>Top Chassis</b>
+      <img src="../media/gearbox_gif.gif" height="500"><br>
+      <b>Printing Proccess</b>
     </td>
     <td align="center" colspan="2">
       <img src="GEARBOX_HOLD.jpg" height="500"><br>
@@ -70,6 +70,35 @@ In our steering system we used aluminum link arms that are mounted to 3D-printed
 It is also important to notice and emphazie that the Ackermann steering is implemented in actual vehicles as well, to reduce wear on tires, enhance turning precision, and provide better control at both high and low velocities. For us, its implementation in our robot allowed our vehicle to act similarly to actual vehicles and enhance the turning precision in our navigation significantly.
 
 <div>
-  <img src="../media/ack.jpg" alt="Ackermann System" height="800px" />
+  <img src="../media/Ackermann_fix.png" alt="Ackermann System" height="800px" />
   <p style="margin-top:0;"><i>Figure 1.1: Ackermann System</i></p>
 </div>
+
+# 4. Servo System
+
+The servo that controls the steering mechanism is TD8120MG metal gear servo. It has a torque of 9.24 kg-cm at 4.8 volts and 10.63 kg-cm at 6 volts, which is ideal for the rotation of the wheels.. The servo also requires only 0.9 seconds to rotate 360 degrees, so it enables fast steering.
+
+We placed the servo on top of a bracket created using PLA, and we specifically designed this bracket to make sure that it aligns well with the Ackermann linkage mechanism. As the servo rotates, it acts on the main steering arm, which in turn acts on both front wheels using the Ackermann rods.
+
+<div>
+  <img src="BATTERY_HOLD.jpg" alt="Ackermann System" height="800px" />
+  <p style="margin-top:0;"><i>Figure 1.2: Servo Holder</i></p>
+</div>
+
+# 5. Wheel Movement
+We control the movement of the wheels on our robot with the rear DC motor. As the rear wheels rotate clockwise, they propel the robot forward, while the rotation of the motor in an anticlockwise direction makes the robot go backward. With the gearbox on the robot we are able to ensure that if one wheel faces a rotation problem or a mechanical barrier in general, the other wheel continues to rotate.
+
+# 6. Center of Gravity and Weight Distribution
+We also positioned every element on our robot to ensure its center of mass remains near the center. Liked this, we increase the robot’s balance and make sure it doesn't develop nose or tail lift during acceleration or braking. We placed The LIDAR near to the front but slightly above the center because we wanted to provide our robot with a full scan range. The camera sensor is placed on its 75-degree width-wise PLA bracket to allow it to scan most of its environment and identify objects-the colors-effectively. Lastly, at the back, we mounted the ultrasonic sensor to assist our robot in detecting objects while reversing or turning through its track on the map.
+
+In the middle of the bottom platform, we put the battery that helps balance out the heavier parts on top, such as the Raspberry Pi and motor driver. We placed the components in this particular way because we wanted our vehicle to have very stable movement when driving, especially during higher speeds while turning.
+
+The formula of the center of mass is:
+
+X_cm = Σ(x_i × m_i) / Σ(m_i
+
+Y_cm = ∑(y_i × m_i) / ∑(m_i
+
+Z_cm = Σ(z_i × m_i) / Σ(m_i
+
+This helped us create a well-rounded robot that moves in a predictable manner and doesn't tip.
