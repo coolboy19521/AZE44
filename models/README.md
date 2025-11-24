@@ -1,3 +1,6 @@
+>[!IMPORTANT]
+>This README file includes some gifs, which could be best viewed through the GitHub itself.
+
 # 1. The  Chassis and General Design
 
 We have a 2-platform design in our robot, which we preferred to be able to modify or repair the robot easily during our test and potentially the competition.
