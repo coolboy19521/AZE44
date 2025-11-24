@@ -232,7 +232,7 @@ We organized every cable on our robot,  using PLA holders. We used them solely f
 
 <table align="center" cellspacing="0" cellpadding="0" style="margin:0; padding:0; border-collapse:collapse;">
   <tr>
-    <th colspan="4">Robot Exploded View Photos</th>
+    <th colspan="4">Robot Solidworks Photos</th>
   </tr>
   <tr>
     <td align="center" colspan="2">
