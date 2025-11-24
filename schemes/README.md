@@ -89,8 +89,6 @@ the Motor Controller.
 **Servo Motor:** Handles robot turns, with the servo angle controlled
 via the motor controller.
 
-2.2 Block Diagram:
-
 # 3. Hardware and Component Introduction
 
 ### 3.1 Raspberry Pi 5
