@@ -602,7 +602,7 @@ Let's get into setting up the development environment. We have a very generic de
 
 Environment for the Raspberry Pi is a little bit more complex but to make it simpler we developed a solution as such:
 
-[![⬇ ISO File](https://img.shields.io/badge/⬇%20ISO%20File-aze44__live__image.iso-df3e3e)](https://drive.google.com/file/d/1ucmIf91wl5LGfa4OBZM_SXe2EEzpq3ym/view?usp=sharing)
+[![⬇ IMG File](https://img.shields.io/badge/⬇%20ISO%20File-aze44__live__image.iso-df3e3e)](https://drive.google.com/file/d/1ucmIf91wl5LGfa4OBZM_SXe2EEzpq3ym/view?usp=sharing)
 
 This is our Raspberry Pi image. If you flash this file into your Raspberry, you will get the exactly same environment as us. To flash this image you can use ``Rufus`` for Windows, ``UNetbootin`` for Linux or ``WonderISO`` for MacOS.
 
