@@ -10,7 +10,7 @@
   <tr>
     <td align="center">
         <a href="https://www.youtube.com/watch?v=vvl1z-_QSYw&list=PLiso-udvas0ohQMEMukKzdqdF-Q77ta-R" target="_blank">
-        <img src="../media/THUMB1.png" height="300"><br>
+        <img src="../media/THUMB0.png" height="300"><br>
         </a>
       <b>Open Challenge</b>
     </td>
@@ -24,7 +24,7 @@
   <tr>
     <td align="center">
         <a href="https://www.youtube.com/watch?v=panU9ucA8hE&list=PLiso-udvas0ohQMEMukKzdqdF-Q77ta-R&index=1" target="_blank">
-        <img src="../media/THUMB0.png" height="300"><br>
+        <img src="../media/THUMB1.png" height="300"><br>
         </a>
       <b>Obstacle Challenge</b>
     </td>
