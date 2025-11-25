@@ -1,6 +1,38 @@
 >[!IMPORTANT]
 >This README file includes some gifs, which could be best viewed through the GitHub itself.
 
+# 1. Bill of Materials (BOM)
+
+<table align="center">
+  <tr>
+    <th colspan="4">Mechanics</th>
+  </tr>
+
+  <tr>
+    <th>Component</th><th>Picture</th>
+    <th>Component</th><th>Picture</th>
+  </tr>
+
+  <tr>
+    <td>3mm Rigid Flange Coupling x 4</td><td><img src="../media/RIGIDFLANGE.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>50mm Standoff Female-Male x 6</td><td><img src="../media/50MMSTANDOFF.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+  </tr>
+
+  <tr>
+    <td>20mm Standoff Female-Male x 4</td><td><img src="../media/20MMSTANDOFF.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>3mm Shaft 7cm x 2</td><td><img src="../media/3MMSHAFT.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+  </tr>
+
+  <tr>
+    <td>Ball Joint x 4</td><td><img src="../media/BALLJOINT.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+    <td>M3 Nylon Insert Lock Nut x 2</td><td><img src="../media/M3NYLON.jpg" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+  </tr>
+
+  <tr>
+    <td>Filament 1Kg x 1</td><td><img src="../media/FILAMENT.webp" style="width:170px;height:170px;object-fit:contain;background:white;"></td>
+  </tr>
+</table>
+
 # 1. The  Chassis and General Design
 
 We have a 2-platform design in our robot, which we preferred to be able to modify or repair the robot easily during our test and potentially the competition.
