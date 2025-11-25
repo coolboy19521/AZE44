@@ -608,7 +608,7 @@ Environment for the Raspberry Pi is a little bit more complex but to make it sim
 This is our Raspberry Pi image. If you flash this file into your Raspberry, you will get the exactly same environment as us. To flash this image you can use ``Rufus`` for Windows, ``UNetbootin`` for Linux or ``WonderISO`` for MacOS.
 
 <div>
-  <img src="../media/rufus.webp" alt="Rufus" />
+  <img src="../media/rufus_img.webp" alt="Rufus" />
   <p style="margin-top:0;"><i>Figure 1.5: Rufus flashing tool</i></p>
 </div>
 
