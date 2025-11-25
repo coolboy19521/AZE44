@@ -4,13 +4,13 @@
   </tr>
   <tr>
     <td align="center">
-        <a href="https://www.youtube.com/watch?v=vvl1z-_QSYw&list=PLiso-udvas0ohQMEMukKzdqdF-Q77ta-R" target="_blank">
+        <a href="https://www.youtube.com/watch?v=vvl1z-_QSYw&list=PLiso-udvas0ohQMEMukKzdqdF-Q77ta-R">
         <img src="../media/THUMB0.png" height="300"><br>
         </a>
       <b>Open Challenge</b>
     </td>
     <td align="center">
-        <a href="https://www.youtube.com/watch?v=AqHtKbuUQjM&list=PLiso-udvas0ohQMEMukKzdqdF-Q77ta-R&index=4" target="_blank">
+        <a href="https://www.youtube.com/watch?v=AqHtKbuUQjM&list=PLiso-udvas0ohQMEMukKzdqdF-Q77ta-R&index=4">
         <img src="../media/THUMB3.png" height="300"><br>
         </a>
       <b>Open Challenge Commentary</b>
@@ -18,13 +18,13 @@
   </tr>
   <tr>
     <td align="center">
-        <a href="https://www.youtube.com/watch?v=panU9ucA8hE&list=PLiso-udvas0ohQMEMukKzdqdF-Q77ta-R&index=1" target="_blank">
+        <a href="https://www.youtube.com/watch?v=panU9ucA8hE&list=PLiso-udvas0ohQMEMukKzdqdF-Q77ta-R&index=1">
         <img src="../media/THUMB1.png" height="300"><br>
         </a>
       <b>Obstacle Challenge</b>
     </td>
     <td align="center">
-        <a href="https://www.youtube.com/watch?v=kVnSEkZt-Fs&list=PLiso-udvas0ohQMEMukKzdqdF-Q77ta-R&index=3" target="_blank">
+        <a href="https://www.youtube.com/watch?v=kVnSEkZt-Fs&list=PLiso-udvas0ohQMEMukKzdqdF-Q77ta-R&index=3">
         <img src="../media/THUMB2.png" height="300"><br>
         </a>
       <b>Obstacle Challenge Documentation</b>
