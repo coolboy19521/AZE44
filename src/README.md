@@ -431,7 +431,7 @@ self.colors = {
 }
 ```
 
-The reason why we only take the lower `60%` of the frame is: if we take the whole frame there can be 2 pillars seen in the same frame. This way robot might assume that the next pillar is the one it is seing right now. That's why we limit the robot's view by only bottom `60%`. We also tilt the physical camera for the same exact reason.
+The values here are in the format of minimum and maximum value pairs of HSV values (Hue, Saturation, and Value). The reason why we only take the lower `60%` of the frame is: if we take the whole frame there can be 2 pillars seen in the same frame. This way robot might assume that the next pillar is the one it is seing right now. That's why we limit the robot's view by only bottom `60%`. We also tilt the physical camera for the same exact reason.
 
 #### 2.5.3 Main Strategy
 
