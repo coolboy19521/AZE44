@@ -1,5 +1,5 @@
 >[!IMPORTANT]
->This README file includes some gifs, which could be best viewed through the GitHub itself.
+>This README file includes some gifs, which could be best viewed through the GitHub itself. You might need to wait for some GIFs to load as well.
 >[!IMPORTANT]
 >There are some heavy videos inside this README file. Please wait until the page is fully loaded before proceeding.
 
@@ -384,6 +384,47 @@ Here, $$Pillar_{\text{pos}}$$ indicates the pillar's distance from the outer wal
 $$\large Distance_{\color{green}green} = \frac{Pillar_{\text{pos}}}{2} \quad \large ; \quad \large Distance_{\color{red}red} = -\frac{100 - Pillar_{\text{pos}}}{2}$$
 
 As you can see the formulas become the inverse.
+
+#### 2.5.2 Color Detection
+
+Color detection is done using HSV values. Color detection using HSV values is pretty standart and works in this principle:
+- You specify 3 values (Hue, Saturation, and Value) spectrum (min. and max. values).
+- Then create a mask in this spectrum (mask is some kind of a filter, like the ones used in social medias).
+- Apply the mask to the retrieved image.
+Colors that don't match the filter will have the value zero. So every value that is not zero is matching the color filter. Using this property we used this kind of an algorithm:
+
+```python
+def find_colors(self, hsv, colors): # Try to match every color's filter in the list colors
+    area = dict() # Store the areas of each color filter's match
+    for color, codes in self.colors.items():
+        if color in colors:
+            area[color], mask = 0, None # Initialize the values to zero
+            for code in codes:
+                color_low = numpy.array(code[0])
+                color_high = numpy.array(code[1])
+                m = cv2.inRange(hsv, color_low, color_high)
+                mask = m if mask is None else cv2.bitwise_or(mask, m) # Bitwise or all the masks belonging to the same color
+            if mask is not None:
+                coords = cv2.findNonZero(mask) # Find all non zeros
+                if coords is not None:
+                    area[color] = len(coords) # The length is equal to the area of the color in the frame
+    return area
+
+def camera_callback(self, msg):
+    np_arr = numpy.frombuffer(msg.data, numpy.uint8) # Convert ROS message into a numpy array
+    frame = cv2.imdecode(np_arr, cv2.IMREAD_COLOR) # Convert the numpy array into an opencv frame
+    height, width, _ = frame.shape
+    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV) # Convert the color values into HSV spectrum
+    k_hsv = hsv[height*4//10:,:] # We only take lower 60% of the frame (explained below)
+    k_area = self.find_colors(k_hsv, ('green', 'red')) # We only check for colors green and red
+    if k_area['green'] > k_area['red']: self.color = GREEN # If green's are is more anything in front is assumed to be green
+    elif k_area['red'] > k_area['green']: self.color = RED # Otherwise it is considered red
+    else: self.color = None # If no pixels match, there is no color
+```
+
+As you can see in our implementation robot is bitwise oring multiple color masks (filters). The reason for this is we figured out we can not fit every pixel of the pillar under some lightings. That's why we get multiple spectrums and combine them. Whichever ligthing is happening (dark or light), the robot does not get affected by it.
+
+The reason why we only take the lower `60%` of the frame is: if we take the whole frame there can be 2 pillars seen in the same frame. This way robot might assume that the next pillar is the one it is seing right now. That's why we limit the robot's view by only bottom `60%`. We also tilt the physical camera for the same exact reason.
 
 #### 2.5.2 Main Strategy
 

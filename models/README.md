@@ -1,5 +1,5 @@
 >[!IMPORTANT]
->This README file includes some gifs, which could be best viewed through the GitHub itself.
+>This README file includes some gifs, which could be best viewed through the GitHub itself. You might need to wait for some GIFs to load as well.
 >[!IMPORTANT]
 >There are some heavy videos inside this README file. Please wait until the page is fully loaded before proceeding.
 
