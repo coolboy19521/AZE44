@@ -426,7 +426,7 @@ As you can see in our implementation robot is bitwise oring multiple color masks
 
 The reason why we only take the lower `60%` of the frame is: if we take the whole frame there can be 2 pillars seen in the same frame. This way robot might assume that the next pillar is the one it is seing right now. That's why we limit the robot's view by only bottom `60%`. We also tilt the physical camera for the same exact reason.
 
-#### 2.5.2 Main Strategy
+#### 2.5.3 Main Strategy
 
 Now let's talk about the famous Obstacle Challange! *Everyone is so excited!* We break the obstacle challenge into wro subchallanges:
 
@@ -526,7 +526,7 @@ Cluster the points according their distance with each other. If there is a group
 
 Thankfully, we switched to our current approach and did not think much to fix the previous one.
 
-#### 2.5.3 Parallel Parking
+#### 2.5.4 Parallel Parking
 
 Parallel parking is a tricky challange considering its need for high-precision. With all the algorithms explained above we were able to achieve this precision. Now the main challange was the robot's dimensions. Our robot had a width of whopping `17cm`. This means we only had a margin of error of only `3cm`. Actually, hitting the wall while parking was also a risk so the margin of error should be calculated from both ends which means the error of margin was just `1.5cm` from both sides. To achieve a better performance, in our new robot we reduced the width of the robot to `15cm`. Which added a centimeter to our margin of error, which is actually a decent difference.
 
