@@ -174,7 +174,7 @@ It is also important to notice and emphazie that the Ackermann steering is imple
 
 # 4. Servo System
 
-The servo that controls the steering mechanism is TD8120MG metal gear servo. It has a torque of 9.24 kg-cm at 4.8 volts and 10.63 kg-cm at 6 volts, which is ideal for the rotation of the wheels.. The servo also requires only 0.9 seconds to rotate 360 degrees, so it enables fast steering.
+The servo that controls the steering mechanism is the TD8120MG metal gear servo. It has a torque of around 18 kg-cm at 4.8 volts and about 20 kg-cm at 6 volts, which is ideal for the rotation of the wheels. The servo also requires about 1.1 seconds to rotate 360 degrees, so it enables fast steering.
 
 We placed the servo on top of a bracket created using PLA, and we specifically designed this bracket to make sure that it aligns well with the Ackermann linkage mechanism. As the servo rotates, it acts on the main steering arm, which in turn acts on both front wheels using the Ackermann rods.
 
