@@ -422,7 +422,14 @@ def camera_callback(self, msg):
     else: self.color = None # If no pixels match, there is no color
 ```
 
-As you can see in our implementation robot is bitwise oring multiple color masks (filters). The reason for this is we figured out we can not fit every pixel of the pillar under some lightings. That's why we get multiple spectrums and combine them. Whichever ligthing is happening (dark or light), the robot does not get affected by it.
+As you can see in our implementation robot is bitwise oring multiple color masks (filters). The reason for this is we figured out we can not fit every pixel of the pillar under some lightings. That's why we get multiple spectrums and combine them. Whichever ligthing is happening (dark or light), the robot does not get affected by it. These are some values we used in national finals (we almost never changed them eversince):
+
+```python
+self.colors = {
+    'green': [((70, 128, 75), (86, 255, 170)), ((67, 106, 22), (78, 188, 182)), ((69, 51, 33), (95, 193, 154)), ((59, 93, 58), (79, 229, 147)), ((18, 27, 88), (97, 188, 156))],
+    'red': [((0, 154, 160), (179, 206, 235)), ((0, 113, 0), (8, 255, 255)), ((0, 40, 124), (1, 219, 196)), ((170, 76, 159), (180, 255, 215))],
+}
+```
 
 The reason why we only take the lower `60%` of the frame is: if we take the whole frame there can be 2 pillars seen in the same frame. This way robot might assume that the next pillar is the one it is seing right now. That's why we limit the robot's view by only bottom `60%`. We also tilt the physical camera for the same exact reason.
 
