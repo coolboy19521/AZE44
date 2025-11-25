@@ -1,5 +1,7 @@
 >[!IMPORTANT]
 >This README file includes some gifs, which could be best viewed through the GitHub itself.
+>[!IMPORTANT]
+>There are some heavy videos inside this README file. Please wait until the page is fully loaded before proceeding.
 
 # 1. Software Structure and Principles 
 
