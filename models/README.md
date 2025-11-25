@@ -36,7 +36,7 @@
   </tr>
 </table>
 
-# 1. The  Chassis and General Design
+# 2. The  Chassis and General Design
 
 We have a 2-platform design in our robot, which we preferred to be able to modify or repair the robot easily during our test and potentially the competition.
 
@@ -82,7 +82,7 @@ The earlier versions of robots did not support complex steering or mounting poin
   </tr>
 </table>
 
-# 2. Drive System and Gearbox
+# 3. Drive System and Gearbox
 
 We use a `12V` DC motor as our drive motor for our robot.
 
@@ -124,7 +124,7 @@ We printed the gears themselves and the gearbox with the PLA material, with alum
   <p style="margin-top:0;"><i>Figure 1.1: DC System</i></p>
 </div>
 
-# 3. Ackermann Steering System
+# 4. Ackermann Steering System
 
 One of the most important changes that we integrated into our design is the Ackermann steering system. We didn’t use this mechanism in our previous versions of the robots, where we could only manage to implement either turning mechanisms with semi-fixed angles and less accurate steering mechanisms. After we saw the difficulties that the previous systems were causing, wedecided to design the entire steering mechanism from scratch.
 The principle behind Ackermann steering is that for a turn, the inner wheel has to turn at a sharper angle than the outer wheel. This corresponds to the geometric shape described by circular motion, where each wheel essentially has to turn at a slightly different radius than the other. After we applied the Ackermann principle, we were finally able to ensure that no wheels start to slide and that the robot moves in predictable arcs.
@@ -175,7 +175,7 @@ It is also important to notice and emphazie that the Ackermann steering is imple
 >[!NOTE]
 >The dotted lines here represent the imaginary projection of a straight line aligned perfectly with the tire holders. The intersection point of these lines should align to the center of the track perfectly for a functional ackermann system. In our previous robot we had miscalculated it a little bit, and the intersection point was a little bit away from the track. That's why this time we focused on fixing the problem. An accurate ackermann system provides us better steering possibilities.
 
-# 4. Servo System
+# 5. Servo System
 
 The servo that controls the steering mechanism is the TD8120MG metal gear servo. It has a torque of around 18 kg-cm at 4.8 volts and about 20 kg-cm at 6 volts, which is ideal for the rotation of the wheels. The servo also requires about 1.1 seconds to rotate 360 degrees, so it enables fast steering.
 
@@ -197,12 +197,12 @@ We placed the servo on top of a bracket created using PLA, and we specifically d
   </tr>
 </table>
 
-# 5. Wheel Movement
+# 6. Wheel Movement
 -	We control the movement of the wheels on our robot with the rear DC motor. As the rear wheels rotate clockwise, they propel the robot forward.
 -	The the rotation of the motor in an anticlockwise direction makes the robot go backward. 
 -	With the gearbox on the robot we are able to ensure that if one wheel faces a rotation problem or a mechanical barrier in general, the other wheel continues to rotate.
 
-# 6. Center of Gravity and Weight Distribution
+# 7. Center of Gravity and Weight Distribution
 We also positioned every element on our robot to ensure its center of mass remains near the center. Liked this, we increase the robot’s balance and make sure it doesn't develop nose or tail lift during acceleration or braking.
 
 -	We placed The LIDAR near to the front but slightly above the center because we wanted to provide our robot with a full scan range. 
@@ -257,11 +257,11 @@ This helped us create a well-rounded robot that moves in a predictable manner an
   </tr>
 </table>
 
-# 7. Cable Management
+# 8. Cable Management
 
 We organized every cable on our robot,  using PLA holders. We used them solely for this function, ensuring that we segregate the power cables, data cables, and servo cables so they are free from any interaction with electromagnetic interference, which can potentially lead to erratic behaviors or data from our sensor or servo. You can also see in our design that our cables are secured to prevent them from shifting whenever our robot moves.
 
-# 8. Mechanical Materials and Bearings
+# 9. Mechanical Materials and Bearings
 
 -	We preferred to work with PLA for 3D parts because it is light and has easy printing properties. 
 -	In parts that needed higher strength such as shafts, rods, or arms in linkages, we chose to work with aluminum because it resists deformation under stress but still is light.
@@ -302,7 +302,7 @@ We organized every cable on our robot,  using PLA holders. We used them solely f
   </tr>
 </table>
 
-# 9. Sensor and Component Placement
+# 10. Sensor and Component Placement
 
 -	As mentioned before, we placed the LIDAR is placed at the front for it to scan freely from its environment. 
 -	Coming to the front-mounted camera, we positioned it upwards for better visibility. 
@@ -327,7 +327,7 @@ We organized every cable on our robot,  using PLA holders. We used them solely f
   </tr>
 </table>
 
-# 10. Specifications for 3D Printing 
+# 11. Specifications for 3D Printing 
 
 -	We used the 3D printer Sidewinder X2 for both replicas and original parts. 
 -	Because we use PLA, prints are a lot more accurate, with very low warpage. 
@@ -339,7 +339,7 @@ We organized every cable on our robot,  using PLA holders. We used them solely f
   <p style="margin-top:0;"><i>Figure 3.1: Our printer</i></p>
 </div>
 
-# 11. Exploded View and SolidWorks Assembly
+# 12. Exploded View and SolidWorks Assembly
 
 We created an exploded view assembly diagram using SolidWorks to detail and better show the development of our robot.
 
