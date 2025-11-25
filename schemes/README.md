@@ -94,6 +94,25 @@ via the motor controller.
   <p style="margin-top:0;"><i>Figure 1.1 Power Flow Diagram</i></p>
 </div>
 
+<table align="center">
+  <tr>
+    <th>Component</th>
+    <th>Voltage</th>
+    <th>Current Consumption</th>
+    <th>Notes</th>
+  </tr>
+  <tr><td>Raspberry Pi 5</td><td>5V</td><td>2.5–5A</td><td>Main processing unit; current fluctuations are stabilized using capacitors.</td></tr>
+  <tr><td>Raspberry Pi Pico</td><td>3.3–5V</td><td>50–150 mA</td><td>Low-power microcontroller for sensor and PWM tasks.</td></tr>
+  <tr><td>LiDAR</td><td>5V</td><td>150 mA</td><td>Standard LiDAR module.</td></tr>
+  <tr><td>IMU / Gyroscope</td><td>3.3–5V</td><td>3–10 mA</td><td>Very low consumption; requires clean power rail.</td></tr>
+  <tr><td>Camera Module</td><td>5V</td><td>250–350 mA</td><td>Higher resolution and FPS increase current usage.</td></tr>
+  <tr><td>Servo Motors (TD8120MG)</td><td>6V</td><td>Idle: 100–200 mA; Load: 1–2A; Stall: 3–4A</td><td>One of the largest dynamic loads.</td></tr>
+  <tr><td>DC Motor + Driver</td><td>6–12V</td><td>No-load: 250 mA; Load: 320 mA; Stall: 1A</td><td>Driver logic draw < 20 mA.</td></tr>
+  <tr><td>3S Li-Po + BECs</td><td>12V → 5V regulated</td><td>—</td><td>Main system power source supplied via BECs.</td></tr>
+  <tr><td>Ultrasonic (HC-SR04)</td><td>5V</td><td>No-load: 2 mA; Load: 10-15 mA</td><td></td></tr>
+  <tr><td colspan="4">We used a 5V 10A BEC for the Raspberry Pi, sensors, and servos.</td></tr>
+</table>
+
 # 3. Hardware and Component Introduction
 
 ### 3.1 Raspberry Pi 5
