@@ -89,6 +89,11 @@ the Motor Controller.
 **Servo Motor:** Handles robot turns, with the servo angle controlled
 via the motor controller.
 
+<div>
+  <img src="../media/CodeComponentDiagram_ManimCE_v0.19.0.png" alt="Diagram" />
+  <p style="margin-top:0;"><i>Figure 1.1 Flow Diagram</i></p>
+</div>
+
 # 3. Hardware and Component Introduction
 
 ### 3.1 Raspberry Pi 5
@@ -103,7 +108,7 @@ via the motor controller.
     <td rowspan="3" style="width:400; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/raspb_up.png" alt="Raspberry Pi" />
-      <p style="margin-top:0;" align="left"><i>Figure 1.1: Raspberry Pi 5</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 2.1: Raspberry Pi 5</i></p>
     </div>
     </td>
     <td>USB</td>
@@ -144,7 +149,7 @@ the main controller of the robot. Its purpose in our robot is:
 
 <div>
   <img src="../media/raspberry_pinout.png" height="500" alt="Raspberry Pi Pinout" />
-  <p style="margin-top:0;"><i>Figure 1.2: Raspberry Pi Pinout</i></p>
+  <p style="margin-top:0;"><i>Figure 2.2: Raspberry Pi Pinout</i></p>
 </div>
 
 >[!NOTE]
@@ -162,7 +167,7 @@ the main controller of the robot. Its purpose in our robot is:
     <td rowspan="3" style="width:400; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/ppico.jpg" alt="Raspberry Pi Pico" />
-      <p style="margin-top:0;" align="left"><i>Figure 2.1: Raspberry Pi Pico 2 W</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 3.1: Raspberry Pi Pico 2 W</i></p>
     </div>
     </td>
     <td>Wireless Connectivity</td>
@@ -195,7 +200,7 @@ the main controller of the robot. Its purpose in our robot is:
 
 <div>
   <img src="../media/pico_pinout.png" height="500" alt="Raspberry Pi Pico 2 Pinout" />
-  <p style="margin-top:0;"><i>Figure 2.2: Raspberry Pi Pico 2 Pinout</i></p>
+  <p style="margin-top:0;"><i>Figure 3.2: Raspberry Pi Pico 2 Pinout</i></p>
 </div>
 
 >[!NOTE]
@@ -213,7 +218,7 @@ the main controller of the robot. Its purpose in our robot is:
     <td rowspan="3" style="height:300px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/tb6612fng.jpeg" height="300px" alt="TB6612FNG" />
-      <p style="margin-top:0;" align="left"><i>Figure 3.1: TB6612FNG</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 4.1: TB6612FNG</i></p>
     </div>
     </td>
     <td>Operating voltage</td>
@@ -239,7 +244,7 @@ the main controller of the robot. Its purpose in our robot is:
 
 <div>
   <img src="../media/tb6612fng-pinout.png" height="400" alt="TB6612FNG Pinout" />
-  <p style="margin-top:0;"><i>Figure 3.2: TB6612FNG Pinout</i></p>
+  <p style="margin-top:0;"><i>Figure 4.2: TB6612FNG Pinout</i></p>
 </div>
 
 ## 3.4 Motors and Servo Motor
@@ -267,7 +272,7 @@ the main controller of the robot. Its purpose in our robot is:
     <td rowspan="3" style="height:350px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/motor.png" height="350px" alt="Gear Motor" />
-      <p style="margin-top:0;" align="left"><i>Figure 4.1: Gear Motor</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 5.1: Gear Motor</i></p>
     </div>
     </td>
     <td>Operating voltage</td>
@@ -302,7 +307,7 @@ may reduce lifespan.
 
 <div>
   <img src="../media/motor_pinout.png" width="700" alt="Motor Pinout" />
-  <p style="margin-top:0;"><i>Figure 4.2: Gear Motor Pinout</i></p>
+  <p style="margin-top:0;"><i>Figure 5.2: Gear Motor Pinout</i></p>
 </div>
 
 ### 3.4.3 Servo Motor (TD8120MG):
@@ -317,7 +322,7 @@ may reduce lifespan.
     <td rowspan="4" style="height:350px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/servo.webp" height="350px" alt="Gear Motor" />
-      <p style="margin-top:0;" align="left"><i>Figure 5.1: Servo Motor</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 6.1: Servo Motor</i></p>
     </div>
     </td>
     <td>Rotation Angle</td>
@@ -349,7 +354,7 @@ We are using this digital servo for our steering (using an Ackermann controller)
 
 <div>
   <img src="../media/servo_pinout.png" width="700" alt="Servo Pinout" />
-  <p style="margin-top:0;"><i>Figure 5.2: Servo Pinout</i></p>
+  <p style="margin-top:0;"><i>Figure 6.2: Servo Pinout</i></p>
 </div>
 
 ### 3.5 LiDAR Sensor
@@ -367,7 +372,7 @@ ambient light resistance, it performs well for our strategy.
     <td rowspan="4" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/lidar.jpg" height="370px" alt="Gear Motor" />
-      <p style="margin-top:0;" align="left"><i>Figure 6.1: Yahboom T-mini Plus LiDAR</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 7.1: Yahboom T-mini Plus LiDAR</i></p>
     </div>
     </td>
     <td>Measurement Range</td>
@@ -403,7 +408,7 @@ We are using a camera for detecting colors. There is no other usage of camera in
     <td rowspan="3" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/camera.avif" height="370px" alt="Gear Motor" />
-      <p style="margin-top:0;" align="left"><i>Figure 7.1: Camera Module </i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 8.1: Camera Module </i></p>
     </div>
     </td>
     <td>Resolution</td>
@@ -440,7 +445,7 @@ The reason why we selected this camera is that it supports HDR mode, phase-detec
     <td rowspan="2" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/bno085.webp" height="370px" alt="Gear Motor" />
-      <p style="margin-top:0;" align="left"><i>Figure 8.1: BNO085</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 9.1: BNO085</i></p>
     </div>
     </td>
     <td>Orientation output</td>
@@ -466,7 +471,7 @@ Our gyro has a built-in fusion algorithm, which means it can in theory fuse acce
     <td rowspan="4" style="height:370px; text-align:center; vertical-align:middle; padding:0; margin:0;">
     <div>
       <img src="../media/hcsr04_eyb.webp" height="370px" alt="Gear Motor" />
-      <p style="margin-top:0;" align="left"><i>Figure 9.1: HC-SR04</i></p>
+      <p style="margin-top:0;" align="left"><i>Figure 10.1: HC-SR04</i></p>
     </div>
     </td>
     <td>Operating Voltage & Current</td>
@@ -507,8 +512,8 @@ $$V_{\text{out}} = V_{\text{in}} \times \frac{R_2}{R_1 + R_2} \implies 5\text{V}
     <th colspan="2">Level Shifting</th>
   </tr>
   <tr>
-    <td align="center" style="margin:0; padding:0;"><img src="../media/shift_1.png" height="300"><br><i>Figure 9.2: Diagram to show how voltage is remapped</i></td>
-    <td align="center"><img src="../media/shift_2.png" height="300"><br><i>Figure 9.3: To show the electric circuit</i></td>
+    <td align="center" style="margin:0; padding:0;"><img src="../media/shift_1.png" height="300"><br><i>Figure 10.2: Diagram to show how voltage is remapped</i></td>
+    <td align="center"><img src="../media/shift_2.png" height="300"><br><i>Figure 10.3: To show the electric circuit</i></td>
   </tr>
 </table>
 
@@ -541,8 +546,8 @@ On the PCB, power lines are routed with thick copper wires, while signal lines a
     <th colspan="2">Board 1</th>
   </tr>
   <tr>
-    <td align="center" style="margin:0; padding:0;"><img src="../media/board_1.png" height="300"><br><i>Figure 10.1: 3D view of first PCB board</i></td>
-    <td align="center"><img src="../media/board_1_2d.jpg" height="300"><br><i>Figure 10.2: 2D view of first PCB board</i></td>
+    <td align="center" style="margin:0; padding:0;"><img src="../media/board_1.png" height="300"><br><i>Figure 11.1: 3D view of first PCB board</i></td>
+    <td align="center"><img src="../media/board_1_2d.jpg" height="300"><br><i>Figure 11.2: 2D view of first PCB board</i></td>
   </tr>
 </table>
 
@@ -551,8 +556,8 @@ On the PCB, power lines are routed with thick copper wires, while signal lines a
     <th colspan="2">Board 2</th>
   </tr>
   <tr>
-    <td align="center" style="margin:0; padding:0;"><img src="../media/board_2.png" height="300"><br><i>Figure 10.3: 3D view of second PCB board</i></td>
-    <td align="center"><img src="../media/board_2_2d.jpg" height="300"><br><i>Figure 10.4: 2D view of second PCB board</i></td>
+    <td align="center" style="margin:0; padding:0;"><img src="../media/board_2.png" height="300"><br><i>Figure 11.3: 3D view of second PCB board</i></td>
+    <td align="center"><img src="../media/board_2_2d.jpg" height="300"><br><i>Figure 11.4: 2D view of second PCB board</i></td>
   </tr>
 </table>
 
@@ -596,8 +601,8 @@ operation.
     <th colspan="2">Motor driver board</th>
   </tr>
   <tr>
-    <td align="center" style="margin:0; padding:0;"><img src="../media/board_pico.png" height="300"><br><i>Figure 10.5: 3D view of our motor driver PCB board</i></td>
-    <td align="center"><img src="../media/board_pico_2d.jpg" height="300"><br><i>Figure 10.6: 2D view of our motor driver PCB board</i></td>
+    <td align="center" style="margin:0; padding:0;"><img src="../media/board_pico.png" height="300"><br><i>Figure 11.5: 3D view of our motor driver PCB board</i></td>
+    <td align="center"><img src="../media/board_pico_2d.jpg" height="300"><br><i>Figure 11.6: 2D view of our motor driver PCB board</i></td>
   </tr>
 </table>
 
@@ -644,10 +649,10 @@ operation.
     <th colspan="1">Circuit Schemes</th>
   </tr>
   <tr>
-    <td align="center" style="margin:0; padding:0;"><a id="motor-driver"></a><img src="control_board.svg"><br><i>Figure 10.7: Control Board scheme</i></td>
+    <td align="center" style="margin:0; padding:0;"><a id="motor-driver"></a><img src="control_board.svg"><br><i>Figure 11.7: Control Board scheme</i></td>
   </tr>
   <tr>
-    <td align="center"><img src="motor_board.svg"><br><i>Figure 10.8: Motor Driver scheme</i></td>
+    <td align="center"><img src="motor_board.svg"><br><i>Figure 11.8: Motor Driver scheme</i></td>
   </tr>
 </table>
 
@@ -773,7 +778,7 @@ Charging Procedure:
 
 <div>
   <img src="../media/electronics_block.png" alt="Diagram" />
-  <p style="margin-top:0;"><i>Figure 11.1 Power Flow Diagram</i></p>
+  <p style="margin-top:0;"><i>Figure 12.1 Power Flow Diagram</i></p>
 </div>
 
 <table align="center">
@@ -797,7 +802,7 @@ Charging Procedure:
 
 <div>
   <img src="../media/lipo_bat.webp" height="400px" alt="Lipo" />
-  <p style="margin-top:0;"><i>Figure 11.2 Lipo Battery</i></p>
+  <p style="margin-top:0;"><i>Figure 12.2 Lipo Battery</i></p>
 </div>
 
 The 11.1V 3S Li-Po battery supplies the entire system. Power is
