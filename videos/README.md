@@ -32,7 +32,7 @@
         <a href="https://www.youtube.com/watch?v=kVnSEkZt-Fs&list=PLiso-udvas0ohQMEMukKzdqdF-Q77ta-R&index=3" target="_blank">
         <img src="../media/THUMB2.png" height="300"><br>
         </a>
-      <b>Front</b>
+      <b>Obstacle Challenge Documentation</b>
     </td>
   </tr>
 </table>
